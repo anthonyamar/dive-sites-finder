@@ -1,0 +1,41 @@
+<div class="container bg-white my-44 mx-auto">
+  <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+        <tr>
+          <th scope="col" class="px-6 py-3">
+            Site name
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Country
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Region
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Bow
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @sites.each do |site| %>
+          <%= link_to sites_path(site), class: "hover:bg-sky-300" %>
+          <tr class="bg-white border-b">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+              <%= site.name %>
+            </th>
+            <td class="px-6 py-4">
+              <%= site.country %>
+            </td>
+            <td class="px-6 py-4">
+              <%= site.region %>
+            </td>
+            <td class="px-6 py-4">
+              <%= site.bow.capitalize %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
