@@ -2,4 +2,19 @@
   <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
     <%= @site.name %>
   </h1>
+  <p class="mt-3 text-lg leading-8 text-gray-600">
+    <%= @site.country %> 
+    <%= "- #{@site.region}" unless @site.region.blank? %>
+  </p>
+  <div class="w-1/2 mt-10">
+    <%= js_map [{
+        latitude: @site.latitude, 
+        longitude: @site.longitude,
+        label: "#{@site.name} - #{@site.country}",
+      }], 
+      style: "mapbox://styles/anthonyamar/cloovcybq00h501pl5uho0vp1", 
+      zoom: 12, 
+      controls: true 
+    %>
+  </div>
 </div>

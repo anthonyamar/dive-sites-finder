@@ -27,3 +27,6 @@
 /config/master.key
 
 /app/assets/builds/*
+
+# Ignore application configuration
+/config/application.yml
