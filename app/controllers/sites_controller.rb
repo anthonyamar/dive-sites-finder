@@ -1,10 +1,11 @@
 class SitesController < ApplicationController
   
   def index
-    @sites = Site.first(10)
+    @pagy, @sites = pagy(Site.all)
   end
 
   def show
+    @site = Site.find(params[:id])
   end
   
 end
