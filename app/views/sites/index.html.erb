@@ -29,13 +29,13 @@
               <%= link_to site.name, site_path(site), class: "underline" %>
             </th>
             <td class="px-6 py-4">
-              <%= site.country %>
+              <%= site.country&.titleize %>
             </td>
             <td class="px-6 py-4">
-              <%= site.region %>
+              <%= site.region&.titleize %>
             </td>
             <td class="px-6 py-4">
-              <%= site.bow.capitalize %>
+              <%= site.bow.titleize %>
             </td>
           </tr>
         <% end %>
