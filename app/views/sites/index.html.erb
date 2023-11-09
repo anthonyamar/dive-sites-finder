@@ -1,0 +1,48 @@
+<div class="container bg-white mt-36 mb-20 mx-auto">
+  <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+    Find your next 
+    <span class="line-through text-gray-500">site</span> 
+    <span class="bold text-sky-600">dream</span>.
+  </h1>
+  <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-8">
+    <table class="w-full text-sm text-left text-gray-500">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+        <tr>
+          <th scope="col" class="px-6 py-3">
+            Site name
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Country
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Region
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Bow
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @sites.each do |site| %>
+          <tr class="bg-white border-b hover:bg-sky-100">
+            <th scope="row" class="px-6 py-4 font-medium text-sky-600 whitespace-nowrap">
+              <%= link_to site.name, site_path(site), class: "underline" %>
+            </th>
+            <td class="px-6 py-4">
+              <%= site.country&.titleize %>
+            </td>
+            <td class="px-6 py-4">
+              <%= site.region&.titleize %>
+            </td>
+            <td class="px-6 py-4">
+              <%= site.bow.titleize %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="text-center mt-10">
+  <%== pagy_nav(@pagy) if @pagy.pages > 1 %>
+  </div>
+</div>
