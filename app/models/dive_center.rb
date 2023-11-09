@@ -10,7 +10,9 @@ class DiveCenter < ApplicationRecord
   validates :state, allow_nil: true, length: { maximum: 255 }, unless: -> { state.nil? }
   validates :zip, presence: true, numericality: { greater_than_or_equal_to: 0 }
   validates :country_code, presence: true, length: { is: 2 }
-  validates :activities, array: { presence: true }
-  validates :phone_number, allow_nil: true, format: { with: /\A\+?\d+\z/, message: "only allows digits and an optional leading plus sign" }, unless: -> { phone_number.nil? }
+  validates :phone_number, allow_nil: true, format: {
+    with: /\A\+?\d+(\s*[-\/()]*\s*\d+)*\z/,
+    message: "must be a valid phone number"
+  }, unless: -> { phone_number.nil? }
   
 end

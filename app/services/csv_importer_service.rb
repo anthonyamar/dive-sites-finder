@@ -31,7 +31,7 @@ class CsvImporterService
     CSV.foreach(@file_path, headers: true) do |row|
       record = DiveCenter.new(
         name: row['name'],
-        activities: row['type_flags'].split(" ")
+        activities: row['type_flags']&.split(" "),
         longitude: row['longitude'],
         latitude: row['latitude'],
         city: row['city'],
@@ -39,7 +39,7 @@ class CsvImporterService
         phone_number: row['phone'],
         state: row['state'],
         street: row['street'],
-        zipcode: row['zip'],
+        zip: row['zip'],
         email: row['email'],
         web_url: row['web_url']
       )
@@ -47,7 +47,7 @@ class CsvImporterService
       if record.save
         puts "Record created: #{record.name}"
       else
-        puts "Error creating record: #{record.errors.full_messages.join(', ')}"
+        puts "Error creating record named '#{row['name']}': #{record.errors.full_messages.join(', ')}"
       end
     end
   end
