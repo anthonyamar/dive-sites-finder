@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get "/offline" => "service_worker#offline"
   
   resources :sites, only: [:index, :show]
+  resources :dive_centers, only: [:index, :show]
   
 end
