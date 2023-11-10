@@ -6,6 +6,7 @@ class DiveCentersController < ApplicationController
 
   def show
     @dive_center = DiveCenter.find(params[:id])
+    @closest_sites = Site.near(@dive_center.to_coordinates, 50, units: :km).first(5)
   end
   
 end

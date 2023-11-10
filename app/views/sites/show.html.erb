@@ -3,50 +3,50 @@
     <ol class="inline-flex items-center space-x-1 md:space-x-3">
       <li class="inline-flex items-center">
         <%= link_to root_path, class: "inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600" do %>
-          <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
-          </svg>
-          Home
+        <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+        </svg>
+        Home
         <% end %>
       </li>
       <li class="inline-flex items-center">
         <%= link_to sites_path, class: "inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600" do %>
-          <span class="inline-flex items-center text-sm font-medium text-gray-700">
-           <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            Dive Sites
-          </span>
+        <span class="inline-flex items-center text-sm font-medium text-gray-700">
+          <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          Dive Sites
+        </span>
         <% end %>
       </li>
       <% unless @site.country.blank? %>
-        <li class="inline-flex items-center">
-          <span class="inline-flex items-center text-sm font-medium text-gray-700">
-           <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <%= @site.country %>
-          </span>
-        </li>
+      <li class="inline-flex items-center">
+        <span class="inline-flex items-center text-sm font-medium text-gray-700">
+          <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <%= @site.country %>
+        </span>
+      </li>
       <% end %>
       <% unless @site.region.blank? %>
-        <li>
-          <div class="flex items-center">
-            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="ml-1 text-sm font-medium text-gray-700 md:ml-2">
-              <%= @site.region %>
-            </span>
-          </div>
-        </li>
+      <li>
+        <div class="flex items-center">
+          <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="ml-1 text-sm font-medium text-gray-700 md:ml-2">
+            <%= @site.region %>
+          </span>
+        </div>
+      </li>
       <% end %>
     </ol>
   </nav>
   <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
     <%= @site.name %>
   </h1>
-  
+
   <div class="bg-sky-100 mx-auto rounded-lg shadow mt-10 p-5">
     <ul class="flex flex-wrap items-center justify-center text-gray-900 text-xl list-none text-center">
       <li class="font-semibold m-5">
@@ -64,7 +64,7 @@
       </li>
     </ul>
   </div>
-  <div class="mt-10">
+  <div class="grid grid-cols-2 gap-4 mt-10">
     <%= js_map [{
         latitude: @site.latitude, 
         longitude: @site.longitude,
@@ -72,7 +72,31 @@
       }], 
       style: "mapbox://styles/anthonyamar/cloovcybq00h501pl5uho0vp1", 
       zoom: 12, 
-      controls: true 
+      controls: true
     %>
+    <div class="w-full  p-4 bg-white rounded-lg shadow sm:p-8">
+      <div class="flex items-center justify-between mb-4">
+        <h5 class="text-xl font-bold leading-none text-gray-900">Closest dive centers</h5>
+      </div>
+      <div class="flow-root">
+        <ul role="list" class="divide-y divide-gray-200">
+          <% @closest_dive_centers.each do |dive_center| %>
+            <li class="p-2 sm:p-4 hover:bg-sky-100">
+              <div class="flex items-center">
+                <div class="flex-1 min-w-0 ms-4">
+                  <%= link_to dive_center.name.titleize, dive_center_path(dive_center), class: "text-sm font-medium text-sky-600 underline truncate" %>
+                  <p class="text-sm text-gray-500 truncate">
+                    <%= dive_center.city.titleize %>
+                  </p>
+                </div>
+                <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                  <%= @site.distance_from(dive_center.to_coordinates).round(0) %>km
+                </div>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
