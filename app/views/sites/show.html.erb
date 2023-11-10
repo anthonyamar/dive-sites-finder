@@ -90,7 +90,7 @@
                   </p>
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900">
-                  <%= @site.distance_from(dive_center.to_coordinates).round(0) %>km
+                  <%= @site.distance_from(dive_center.to_coordinates, :km).round(0) %>km
                 </div>
               </div>
             </li>

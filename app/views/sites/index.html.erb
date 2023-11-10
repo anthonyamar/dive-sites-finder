@@ -26,7 +26,7 @@
         <% @sites.each do |site| %>
           <tr class="bg-white border-b hover:bg-sky-100">
             <th scope="row" class="px-6 py-4 font-medium text-sky-600 whitespace-nowrap">
-              <%= link_to site.name, site_path(site), class: "underline" %>
+              <%= link_to site.name.titleize, site_path(site), class: "underline" %>
             </th>
             <td class="px-6 py-4">
               <%= site.country&.titleize %>
