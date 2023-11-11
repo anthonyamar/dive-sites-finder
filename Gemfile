@@ -47,6 +47,22 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+# Paginate models [https://github.com/ddnexus/pagy]
+gem "pagy"
+
+# Geocoding and maps [https://github.com/mapbox/mapbox-sdk-rb]
+gem 'mapbox-sdk'
+
+# Create maps over a Ruby line code [https://github.com/ankane/mapkick/tree/master]
+gem 'mapkick-rb'
+
+# Manage application variable environment [https://github.com/laserlemon/figaro]
+gem 'figaro'
+
+# Complete geocoding solution for Ruby [https://github.com/alexreisner/geocoder]
+gem 'geocoder'
+
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
