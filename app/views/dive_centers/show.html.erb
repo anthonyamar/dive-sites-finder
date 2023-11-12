@@ -67,18 +67,17 @@
     </ul>
   </div>
   <div class="grid grid-cols-2 gap-4 mt-10">
-    <%= js_map [{
-        latitude: @dive_center.latitude, 
-        longitude: @dive_center.longitude,
-        label: "#{@dive_center.name} - #{@dive_center.city} - #{@dive_center.country_code}",
-      }], 
+    <%= js_map @locations, 
       style: "mapbox://styles/anthonyamar/cloovcybq00h501pl5uho0vp1", 
-      zoom: 12, 
-      controls: true 
+      zoom: 14, 
+      controls: true,
+      library: {
+        center: [@dive_center.longitude, @dive_center.latitude]
+      }
     %>
     <div class="w-full  p-4 bg-white rounded-lg shadow sm:p-8">
       <div class="flex items-center justify-between mb-4">
-        <h5 class="text-xl font-bold leading-none text-gray-900">Closest dive centers</h5>
+        <h5 class="text-xl font-bold leading-none text-gray-900">Closest sites</h5>
       </div>
       <div class="flow-root">
         <ul role="list" class="divide-y divide-gray-200">
@@ -92,7 +91,7 @@
                   </p>
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900">
-                  <%= @dive_center.distance_to(site.to_coordinates, :km).round(0) %>km
+                  <%= @dive_center.distance_to(site.to_coordinates, :km).round(1) %>km
                 </div>
               </div>
             </li>
