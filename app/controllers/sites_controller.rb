@@ -14,9 +14,9 @@ class SitesController < ApplicationController
   private
   
   def create_locations_array
-    site_location = Maps::CreateLocationHashes.new([@site], :red).perform
-    dive_centers_locations = Maps::CreateLocationHashes.new(@closest_dive_centers, :blue).perform
-    sites_around_locations = Maps::CreateLocationHashes.new(@sites_around, :green).perform
+    site_location = Maps::CreateLocationHashes.new([@site]).perform
+    dive_centers_locations = Maps::CreateLocationHashes.new(@closest_dive_centers).perform
+    sites_around_locations = Maps::CreateLocationHashes.new(@sites_around).perform
     
     site_location + dive_centers_locations + sites_around_locations
   end

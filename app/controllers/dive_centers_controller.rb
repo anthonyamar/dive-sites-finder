@@ -13,8 +13,8 @@ class DiveCentersController < ApplicationController
   private
   
   def create_locations_array
-    dive_center_location = Maps::CreateLocationHashes.new([@dive_center], :red).perform
-    sites_around_locations = Maps::CreateLocationHashes.new(@closest_sites, :blue).perform
+    dive_center_location = Maps::CreateLocationHashes.new([@dive_center]).perform
+    sites_around_locations = Maps::CreateLocationHashes.new(@closest_sites).perform
     
     dive_center_location + sites_around_locations
   end

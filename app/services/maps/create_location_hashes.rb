@@ -1,16 +1,9 @@
 class Maps::CreateLocationHashes 
   
-  attr_reader :objects, :color
+  attr_reader :objects
   
-  COLORS = {
-    red: "#f43f5e",
-    blue: "#0ea5e9",
-    green: "#22c55e"
-  }
-  
-  def initialize(objects, color = :red)
+  def initialize(objects)
     @objects = objects
-    @color = COLORS[color]
   end
   
   def perform
@@ -20,12 +13,30 @@ class Maps::CreateLocationHashes
       locations << {
         latitude: object.latitude,
         longitude: object.longitude,
-        label: object.name,
-        color: color
+        popup: create_html_popup(object),
+        type: object.model_name.element
       }
     end
     
     locations
+  end
+  
+  private 
+  
+  def create_html_popup(object)
+    link = show_link(object)
+    name = object.name.titleize
+    kind = object.model_name.element == "site" ? "Dive site" : "Dive center"
+    
+    "<a href='#{link}'>#{name}</a><br>#{kind}"
+  end
+  
+  def show_link(object)
+    if object.model_name.element == "site"
+      "/sites/#{object.id}"
+    else
+      "/dive_centers/#{object.id}"
+    end
   end
   
 end
