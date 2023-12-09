@@ -67,14 +67,13 @@
     </ul>
   </div>
   <div class="grid grid-cols-2 gap-4 mt-10">
-    <%= js_map @locations, 
-      style: "mapbox://styles/anthonyamar/cloovcybq00h501pl5uho0vp1", 
-      zoom: 14, 
-      controls: true,
-      library: {
-        center: [@dive_center.longitude, @dive_center.latitude]
-      }
-    %>
+    <div data-controller="map" 
+      data-map-locations="<%= @locations.to_json %>"
+      data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
+      data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
+    >
+      <div id="map" class="w-full h-full"></div>
+    </div>
     <div class="w-full  p-4 bg-white rounded-lg shadow sm:p-8">
       <div class="flex items-center justify-between mb-4">
         <h5 class="text-xl font-bold leading-none text-gray-900">Closest sites</h5>
