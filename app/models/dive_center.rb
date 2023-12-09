@@ -2,6 +2,12 @@ class DiveCenter < ApplicationRecord
   
   reverse_geocoded_by :latitude, :longitude
   
+  # ============= relations ==============
+  
+  belongs_to :destination
+  
+  # ============= validations ============
+  
   validates :name, presence: true, length: { maximum: 255 }
   validates :email, presence: true, length: { maximum: 255 }, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :web_url, allow_nil: true, length: { maximum: 255 }, format: { with: URI::DEFAULT_PARSER.make_regexp }, unless: -> { web_url.nil? }

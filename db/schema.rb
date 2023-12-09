@@ -10,9 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_12_09_213919) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_09_220542) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "destination_conditions", force: :cascade do |t|
+    t.integer "destination_id"
+    t.integer "month"
+    t.float "air_temperature"
+    t.float "water_temperature"
+    t.float "rainfall"
+    t.integer "current_strength"
+    t.integer "visibility_scale"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "destinations", force: :cascade do |t|
+    t.string "name"
+    t.string "city"
+    t.string "region"
+    t.string "country"
+    t.string "country_code"
+    t.string "water_type"
+    t.string "water_specific"
+    t.string "timezone"
+    t.string "languages"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "dive_centers", force: :cascade do |t|
     t.string "name"
@@ -29,6 +55,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_09_213919) do
     t.text "activities", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "destination_id"
   end
 
   create_table "dive_sites", force: :cascade do |t|
@@ -42,6 +69,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_09_213919) do
     t.boolean "is_private"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "destination_id"
   end
 
+  add_foreign_key "dive_centers", "destinations"
+  add_foreign_key "dive_sites", "destinations"
 end
