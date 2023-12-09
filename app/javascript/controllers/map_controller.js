@@ -11,15 +11,18 @@ export default class extends Controller {
   }
 
   connect() {
-    const locations = JSON.parse(this.data.get("locations"))
-    
-    const map = L.map('map');
-    map.setView([locations[0].latitude, locations[0].longitude], 15);
+    const locations = JSON.parse(this.data.get("locations"));
+    this.initializeMap(locations);
+  }
+
+  initializeMap(locations) {
+    this.map = L.map('map');
+    this.map.setView([locations[0].latitude, locations[0].longitude], 15);
     
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
       attribution: "OpenStreetMap",
-    }).addTo(map);
+    }).addTo(this.map);
     
     const diveSiteMarker = L.icon({
       iconUrl: this.data.get("diveSiteMarkerUrl"),
@@ -34,7 +37,7 @@ export default class extends Controller {
     for (var i = 0; i < locations.length; i++) {
       var marker = L.marker([locations[i].latitude, locations[i].longitude], {
         icon: locations[i].type === "site" ? diveSiteMarker : diveCenterMarker
-      }).addTo(map);
+      }).addTo(this.map);
       
       marker.bindPopup(locations[i].popup);
       (i == 0) && marker.openPopup(); 
@@ -42,11 +45,8 @@ export default class extends Controller {
   }
 
   setCenter({ params: {latitude, longitude} }) { 
-    console.log("Bonjour de setCenter")
-    if (map) {
-      map.flyTo([latitude, longitude], 15);
-    } else {
-      console.log("no")
-    }
+    console.log("Bonjour de setCenter");
+    
+    this.map.flyTo([latitude, longitude], 15);
   }
 }
