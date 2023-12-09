@@ -8,7 +8,7 @@ class CsvImporterService
 
   def import_sites_data
     CSV.foreach(@file_path, headers: true) do |row|
-      record = Site.new(
+      record = DiveSite.new(
         name: row['odin_dive_sites_name'],
         bow: row['bow'].blank? ? "unknown" : row['bow'],
         longitude: row['longitude'],

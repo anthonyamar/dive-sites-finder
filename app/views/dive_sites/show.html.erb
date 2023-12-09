@@ -10,7 +10,7 @@
         <% end %>
       </li>
       <li class="inline-flex items-center">
-        <%= link_to sites_path, class: "inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600" do %>
+        <%= link_to dive_sites_path, class: "inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600" do %>
         <span class="inline-flex items-center text-sm font-medium text-gray-700">
           <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
@@ -19,24 +19,24 @@
         </span>
         <% end %>
       </li>
-      <% unless @site.country.blank? %>
+      <% unless @dive_site.country.blank? %>
       <li class="inline-flex items-center">
         <span class="inline-flex items-center text-sm font-medium text-gray-700">
           <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
           </svg>
-          <%= @site.country %>
+          <%= @dive_site.country %>
         </span>
       </li>
       <% end %>
-      <% unless @site.region.blank? %>
+      <% unless @dive_site.region.blank? %>
       <li>
         <div class="flex items-center">
           <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
           </svg>
           <span class="ml-1 text-sm font-medium text-gray-700 md:ml-2">
-            <%= @site.region %>
+            <%= @dive_site.region %>
           </span>
         </div>
       </li>
@@ -44,22 +44,22 @@
     </ol>
   </nav>
   <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-    <i class="fa-duotone fa-location-dot" style="--fa-primary-color: #0ea5e9; --fa-secondary-color: #0284c7;"></i> <%= @site.name.titleize %>
+    <i class="fa-duotone fa-location-dot" style="--fa-primary-color: #0ea5e9; --fa-secondary-color: #0284c7;"></i> <%= @dive_site.name.titleize %>
   </h1>
 
   <div class="bg-sky-100 mx-auto rounded-lg shadow mt-10 p-5">
     <ul class="flex flex-wrap items-center justify-center text-gray-900 text-xl list-none text-center">
       <li class="font-semibold m-5">
-        <%= @site.country %> 
-        <%= "- #{@site.region}" unless @site.region.blank? %> <br>
+        <%= @dive_site.country %> 
+        <%= "- #{@dive_site.region}" unless @dive_site.region.blank? %> <br>
         <span class="text-sm font-normal">Location</span>
       </li>
       <li class="font-semibold m-5">
-        <%= @site.latitude %>, <%= @site.longitude %><br>
+        <%= @dive_site.latitude %>, <%= @dive_site.longitude %><br>
         <span class="text-sm font-normal">Coordinates</span>
       </li>
       <li class="font-semibold m-5">
-        <%= @site.bow.capitalize %><br>
+        <%= @dive_site.bow.capitalize %><br>
         <span class="text-sm font-normal">Bow</span>
       </li>
     </ul>
@@ -96,7 +96,7 @@
                       </p>
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900">
-                      <%= @site.distance_from(dive_center.to_coordinates, :km).round(1) %>km
+                      <%= @dive_site.distance_from(dive_center.to_coordinates, :km).round(1) %>km
                     </div>
                   </div>
                 </li>
@@ -113,7 +113,7 @@
           </div>
           <div class="flow-root">
             <ul role="list" class="divide-y divide-gray-200">
-              <% @sites_around.each do |site| %>
+              <% @dive_sites_around.each do |site| %>
                 <li class="p-2 sm:py-4 sm:pr-1 sm:pl-0 hover:bg-sky-100">
                   <div class="flex items-center">
                     <div class="flex-shrink-0">
@@ -126,13 +126,13 @@
                       ></i>
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                      <%= link_to site.name.titleize, site_path(site), class: "text-sm font-medium text-sky-600 underline truncate" %>
+                      <%= link_to site.name.titleize, dive_site_path(site), class: "text-sm font-medium text-sky-600 underline truncate" %>
                       <p class="text-sm text-gray-500 truncate">
                         <%= site.bow.titleize %>
                       </p>
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900">
-                      <%= @site.distance_to(site.to_coordinates, :km).round(1) %>km
+                      <%= @dive_site.distance_to(site.to_coordinates, :km).round(1) %>km
                     </div>
                   </div>
                 </li>

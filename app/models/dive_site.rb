@@ -1,4 +1,4 @@
-class Site < ApplicationRecord
+class DiveSite < ApplicationRecord
   
   reverse_geocoded_by :latitude, :longitude
   enum bow: { salt: 'salt', artificial: 'artificial', fresh: 'fresh', unknown: 'unknown' }

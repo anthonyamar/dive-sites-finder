@@ -80,11 +80,11 @@
       </div>
       <div class="flow-root">
         <ul role="list" class="divide-y divide-gray-200">
-          <% @closest_sites.each do |site| %>
+          <% @closest_dive_sites.each do |site| %>
             <li class="p-2 sm:p-4 hover:bg-sky-100">
               <div class="flex items-center">
                 <div class="flex-1 min-w-0 ms-4">
-                  <%= link_to site.name.titleize, site_path(site), class: "text-sm font-medium text-sky-600 underline truncate" %>
+                  <%= link_to site.name.titleize, dive_site_path(site), class: "text-sm font-medium text-sky-600 underline truncate" %>
                   <p class="text-sm text-gray-500 truncate">
                     <%= site.bow.titleize %>
                   </p>

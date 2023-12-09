@@ -6,7 +6,7 @@ class DiveCentersController < ApplicationController
 
   def show
     @dive_center = DiveCenter.find(params[:id])
-    @closest_sites = Site.near(@dive_center.to_coordinates, 50, units: :km).first(5)
+    @closest_dive_sites = DiveSite.near(@dive_center.to_coordinates, 50, units: :km).first(5)
     @locations = create_locations_array
   end
   
@@ -14,9 +14,9 @@ class DiveCentersController < ApplicationController
   
   def create_locations_array
     dive_center_location = Maps::CreateLocationHashes.new([@dive_center]).perform
-    sites_around_locations = Maps::CreateLocationHashes.new(@closest_sites).perform
+    dive_sites_around_locations = Maps::CreateLocationHashes.new(@closest_dive_sites).perform
     
-    dive_center_location + sites_around_locations
+    dive_center_location + dive_sites_around_locations
   end
   
 end
