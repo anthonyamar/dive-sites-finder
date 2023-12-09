@@ -62,6 +62,11 @@ gem 'figaro'
 # Complete geocoding solution for Ruby [https://github.com/alexreisner/geocoder]
 gem 'geocoder'
 
+# Solution for managing countries, timezone and currencies [https://github.com/countries/countries]
+gem 'countries'
+gem 'tzinfo'
+gem 'money'
+
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

@@ -93,6 +93,8 @@ GEM
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
+    countries (5.7.1)
+      unaccent (~> 0.3)
     crass (1.0.6)
     date (3.3.3)
     debug (1.8.0)
@@ -143,6 +145,8 @@ GEM
     mime-types-data (3.2023.1003)
     mini_mime (1.1.5)
     minitest (5.20.0)
+    money (6.16.0)
+      i18n (>= 0.6.4, <= 2)
     msgpack (1.7.2)
     mutex_m (0.1.2)
     net-imap (0.4.4)
@@ -253,6 +257,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    unaccent (0.4.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
@@ -278,6 +283,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
+  countries
   debug
   error_highlight (>= 0.4.0)
   figaro
@@ -286,6 +292,7 @@ DEPENDENCIES
   jbuilder
   mapbox-sdk
   mapkick-rb
+  money
   pagy
   pg (~> 1.1)
   puma (>= 5.0)
@@ -296,6 +303,7 @@ DEPENDENCIES
   stimulus-rails
   tailwindcss-rails
   turbo-rails
+  tzinfo
   tzinfo-data
   web-console
 
