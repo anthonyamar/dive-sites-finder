@@ -27,7 +27,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_09_220542) do
   end
 
   create_table "destinations", force: :cascade do |t|
-    t.string "name"
     t.string "city"
     t.string "region"
     t.string "country"

@@ -8,7 +8,6 @@ class Destination < ApplicationRecord
   
   # ============= validations ============
   
-  validates :name, presence: true
   validates :country, presence: true
   validates :country_code, presence: true
   

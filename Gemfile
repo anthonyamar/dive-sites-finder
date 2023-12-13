@@ -64,7 +64,7 @@ gem 'geocoder'
 
 # Solution for managing countries, timezone and currencies [https://github.com/countries/countries]
 gem 'countries'
-gem 'tzinfo'
+gem 'timezone'
 gem 'money'
 
 

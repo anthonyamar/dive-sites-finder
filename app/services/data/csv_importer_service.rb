@@ -1,6 +1,6 @@
 require "csv"
 
-class CsvImporterService
+class Data::CsvImporterService
   
   def initialize(file_path)
     @file_path = file_path
