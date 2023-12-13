@@ -64,13 +64,13 @@
       </li>
     </ul>
   </div>
-  <div class="grid grid-cols-2 gap-4 mt-10">
-    <div data-controller="map" 
-      data-map-locations="<%= @locations.to_json %>"
-      data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
-      data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
-    >
-      <div id="map" class="w-full h-full"></div>
+  <div class="grid grid-cols-2 gap-4 mt-10" data-controller="map"
+    data-map-locations="<%= @locations.to_json %>"
+    data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
+    data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
+  >
+    <div id="map" class="w-full h-full">
+      <!--  javascript/controllers/map_controller.js   -->
     </div>
     <div class="w-full p-4 bg-white rounded-lg shadow sm:p-8">
       <div class="grid grid-cols-2 gap-2">
@@ -87,7 +87,12 @@
                 <li class="p-2 sm:py-4 sm:pr-1 sm:pl-0 hover:bg-sky-100">
                   <div class="flex items-center">
                     <div class="flex-shrink-0">
-                      <i onclick="setMapCenter(<%= dive_center.latitude %>, <%= dive_center.longitude %>);" class="fa-duotone fa-bullseye-pointer fa-lg" style="--fa-primary-color: #0ea5e9; --fa-secondary-color: #0ea5e9;"></i>
+                      <i data-action="click->map#setCenter" 
+                        data-map-latitude-param="<%= dive_center.latitude %>" 
+                        data-map-longitude-param="<%= dive_center.longitude %>" 
+                        class="fa-duotone fa-bullseye-pointer fa-lg" 
+                        style="--fa-primary-color: #0ea5e9; --fa-secondary-color: #0ea5e9;"
+                      ></i>
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
                       <%= link_to dive_center.name.titleize, dive_center_path(dive_center), class: "text-sm font-medium text-sky-600 underline truncate" %>
@@ -117,8 +122,7 @@
                 <li class="p-2 sm:py-4 sm:pr-1 sm:pl-0 hover:bg-sky-100">
                   <div class="flex items-center">
                     <div class="flex-shrink-0">
-                      <i data-controller="map"
-                        data-action="click->map#setCenter" 
+                      <i data-action="click->map#setCenter" 
                         data-map-latitude-param="<%= site.latitude %>" 
                         data-map-longitude-param="<%= site.longitude %>" 
                         class="fa-duotone fa-bullseye-pointer fa-lg" 

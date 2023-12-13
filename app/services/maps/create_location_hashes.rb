@@ -26,14 +26,14 @@ class Maps::CreateLocationHashes
   def create_html_popup(object)
     link = show_link(object)
     name = object.name.titleize
-    kind = object.model_name.element == "site" ? "Dive site" : "Dive center"
+    kind = object.model_name.element == "dive_site" ? "Dive site" : "Dive center"
     
     "<a href='#{link}'>#{name}</a><br>#{kind}"
   end
   
   def show_link(object)
-    if object.model_name.element == "site"
-      "/sites/#{object.id}"
+    if object.model_name.element == "dive_site"
+      "/dive_sites/#{object.id}"
     else
       "/dive_centers/#{object.id}"
     end

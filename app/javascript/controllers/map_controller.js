@@ -36,7 +36,7 @@ export default class extends Controller {
 
     for (var i = 0; i < locations.length; i++) {
       var marker = L.marker([locations[i].latitude, locations[i].longitude], {
-        icon: locations[i].type === "site" ? diveSiteMarker : diveCenterMarker
+        icon: locations[i].type === "dive_site" ? diveSiteMarker : diveCenterMarker
       }).addTo(this.map);
       
       marker.bindPopup(locations[i].popup);
@@ -44,9 +44,27 @@ export default class extends Controller {
     }
   }
 
-  setCenter({ params: {latitude, longitude} }) { 
-    console.log("Bonjour de setCenter");
+  findPopupByCoordinates(map, latlng) {
+    let targetPopup = null;
+
+    // Utilisez eachLayer pour parcourir tous les calques de la carte
+    map.eachLayer((layer) => {
+      // Vérifiez si le calque est un popup et si ses coordonnées correspondent
+      console.log(layer)
+      if (layer instanceof L.Popup && layer.getLatLng().equals(latlng)) {
+        targetPopup = layer;
+      }
+    });
     
-    this.map.flyTo([latitude, longitude], 15);
+    return targetPopup;
+  }
+
+  setCenter({ params: {latitude, longitude} }) { 
+    const coordinates = [latitude, longitude]
+    const popup = this.findPopupByCoordinates(this.map, coordinates);
+    
+    this.map.panTo(coordinates, 15);
+    console.log(popup)
+    popup.openPopup();
   }
 }
