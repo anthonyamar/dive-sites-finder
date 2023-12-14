@@ -15,5 +15,11 @@ Rails.application.routes.draw do
   
   resources :dive_sites, only: [:index, :show]
   resources :dive_centers, only: [:index, :show]
+  resources :destinations, only: [:index] do
+    get ':country', to: 'destinations#country', on: :collection, as: 'country'
+    get ':country/:region', to: 'destinations#region', on: :collection, as: 'region'
+    get ':country/:region/:city', to: 'destinations#city', on: :collection, as: 'city'
+  end
+
   
 end
