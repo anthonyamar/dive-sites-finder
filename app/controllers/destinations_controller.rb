@@ -8,7 +8,7 @@ class DestinationsController < ApplicationController
     @destination = Destination.find_by(country: params[:country])
     @destinations = Destination
       .where(country: @destination.country)
-      .reject { |d| d == @destination }
+      .where.not(id: @destination.id)
     
     load_associated_data
   end
@@ -17,7 +17,7 @@ class DestinationsController < ApplicationController
     @destination = Destination.find_by(region: params[:region])
     @destinations = Destination
       .where(region: @destination.region)
-      .reject { |d| d == @destination }
+      .where.not(id: @destination.id)
     
     load_associated_data
   end
@@ -34,4 +34,5 @@ class DestinationsController < ApplicationController
     @dive_centers = DiveCenter.where(destination: @destinations)
     @dive_sites = DiveSite.where(destination: @destinations)
   end
+   
 end

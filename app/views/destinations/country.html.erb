@@ -24,4 +24,26 @@
   <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
     <i class="fa-duotone fa-location-dot" style="--fa-primary-color: #0ea5e9; --fa-secondary-color: #0284c7;"></i> <%= @destination.country %>
   </h1>
+  
+    
+  <div class="mt-10 p-5 shadow rounded">
+    <h3 class="text-2l font-bold tracking-tight text-gray-700 sm:text-4l">
+      Discover <%= @destinations.pluck(:region).compact.uniq.size %> regions in <%= @destination.country %>
+    </h3>
+    
+    <% @destinations.pluck(:region).compact.uniq.each do |region| %>
+      <div class="mt-2">
+        <%= link_to region, region_destinations_path(region: region), class: "font-medium text-sky-600 whitespace-nowrap" %>
+        
+        <% region_destinations = @destinations.where(region: region) %>
+        <p>
+          <%= region_destinations.pluck(:city).compact.uniq.size %> cities,
+          <%= region_destinations.sum { |dest| dest.dive_sites.size } %> dive sites,
+          <%= region_destinations.sum { |dest| dest.dive_centers.size } %> dive centers
+        </p>
+        
+      </div>
+    <% end %>
+    
+  </div>
 </div>
