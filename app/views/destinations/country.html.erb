@@ -22,7 +22,8 @@
     </ol>
   </nav>
   <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-    <i class="fa-duotone fa-location-dot" style="--fa-primary-color: #0ea5e9; --fa-secondary-color: #0284c7;"></i> <%= @destination.country %>
+    <%= ISO3166::Country.new(@destination.country_code).emoji_flag %>
+    <%= @destination.country %>
   </h1>
   
     
@@ -31,15 +32,15 @@
       Discover <%= @destinations.pluck(:region).compact.uniq.size %> regions in <%= @destination.country %>
     </h3>
     
-    <% @destinations.pluck(:region).compact.uniq.each do |region| %>
+    <% @destinations.includes(:dive_sites, :dive_centers).pluck(:region).compact.uniq.each do |region| %>
       <div class="mt-2">
-        <%= link_to region, region_destinations_path(region: region), class: "font-medium text-sky-600 whitespace-nowrap" %>
+        <%= link_to region, region_destinations_path(region: region), class: "font-medium text-sky-600 whitespace-nowrap underline" %>
         
         <% region_destinations = @destinations.where(region: region) %>
         <p>
-          <%= region_destinations.pluck(:city).compact.uniq.size %> cities,
-          <%= region_destinations.sum { |dest| dest.dive_sites.size } %> dive sites,
-          <%= region_destinations.sum { |dest| dest.dive_centers.size } %> dive centers
+          <%= t("count.x_cities", count: region_destinations.pluck(:city).compact.uniq.size) %>,
+          <%= t("count.x_dive_sites", count: region_destinations.sum { |dest| dest.dive_sites.size }) %>,
+          <%= t("count.x_dive_centers", count: region_destinations.sum { |dest| dest.dive_centers.size }) %>
         </p>
         
       </div>
