@@ -9,6 +9,7 @@ class DestinationsController < ApplicationController
     @destinations = Destination
       .where(country: @destination.country)
       .where.not(id: @destination.id)
+    @locations = Maps::CreateLocationHashes.new([@destination], boundaries: :country).perform
     
     load_associated_data
   end

@@ -1,20 +1,25 @@
 class Maps::CreateLocationHashes 
   
-  attr_reader :objects
+  attr_reader :objects, :boundaries
   
-  def initialize(objects)
+  def initialize(objects, boundaries: :point)
     @objects = objects
+    @boundaries = boundaries
   end
   
   def perform
     locations = []
     
     objects.each do |object|
+      type = object.model_name.element
+      
+      geocoded = point? ? nil : geocode(object)
+      
       locations << {
-        latitude: object.latitude,
-        longitude: object.longitude,
+        latitude: geocoded&["lat"] || object.latitude,
+        longitude: geocoded&["lon"] || object.longitude,
         popup: create_html_popup(object),
-        type: object.model_name.element
+        type: type
       }
     end
     
@@ -24,19 +29,19 @@ class Maps::CreateLocationHashes
   private 
   
   def create_html_popup(object)
-    link = show_link(object)
-    name = object.name.titleize
-    kind = object.model_name.element == "dive_site" ? "Dive site" : "Dive center"
+    link = "/#{object.model_name.route_key}/#{object.id}"
+    name = point? ? object.name.titleize : object.send(boundaries) 
+    type = object.model_name.human
     
-    "<a href='#{link}'>#{name}</a><br>#{kind}"
+    "<a href='#{link}'>#{name}</a><br>#{type}"
   end
   
-  def show_link(object)
-    if object.model_name.element == "dive_site"
-      "/dive_sites/#{object.id}"
-    else
-      "/dive_centers/#{object.id}"
-    end
+  def geocode(object)
+    Geocoder.search(object.send(boundaries)).first.data # should either be city, region or country.
+  end
+  
+  def point?
+    boundaries == :point
   end
   
 end

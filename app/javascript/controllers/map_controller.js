@@ -2,7 +2,13 @@ import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   
-  static targets = ["locations", "diveCenterMarkerUrl", "diveSiteMarkerUrl"]
+  static targets = [
+    "locations", 
+    "zoomLevel",
+    "diveCenterMarkerUrl", 
+    "diveSiteMarkerUrl",
+    "destinationMarkerUrl"
+  ]
   
   static values = {
     locations: Object,
@@ -17,28 +23,21 @@ export default class extends Controller {
 
   initializeMap(locations) {
     this.map = L.map('map');
-    this.map.setView([locations[0].latitude, locations[0].longitude], 15);
+    this.map.setView(
+      [locations[0].latitude, locations[0].longitude], 
+      this.data.get("zoomLevel")
+    );
     
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
       attribution: "OpenStreetMap",
     }).addTo(this.map);
-    
-    const diveSiteMarker = L.icon({
-      iconUrl: this.data.get("diveSiteMarkerUrl"),
-      iconSize: [38, 38],
-    })
-
-    const diveCenterMarker = L.icon({
-      iconUrl: this.data.get("diveCenterMarkerUrl"),
-      iconSize: [38, 38],
-    })
 
     for (var i = 0; i < locations.length; i++) {
       var marker = L.marker([locations[i].latitude, locations[i].longitude], {
-        icon: locations[i].type === "dive_site" ? diveSiteMarker : diveCenterMarker
+        icon: this.marker(locations[i].type),
       }).addTo(this.map);
-      
+
       marker.bindPopup(locations[i].popup);
       (i == 0) && marker.openPopup(); 
     }
@@ -58,7 +57,8 @@ export default class extends Controller {
     
     return targetPopup;
   }
-
+  
+  // Bouge la map au point souhaité sur event (clic ou autres), puis ouvre le popup
   setCenter({ params: {latitude, longitude} }) { 
     const coordinates = [latitude, longitude]
     const popup = this.findPopupByCoordinates(this.map, coordinates);
@@ -66,5 +66,21 @@ export default class extends Controller {
     this.map.panTo(coordinates, 15);
     console.log(popup)
     popup.openPopup();
+  }
+
+  // Donne le marker approprié
+  marker(type) {
+   const iconUrls = {
+      "dive_site": this.data.get("diveSiteMarkerUrl"),
+      "dive_center": this.data.get("diveCenterMarkerUrl"),
+      "destination": this.data.get("destinationMarkerUrl")
+    };
+
+    var iconUrl = iconUrls[type] || this.data.get("destinationMarkerUrl"); // Fallback to a destination as default if needed
+
+    return L.icon({
+      iconUrl: iconUrl,
+      iconSize: [38, 38],
+    })
   }
 }

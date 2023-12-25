@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_12_25_160936) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_25_162956) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -39,6 +39,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_25_160936) do
     t.datetime "updated_at", null: false
     t.integer "dive_centers_count", default: 0
     t.integer "dive_sites_count", default: 0
+    t.float "latitude"
+    t.float "longitude"
   end
 
   create_table "dive_centers", force: :cascade do |t|
