@@ -71,7 +71,7 @@
     data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
     data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
   >
-    <div id="map" class="w-full h-full">
+    <div id="map" class="w-full h-full min-h-[65vh]">
       <!--  javascript/controllers/map_controller.js   -->
     </div>
     <div class="w-full p-4 bg-white rounded-lg shadow sm:p-8">
@@ -108,6 +108,11 @@
                   </div>
                 </li>
               <% end %>
+              <% if @closest_dive_centers.blank? %>
+                <p class="text-sm text-gray-500">
+                  No other dive centers listed around, yet.
+                </p>
+              <% end %>
             </ul>
           </div>
         </div>
@@ -142,6 +147,11 @@
                     </div>
                   </div>
                 </li>
+              <% end %>
+              <% if @dive_sites_around.blank? %>
+                <p class="text-sm text-gray-500">
+                  No other dive sites listed around, yet.
+                </p>
               <% end %>
             </ul>
           </div>
