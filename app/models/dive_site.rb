@@ -5,7 +5,7 @@ class DiveSite < ApplicationRecord
   
   # ============= relations ==============
   
-  belongs_to :destination
+  belongs_to :destination, counter_cache: true
   
   # ============= validations ============
   

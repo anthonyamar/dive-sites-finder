@@ -26,7 +26,7 @@ Rails.application.configure do
     config.cache_store = :memory_store
     config.public_file_server.headers = {
       "Cache-Control" => "public, max-age=#{2.days.to_i}"
-    }
+      }
   else
     config.action_controller.perform_caching = false
 
@@ -73,4 +73,28 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
+
+  # BULLET NOTIFICATION CONFIG
+  config.after_initialize do
+    Bullet.enable = true
+#    Bullet.sentry = true
+#    Bullet.alert = true
+    Bullet.bullet_logger = true
+    Bullet.console = true
+#    Bullet.xmpp = { :account  => 'bullets_account@jabber.org',
+#      :password => 'bullets_password_for_jabber',
+#      :receiver => 'your_account@jabber.org',
+#      :show_online_status => true }
+    Bullet.rails_logger = true
+#    Bullet.honeybadger = true
+#    Bullet.bugsnag = true
+#    Bullet.appsignal = true
+#    Bullet.airbrake = true
+#    Bullet.rollbar = true
+    Bullet.add_footer = true
+    Bullet.skip_html_injection = false
+#    Bullet.stacktrace_includes = [ 'your_gem', 'your_middleware' ]
+#    Bullet.stacktrace_excludes = [ 'their_gem', 'their_middleware', ['my_file.rb', 'my_method'], ['my_file.rb', 16..20] ]
+#    Bullet.slack = { webhook_url: 'http://some.slack.url', channel: '#default', username: 'notifier' }
+  end
 end
