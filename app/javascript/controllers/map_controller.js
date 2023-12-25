@@ -30,7 +30,7 @@ export default class extends Controller {
     
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}&language=en', {
       maxZoom: 19,
-      id: 'mapbox/streets-v11', // ou un autre style de carte de votre choix
+      id: 'anthonyamar/cloov0uiv00h401pl238geunu', // ou un autre style de carte de votre choix
       accessToken: 'pk.eyJ1IjoiYW50aG9ueWFtYXIiLCJhIjoiY2xvb3Vhb3I5MDRzbjJpbzZ3aXpiY3JlOCJ9.P7fK9W5NaG4f2GK3OPMNzg',
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
         '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
