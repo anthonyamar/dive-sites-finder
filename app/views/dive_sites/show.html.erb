@@ -66,6 +66,8 @@
   </div>
   <div class="grid grid-cols-2 gap-4 mt-10" data-controller="map"
     data-map-locations="<%= @locations.to_json %>"
+    data-map-zoom-level="13"
+    data-map-destination-marker-url="<%= image_url('map_markers/destination.png') %>"
     data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
     data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
   >

@@ -28,9 +28,14 @@ export default class extends Controller {
       this.data.get("zoomLevel")
     );
     
-    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}&language=en', {
       maxZoom: 19,
-      attribution: "OpenStreetMap",
+      id: 'mapbox/streets-v11', // ou un autre style de carte de votre choix
+      accessToken: 'pk.eyJ1IjoiYW50aG9ueWFtYXIiLCJhIjoiY2xvb3Vhb3I5MDRzbjJpbzZ3aXpiY3JlOCJ9.P7fK9W5NaG4f2GK3OPMNzg',
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      language: 'en' // Définir la langue des étiquettes en anglais
     }).addTo(this.map);
 
     for (var i = 0; i < locations.length; i++) {
@@ -61,11 +66,11 @@ export default class extends Controller {
   // Bouge la map au point souhaité sur event (clic ou autres), puis ouvre le popup
   setCenter({ params: {latitude, longitude} }) { 
     const coordinates = [latitude, longitude]
-    const popup = this.findPopupByCoordinates(this.map, coordinates);
+    const popup = this.findPopupByCoordinates(this.map, coordinates); // OUTPUT NULL
     
     this.map.panTo(coordinates, 15);
-    console.log(popup)
-    popup.openPopup();
+    console.log(popup) // DON'T WORK
+    popup.openPopup(); // DON'T WORK 
   }
 
   // Donne le marker approprié

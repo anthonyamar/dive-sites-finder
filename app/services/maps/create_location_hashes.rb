@@ -11,15 +11,11 @@ class Maps::CreateLocationHashes
     locations = []
     
     objects.each do |object|
-      type = object.model_name.element
-      
-      geocoded = point? ? nil : geocode(object)
-      
       locations << {
-        latitude: geocoded&["lat"] || object.latitude,
-        longitude: geocoded&["lon"] || object.longitude,
+        latitude: geocode(object)[:lat],
+        longitude: geocode(object)[:lon],
         popup: create_html_popup(object),
-        type: type
+        type: object.model_name.element
       }
     end
     
@@ -37,7 +33,12 @@ class Maps::CreateLocationHashes
   end
   
   def geocode(object)
-    Geocoder.search(object.send(boundaries)).first.data # should either be city, region or country.
+    if point?
+      { lat: object.latitude, lon: object.longitude, bounds: nil }
+    else
+      geocoded = Geocoder.search(object.send(boundaries)).first.data # should either be city, region or country.
+      { lat: geocoded["lat"], lon: geocoded["lon"], bounds: geocoded["boundingbox"] }
+    end
   end
   
   def point?
