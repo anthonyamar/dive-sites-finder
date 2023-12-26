@@ -36,6 +36,7 @@ class Maps::CreateLocationHashes
     if point?
       { lat: object.latitude, lon: object.longitude, bounds: nil }
     else
+#      binding.pry
       geocoded = Geocoder.search(object.send(boundaries)).first.data # should either be city, region or country.
       { lat: geocoded["lat"], lon: geocoded["lon"], bounds: geocoded["boundingbox"] }
     end

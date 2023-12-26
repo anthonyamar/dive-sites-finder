@@ -8,7 +8,7 @@ class DestinationsController < ApplicationController
     @destination = Destination.find_by(country: params[:country])
     @destinations = Destination
       .where(country: @destination.country)
-      .where.not(id: @destination.id)
+#      .where.not(id: @destination.id)
     @locations = Maps::CreateLocationHashes.new([@destination], boundaries: :country).perform
     
     load_associated_data
@@ -16,15 +16,18 @@ class DestinationsController < ApplicationController
 
   def region
     @destination = Destination.find_by(region: params[:region])
+    puts @destination.id
     @destinations = Destination
       .where(region: @destination.region)
-      .where.not(id: @destination.id)
+#      .where.not(id: @destination.id)
+    @locations = Maps::CreateLocationHashes.new([@destination], boundaries: :region).perform
     
     load_associated_data
   end
 
   def city
     @destination = Destination.find_by(city: params[:city])
+    @locations = Maps::CreateLocationHashes.new([@destination], boundaries: :city).perform
     
     load_associated_data
   end

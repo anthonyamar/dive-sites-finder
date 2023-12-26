@@ -42,6 +42,40 @@
     </ol>
   </nav>
   <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-    <i class="fa-duotone fa-location-dot" style="--fa-primary-color: #0ea5e9; --fa-secondary-color: #0284c7;"></i> <%= @destination.region %>
+    <%= ISO3166::Country.new(@destination.country_code).emoji_flag %>
+    Diving in <%= @destination.region %> - <%= @destination.country %>
   </h1>
+  
+  <div class="grid grid-cols-2 gap-4 mt-10" data-controller="map"
+    data-map-locations="<%= @locations.to_json %>"
+    data-map-zoom-level="8"
+    data-map-destination-marker-url="<%= image_url('map_markers/destination.png') %>"
+    data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
+    data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
+    data-map-mapbox-token="<%= ENV["MAPBOX_ACCESS_TOKEN"] %>"
+  >
+    <div id="map" class="w-full h-full min-h-[65vh]">
+      <!--  javascript/controllers/map_controller.js   -->
+    </div>
+    
+    <div class="p-5 shadow rounded">
+      <h3 class="text-2l font-bold tracking-tight text-gray-700 sm:text-4l">
+        Discover <%= @destinations.pluck(:city).compact.uniq.size %> cities in <%= @destination.region %>
+      </h3>
+
+      <% @destinations.includes(:dive_sites, :dive_centers).pluck(:city).compact.uniq.each do |city| %>
+        <div class="mt-2">
+          <%= link_to city, city_destinations_path(city: city), class: "font-medium text-sky-600 whitespace-nowrap underline" %>
+
+          <% city_destinations = @destinations.where(city: city) %>
+          <p>
+            <%= t("count.x_dive_sites", count: city_destinations.sum { |dest| dest.dive_sites.size }) %>,
+            <%= t("count.x_dive_centers", count: city_destinations.sum { |dest| dest.dive_centers.size }) %>
+          </p>
+
+        </div>
+      <% end %>
+
+    </div>
+  </div>
 </div>
