@@ -16,6 +16,42 @@ class Destination < ApplicationRecord
   
   # ============= scopes ============
   
+  def self.cities_in_country(country)
+    # Sous-requête pour trouver l'ID minimum pour chaque ville dans le pays
+    subquery = Destination.where(country: country)
+      .where.not(city: nil)
+      .select("MIN(id) as id")
+      .group(:city)
+
+    # Utiliser la sous-requête pour obtenir les objets Destination
+    Destination.where(id: subquery)
+  end
+
+  # Méthode pour récupérer toutes les régions d'un pays
+  def self.regions_in_country(country)
+    # Sous-requête pour trouver l'ID minimum pour chaque combinaison unique de pays et de région
+    subquery = Destination.where(country: country)
+      .where.not(region: nil)
+      .select("MIN(id) as id")
+      .group(:region)
+
+    # Utiliser la sous-requête pour obtenir les objets Destination
+    Destination.where(id: subquery)
+  end
+
+  # Méthode pour récupérer toutes les villes d'une région
+  def self.cities_in_region(country, region)
+    # Sous-requête pour trouver l'ID minimum pour chaque ville dans la région
+    subquery = Destination.where(country: country, region: region)
+      .where.not(city: nil)
+      .select("MIN(id) as id")
+      .group(:city)
+
+    # Utiliser la sous-requête pour obtenir les objets Destination
+    Destination.where(id: subquery)
+  end
+  
+  
   # ============= methods ===========
   
   def name

@@ -5,10 +5,10 @@ class DestinationsController < ApplicationController
   end
 
   def country
-    @destination = Destination.find_by(country: params[:country])
-    @destinations = Destination
-      .where(country: @destination.country)
-#      .where.not(id: @destination.id)
+
+    @destination = Destination.find_by(country: params[:country], region: nil, city: nil)
+    @regions = Destination.regions_in_country(params[:country])
+    
     @locations = Maps::CreateLocationHashes.new([@destination], boundaries: :country).perform
     
     load_associated_data

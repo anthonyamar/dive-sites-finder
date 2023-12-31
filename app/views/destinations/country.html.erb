@@ -42,29 +42,28 @@
     data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
     data-map-mapbox-token="<%= ENV["MAPBOX_ACCESS_TOKEN"] %>"
   >
-    <div id="map" class="w-full h-full min-h-[65vh]">
+    <div id="map" class="w-full h-full min-h-[65vh] max-h-[100vh]">
       <!--  javascript/controllers/map_controller.js   -->
     </div>
     
     <div class="p-5 shadow rounded">
       <h3 class="text-2l font-bold tracking-tight text-gray-700 sm:text-4l">
-        Discover <%= @destinations.pluck(:region).compact.uniq.size %> regions in <%= @destination.country %>
+        Discover <%= @regions.size %> regions in <%= @destination.country %>
       </h3>
 
-      <% @destinations.includes(:dive_sites, :dive_centers).pluck(:region).compact.uniq.each do |region| %>
+      <% @regions.order(region: :asc).each do |region| %>
         <div class="mt-2">
-          <%= link_to region, region_destinations_path(region: region), class: "font-medium text-sky-600 whitespace-nowrap underline" %>
+          <%= link_to region.region, region_destinations_path(region: region.region), class: "font-medium text-sky-600 whitespace-nowrap underline" %>
 
-          <% region_destinations = @destinations.where(region: region) %>
+          <% cities = Destination.cities_in_region(region.country, region.region) %>
           <p>
-            <%= t("count.x_cities", count: region_destinations.pluck(:city).compact.uniq.size) %>,
-            <%= t("count.x_dive_sites", count: region_destinations.sum { |dest| dest.dive_sites.size }) %>,
-            <%= t("count.x_dive_centers", count: region_destinations.sum { |dest| dest.dive_centers.size }) %>
+            <!-- Finir de faire les comptes et les requettes permettant d'avoir les dive sites et centers. Les requêtes ici ne combinent pas tous les sites de plongée. Il faut aussi prendre ceux de @destination et non que les objets strictement région/ville ou autres -->
+            <%= t("count.x_cities", count: cities.size) %>,
+            <%= t("count.x_dive_sites", count: cities.sum(&:dive_sites_count)) %>,
+            <%= t("count.x_dive_centers", count: cities.sum(&:dive_centers_count)) %>
           </p>
-
         </div>
       <% end %>
-
     </div>
   </div>
 </div>

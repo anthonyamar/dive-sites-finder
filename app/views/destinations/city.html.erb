@@ -54,6 +54,43 @@
     </ol>
   </nav>
   <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-    <i class="fa-duotone fa-location-dot" style="--fa-primary-color: #0ea5e9; --fa-secondary-color: #0284c7;"></i> <%= @destination.city %>
+    <%= ISO3166::Country.new(@destination.country_code).emoji_flag %>
+    Diving in <%= @destination.city %> - <%= @destination.country %>
   </h1>
+  
+  <div class="grid grid-cols-2 gap-4 mt-10" data-controller="map"
+    data-map-locations="<%= @locations.to_json %>"
+    data-map-zoom-level="12"
+    data-map-destination-marker-url="<%= image_url('map_markers/destination.png') %>"
+    data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
+    data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
+    data-map-mapbox-token="<%= ENV["MAPBOX_ACCESS_TOKEN"] %>"
+  >
+    <div id="map" class="w-full h-full min-h-[65vh]">
+      <!--  javascript/controllers/map_controller.js   -->
+    </div>
+    
+    <div class="p-5 shadow rounded">
+      <div>
+        <h3 class="text-2l font-bold tracking-tight text-gray-700 sm:text-4l">
+          Discover <%= t("count.x_dive_sites", count: @destination.dive_sites.size) %> dive sites. 
+        </h3>
+        <% @destination.dive_sites.each do |dive_site| %>
+          <div class="mt-2">
+            <%= link_to dive_site.name, dive_site_path(dive_site), class: "font-medium text-sky-600 whitespace-nowrap underline" %>
+          </div>
+        <% end %>
+      </div>
+      <div class="mt-5">
+        <h3 class="text-2l font-bold tracking-tight text-gray-700 sm:text-4l">
+          Discover <%= t("count.x_dive_centers", count: @destination.dive_centers.size) %> dive centers. 
+        </h3>
+        <% @destination.dive_centers.each do |dive_center| %>
+          <div class="mt-2">
+            <%= link_to dive_center.name, dive_center_path(dive_center), class: "font-medium text-sky-600 whitespace-nowrap underline" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
