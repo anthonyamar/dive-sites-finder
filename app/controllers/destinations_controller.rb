@@ -5,13 +5,14 @@ class DestinationsController < ApplicationController
   end
 
   def country
-
-    @destination = Destination.find_by(country: params[:country], region: nil, city: nil)
+    @destination = Destination.find_by(country: params[:country])
     @regions = Destination.regions_in_country(params[:country])
     
-    @locations = Maps::CreateLocationHashes.new([@destination], boundaries: :country).perform
-    
     load_associated_data
+    
+    destination_map = Maps::CreateLocationHashes.new([@destination], boundaries: :country).perform
+    sites_and_centers = Maps::CreateLocationHashes.new(@dive_centers + @dive_sites).perform
+    @locations = destination_map + sites_and_centers
   end
 
   def region
@@ -35,8 +36,8 @@ class DestinationsController < ApplicationController
   private
 
   def load_associated_data
-    @dive_centers = DiveCenter.where(destination: @destinations)
-    @dive_sites = DiveSite.where(destination: @destinations)
+    @dive_centers = DiveCenter.where(destination: @destination)
+    @dive_sites = DiveSite.where(destination: @destination)
   end
    
 end

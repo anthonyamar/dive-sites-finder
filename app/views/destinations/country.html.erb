@@ -45,25 +45,41 @@
     <div id="map" class="w-full h-full min-h-[65vh] max-h-[100vh]">
       <!--  javascript/controllers/map_controller.js   -->
     </div>
-    
-    <div class="p-5 shadow rounded">
-      <h3 class="text-2l font-bold tracking-tight text-gray-700 sm:text-4l">
-        Discover <%= @regions.size %> regions in <%= @destination.country %>
-      </h3>
+    <div class="w-full p-4 bg-white rounded-lg shadow sm:p-8">
+      <div class="grid grid-cols-2 gap-2">
+        <div>
+          <h3 class="text-2l font-bold tracking-tight text-gray-700 sm:text-4l">
+            Discover <%= @regions.size %> regions in <%= @destination.country %>
+          </h3>
 
-      <% @regions.order(region: :asc).each do |region| %>
-        <div class="mt-2">
-          <%= link_to region.region, region_destinations_path(region: region.region), class: "font-medium text-sky-600 whitespace-nowrap underline" %>
+          <% @regions.order(region: :asc).each do |region| %>
+            <div class="mt-2">
+              <%= link_to region.region, region_destinations_path(region: region.region), class: "font-medium text-sky-600 whitespace-nowrap underline" %>
 
-          <% cities = Destination.cities_in_region(region.country, region.region) %>
-          <p>
-            <!-- Finir de faire les comptes et les requettes permettant d'avoir les dive sites et centers. Les requêtes ici ne combinent pas tous les sites de plongée. Il faut aussi prendre ceux de @destination et non que les objets strictement région/ville ou autres -->
-            <%= t("count.x_cities", count: cities.size) %>,
-            <%= t("count.x_dive_sites", count: cities.sum(&:dive_sites_count)) %>,
-            <%= t("count.x_dive_centers", count: cities.sum(&:dive_centers_count)) %>
-          </p>
+              <% cities = Destination.cities_in_region(region.country, region.region) %>
+              <p>
+                <!-- Finir de faire les comptes et les requettes permettant d'avoir les dive sites et centers. Les requêtes ici ne combinent pas tous les sites de plongée. Il faut aussi prendre ceux de @destination et non que les objets strictement région/ville ou autres -->
+                <%= t("count.x_cities", count: cities.size) %>,
+                <%= t("count.x_dive_sites", count: cities.sum(&:dive_sites_count)) %>,
+                <%= t("count.x_dive_centers", count: cities.sum(&:dive_centers_count)) %>
+              </p>
+            </div>
+          <% end %>
         </div>
-      <% end %>
+        <div>
+          <h3>Discover <%= @dive_centers.size %> dive centers and <%= @dive_sites.size %> dive sites</h3>
+          
+          <h4>Dive sites</h4>
+          <% @dive_sites.each do |site| %>
+            <p><%= site.name %> #<%= site.id %></p>
+          <% end %>
+          
+          <h4>Dive centers</h4>
+          <% @dive_centers.each do |centers| %>
+            <p><%= centers.name %></p>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
