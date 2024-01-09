@@ -8,11 +8,19 @@ module.exports = {
     './app/views/**/*.{erb,haml,html,slim}'
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      },
+    fontFamily: {
+      serif: ['DM Serif Display', ...defaultTheme.fontFamily.serif],
+      sans: ['DM Sans', ...defaultTheme.fontFamily.sans],
     },
+    extend: {
+      spacing: {
+        '8xl': '96rem',
+        '9xl': '128rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      }
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),

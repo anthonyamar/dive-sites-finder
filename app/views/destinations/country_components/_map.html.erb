@@ -1,0 +1,41 @@
+<div class="my-20">
+  <h2 class="text-4xl font-serif font-bold tracking-wide text-gray-900 sm:text-6xl">
+    Where to dive in <%= @destination.country %>
+  </h2>
+  <div class="grid grid-cols-2 gap-12 mt-10" data-controller="map"
+    data-map-locations="<%= @locations.to_json %>"
+    data-map-zoom-level="5"
+    data-map-destination-marker-url="<%= image_url('map_markers/destination.png') %>"
+    data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
+    data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
+    data-map-mapbox-token="<%= ENV["MAPBOX_ACCESS_TOKEN"] %>"
+  >
+    <div id="map" class="w-full h-full min-h-[65vh] max-h-[100vh] rounded-4xl shadow">
+      <!--  javascript/controllers/map_controller.js   -->
+    </div>
+    
+      <div>
+        <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4l">
+          Discover <%= @regions.size %> regions in <%= @destination.country %>
+        </h3>
+          <div class="grid grid-cols-2 gap-2">
+        <% @regions.order(region: :asc).each do |region| %>
+          <%= link_to region_destinations_path(region: region.region) do %>
+            <div class="mt-2 w-full p-2 bg-white rounded-lg shadow sm:p-6 hover:shadow-lg">
+              <p class="font-medium text-sky-600 whitespace-nowrap underline"><%= region.region %></p>
+
+              <% cities = Destination.cities_in_region(region.country, region.region) %>
+              <p>
+                <!-- Finir de faire les comptes et les requettes permettant d'avoir les dive sites et centers. Les requêtes ici ne combinent pas tous les sites de plongée. Il faut aussi prendre ceux de @destination et non que les objets strictement région/ville ou autres -->
+                <%= t("count.x_cities", count: cities.size) %>,
+                <%= t("count.x_dive_sites", count: cities.sum(&:dive_sites_count)) %>,
+                <%= t("count.x_dive_centers", count: cities.sum(&:dive_centers_count)) %>
+              </p>
+            </div>
+          <% end %>
+        <% end %>
+        </div>
+      </div>
+    
+  </div>
+</div>
