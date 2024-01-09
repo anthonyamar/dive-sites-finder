@@ -9,6 +9,9 @@
       <thead class="text-xs text-gray-700 uppercase bg-gray-50">
         <tr>
           <th scope="col" class="px-6 py-3">
+            ID
+          </th>
+          <th scope="col" class="px-6 py-3">
             Country
           </th>
           <th scope="col" class="px-6 py-3">
@@ -26,39 +29,78 @@
         </tr>
       </thead>
       <tbody>
-        <% @destinations.each do |destination| %>
-          <tr class="bg-white border-b hover:bg-sky-100">
-            <th scope="row" class="px-6 py-4 font-medium text-sky-600 whitespace-nowrap">
-              <%= link_to destination.country, 
-                  country_destinations_path(country: destination.country), 
-                  class: "underline" 
-              %>
-            </th>
-            <td class="px-6 py-4">
-              <% unless destination.region.blank? %>
+        <% previous_country = previous_region = nil %>
+        <% @destinations.order(:country, :region, :city).each do |destination| %>
+          
+          <% if destination.country != previous_country %>
+            <tr class="border-t bg-sky-100">
+              <td class="px-6 py-4">
+                <%= destination.id %>
+              </td>
+              <td colspan="6" class="px-6 py-4 font-medium text-sky-600 whitespace-nowrap">
+                <%= link_to destination.country, 
+                    country_destinations_path(country: destination.country), 
+                    class: "underline" 
+                %>
+              </td>
+            </tr>
+            <% previous_country = destination.country %>
+            <% previous_region = nil %>
+          <% end %>
+          <% if destination.region.present? && destination.region != previous_region %>
+            <tr class="bg-white hover:bg-sky-50">
+              <td class="px-6 py-4">
+                <%= destination.id %>
+              </td>
+              <td class="px-6 py-4">
+                <%= link_to destination.country, 
+                    country_destinations_path(country: destination.country), 
+                    class: "underline" 
+                %>
+              </td>
+              <td colspan="6" class="px-6 py-4 font-medium text-sky-600 whitespace-nowrap">
                 <%= link_to destination.region, 
                     region_destinations_path(country: destination.country, region: destination.region), 
                     class: "underline" 
                 %>
-              <% end %>
-            </td>
-            <td class="px-6 py-4">
-              <% unless destination.region.blank? || destination.city.blank? %>
+              </td>
+            </tr>
+            <% previous_region = destination.region %>
+          <% end %>
+          <% if destination.city.present? %>
+            <tr class="bg-white hover:bg-sky-100">
+              <td class="px-6 py-4">
+                <%= destination.id %>
+              </td>
+              <td class="px-6 py-4">
+                <%= link_to destination.country, 
+                    country_destinations_path(country: destination.country), 
+                    class: "underline" 
+                %>
+              </td>
+              <td class="px-6 py-4">
+                <%= link_to destination.region, 
+                    region_destinations_path(country: destination.country, region: destination.region), 
+                    class: "underline" 
+                %>
+              </td>
+              <td class="px-6 py-4 font-medium text-sky-600 whitespace-nowrap">
                 <%= link_to destination.city, 
                     city_destinations_path(country: destination.country, region: destination.region, city: destination.city), 
                     class: "underline" 
                 %>
-              <% end %>
-            </td>
-            <td class="px-6 py-4">
-              <%= destination.timezone %>
-            </td>
-            <td class="px-6 py-4">
-              <%= destination.languages %>
-            </td>
-          </tr>
+              </td>
+              <td class="px-6 py-4">
+                <%= destination.timezone %>
+              </td>
+              <td class="px-6 py-4">
+                <%= destination.languages %>
+              </td>
+            </tr>
+          <% end %>
         <% end %>
       </tbody>
+
     </table>
   </div>
   <div class="text-center mt-10">

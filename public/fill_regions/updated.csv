@@ -1,0 +1,1101 @@
+ID,name,longitude,latitude,address,region,country
+184,16.7180177,42.9609767,Vela Luka,Dubrovnik-Neretva County,Croatia
+185,14.6927906,45.1737049,Crikvenica,Primorje-Gorski Kotar County,Croatia
+186,13.6417282,45.0807411,Grad Rovinj,Istria County,Croatia
+188,14.2530932,45.2388503,Mošćenička Draga,Primorje-Gorski Kotar County,Croatia
+193,56.2608449,25.6077354,Sayh Al Diyar,Musandam Governorate,Oman
+189,14.7607367,44.7562894,Town of Rab,Primorje-Gorski Kotar County,Croatia
+213,18.5460128,59.2877529,Strömma,Stockholm County,Sweden
+279,-59.6184184,13.0977832,Bridgetown,Saint Michael,Barbados
+219,-64.7853167,32.2942679,City of Hamilton,HM 11,Bermuda
+223,6.0093091,49.5611874,Reckange-sur-Mess,Canton Esch-sur-Alzette,Luxembourg
+214,121.5636796,25.0375198,Taipei,110,Taiwan
+218,-81.3807776,19.2953549,George Town,KY1-9000,Cayman Islands
+243,4.3181187,50.811795,Forest - Vorst,Brussels-Capital,Belgium
+271,-15.4445131,27.9049541,Agüimes,Canary Islands,Spain
+249,4.3338445,50.8035441,Uccle - Ukkel,Brussels-Capital,Belgium
+265,-85.34586937147208,10.5061425,Hacienda Ciruelas,Cantón Bagaces,Costa Rica
+225,-13.5602184,29.0592518,Teguise,Canary Islands,Spain
+272,-13.6139122,29.0017041,San Bartolomé,Canary Islands,Spain
+217,134.4766767,7.343275,Koror,Unknown region,Palau
+322,-63.10424365597148,18.0339338,Simpson Bay,Unknown region,Sint Maarten
+297,128.7260798,36.5634886,Andong-si,36689,South Korea
+302,-84.9321826,9.819041,Paquera,Cantón Puntarenas,Costa Rica
+303,-85.7198166,10.4145696,Tempate,Cantón Santa Cruz,Costa Rica
+317,-1.6440089,42.8181992,Pamplona,Iruñerria / Comarca de Pamplona,Spain
+316,-16.717,28.0526298,Los Cristianos,Canary Islands,Spain
+333,13.6063472,45.1490782,Vrsar,Istria County,Croatia
+346,14.4694111,44.5316056,Mali Lošinj,Primorje-Gorski Kotar County,Croatia
+286,-68.9309263,12.1176488,,0000 NA,Curacao
+329,18.2280317,46.0765092,Pécs,Southern Transdanubia,Hungary
+330,18.9825043,46.5230265,Kalocsa,South Great Plain,Hungary
+347,16.4399659,43.5116383,Split,Grad Split,Croatia
+343,29.6413365,36.1993752,Kaş,Mediterranean Region,Turkey
+348,15.9772795,45.8130967,City of Zagreb,10000,Croatia
+381,-13.7642134,28.9528697,Yaiza,Canary Islands,Spain
+358,14.631247,45.0195884,Punat,Primorje-Gorski Kotar County,Croatia
+384,-1.6745719,42.83565,Berriozar,Metropolialdea / Área Metropolitana,Spain
+362,55.4112979,-4.6193716,Bel Ombre,Unknown region,Seychelles
+378,121.0211226,14.5567949,Makati,Metro Manila,Philippines
+406,-4.7391371,54.077268,Port Saint Mary,Rushen,Isle of Man
+366,13.5684485,45.5284919,Piran / Pirano,Upravna enota Piran / Unità amministrativa Pirano,Slovenia
+463,7.4276832,43.7323492,Monaco,98000,Monaco
+440,15.2353257,44.1168594,Zadar,Zadar County,Croatia
+437,13.9586273,44.828458,Ližnjan,Istria County,Croatia
+438,15.7097105,45.8018625,Grad Samobor,Zagreb County,Croatia
+450,15.4477635,43.9377147,Grad Biograd na Moru,Zadar County,Croatia
+442,16.3646048,43.5561377,Grad Kaštela,21215,Croatia
+443,16.6520192,43.2605186,Općina Bol,21420,Croatia
+441,16.4418127,43.1723573,Grad Hvar,21450,Croatia
+436,14.442208,45.3267976,Grad Rijeka,Primorje-Gorski Kotar County,Croatia
+457,-18.001635643741167,27.68504425,El Pinar de El Hierro,Canary Islands,Spain
+456,-17.841202563392855,28.5071431,Fuencaliente de la Palma,Canary Islands,Spain
+439,13.8455311,44.8702281,Grad Pula,Istria County,Croatia
+501,15.6415407,43.7987234,Tisno,Šibenik-Knin County,Croatia
+503,15.4097223,43.9670815,Turanj,Zadar County,Croatia
+512,-13.8104447,28.9199232,Las Breñas,Canary Islands,Spain
+509,16.2272015,43.5179953,Seget Donji,Općina Seget,Croatia
+506,71.46636599643543,51.115320749999995,Astana,Astana,Kazakhstan
+5441,134.3321405,35.5759945,Iwami,Iwami County,Japan
+1675,29.1153234,36.6221019,Fethiye,Aegean Region,Turkey
+5442,136.1945582,35.833286,Minamiechizen,Chubu Region,Japan
+592,149.0431454,-35.2274338,District of Belconnen,2615,Australia
+593,149.1012676,-35.2975906,Canberra,District of Canberra Central,Australia
+589,14.4464691,45.07959,Brzac,Primorje-Gorski Kotar County,Croatia
+685,51.3896004,35.6892523,Tehran,بخش مرکزی شهرستان تهران,Iran
+5443,140.5977945,43.2986409,Shakotan,Shiribeshi Subprefecture,Japan
+646,-8.4654674,51.897077,Cork,Munster,Ireland
+644,-7.9794599,52.865196,,The Municipal District of Birr,Ireland
+693,-7.7354381,54.9517933,Letterkenny,County Donegal,Ireland
+645,-6.2605593,53.3493795,Dublin,Leinster,Ireland
+5444,129.081617,32.956429,Shinkami Gotou,Minami-Matsuura County,Japan
+725,-16.36842449999159,28.4325417,El Rosario,Canary Islands,Spain
+723,18.6266432,42.4425312,Baošići,Herceg Novi Municipality,Montenegro
+715,-16.6809103,28.0996248,Arona,Canary Islands,Spain
+741,167.16578476651785,-20.9328607,Lifou,New Caledonia,France
+758,-15.4166761,27.9984538,Telde,Canary Islands,Spain
+716,-17.9326028,28.642858,Tazacorte,Canary Islands,Spain
+784,-8.941924,37.0078288,Sagres,Faro,Portugal
+775,-28.3201553,38.5134299,São Roque do Pico,Azores,Portugal
+782,-27.156264396780458,38.739237599999996,Praia da Vitória,Azores,Portugal
+797,-28.2522218,38.3944509,Lajes do Pico,Azores,Portugal
+790,-8.1022591,37.0712719,Quarteira,Faro,Portugal
+793,-27.241963696252256,38.66205585,Angra (São Pedro),Azores,Portugal
+806,-25.4335352,37.7171624,Vila Franca do Campo,Azores,Portugal
+776,-8.523255293554344,41.8803257,Viana do Castelo,Viana do Castelo,Portugal
+805,-7.4155628,37.1946052,Vila Real de Santo António,Faro,Portugal
+773,-25.672678266146384,37.74757445,Ponta Delgada,Azores,Portugal
+781,-9.24421762988666,38.726139849999996,Carnaxide e Queijas,Lisbon,Portugal
+769,-9.1365919,38.7077507,Lisbon,Lisbon,Portugal
+772,-8.2526339,37.088241,Albufeira,Faro,Portugal
+788,-8.6107884,41.1494512,Porto,Porto,Portugal
+809,-8.74187057134668,37.15311785,Lagos,Faro,Portugal
+780,-9.1576301,38.6831302,Almada,Setúbal,Portugal
+791,-9.0701572,39.6029108,Nazaré,Leiria,Portugal
+832,165.3342587,-20.9369364,Poindimié,New Caledonia,France
+783,-8.6821998,41.1806814,Matosinhos,Porto,Portugal
+796,-7.6499121,37.1262493,Tavira,Faro,Portugal
+823,127.1262092,37.4201556,Seongnam-si,13437,South Korea
+787,-9.0996273,38.4436932,Sesimbra,Setúbal,Portugal
+800,-27.223109550409497,38.6648376,Angra (Santa Luzia),Azores,Portugal
+801,-8.9935314,38.6523995,Moita,Setúbal,Portugal
+802,-9.1160023,38.6297097,Amora,Setúbal,Portugal
+770,-8.363255,37.1036672,Armação de Pêra,Faro,Portugal
+771,-9.3812853,39.3566221,Peniche,Leiria,Portugal
+804,-28.630109,38.5368032,Horta,Azores,Portugal
+813,-25.0703777,16.83124,Santo André,São Vicente,Cape Verde
+811,-23.5095095,14.9162811,Praia,Praia,Cape Verde
+799,-28.2052961,38.6797531,Velas,Azores,Portugal
+814,-25.2004042229527,17.0174637,Porto Novo,Porto Novo,Cape Verde
+786,-8.5368426,37.1375808,Portimão,Faro,Portugal
+792,-16.7659069,32.722875,Machico,Madeira,Portugal
+810,-24.0083947,16.0000552,,Unknown region,Cape Verde
+795,-16.3336622,33.0593059,Vila Baleira,Madeira,Portugal
+778,-16.9086783,32.6496497,Funchal,Madeira,Portugal
+779,-9.4204495,38.6968919,Cascais,Lisbon,Portugal
+765,11.9670171,57.7072326,Gothenburg,Västra Götaland County,Sweden
+807,-28.5243488,38.5363166,Madalena,Azores,Portugal
+850,12.4802946,43.9699026,Serravalle,47899,San Marino
+853,25.957973495516235,43.8350657,Ruse,Ruse,Bulgaria
+5555,19.5180992,42.9868853,,Mojkovac Municipality,Montenegro
+1697,-71.3187697,-31.7613365,,Coquimbo Region,Chile
+5556,36.941628,31.1667049,,Maan,Jordan
+970,13.3888599,52.5170365,Berlin,10117,Germany
+1698,-85.2936911,12.6090157,,Boaco,Nicaragua
+967,10.5055475,55.1312253,Stenstrup,Svendborg Municipality,Denmark
+974,10.000654,53.550341,Hamburg,20095,Germany
+1086,16.3725042,48.2083537,Vienna,1010,Austria
+1096,11.3927685,47.2654296,Innsbruck,6020,Austria
+1091,14.030993,48.1522388,Thalheim bei Wels,Bezirk Wels-Land,Austria
+1090,14.22972181544776,48.41032295,Eidenberg,Bezirk Urfahr-Umgebung,Austria
+1092,13.8162737,48.4009681,Willing,Bezirk Grieskirchen,Austria
+1093,13.8003048,47.9185855,Gmunden,Upper Austria,Austria
+1190,12.8296734,55.8698007,Landskrona kommun,Skåne County,Sweden
+5557,104.8144914,12.5433216,,Kampong Thom,Cambodia
+1150,14.4595231,48.1387196,Kronstorfberg,Bezirk Linz-Land,Austria
+1151,13.561891,48.1556913,Eberschwang,Bezirk Ried im Innkreis,Austria
+1180,6.555073940277875,62.48023635,Ålesund,Møre og Romsdal,Norway
+1177,24.4406694,60.1227857,Kirkkonummi,Mainland Finland,Finland
+1194,25.7495727,62.2417066,Jyväskylä,Mainland Finland,Finland
+1167,28.9831642,41.0637891,Şişli,Marmara Region,Turkey
+1185,18.0710935,59.3251172,Stockholm,Stockholm County,Sweden
+1170,26.7038517,60.8680928,Kouvola,Mainland Finland,Finland
+1171,27.6781839,62.8924601,Kuopio,Mainland Finland,Finland
+1184,5.3259192,60.3943055,Bergen,Vestland,Norway
+1173,21.7968951,61.4865542,Pori,Mainland Finland,Finland
+1176,25.4716809,65.0118734,Oulu,Mainland Finland,Finland
+1182,10.659657776223916,59.414667449999996,Moss,Viken,Norway
+1175,25.6613764,60.9826014,Lahti,Mainland Finland,Finland
+1181,5.082761213563481,59.46824785,Haugesund,Rogaland,Norway
+1189,12.703706,56.0442098,Helsingborg,Skåne County,Sweden
+1186,18.297982,57.6379361,Visby,Gotland County,Sweden
+1187,21.1796961,64.6689526,Örviken,Västerbotten County,Sweden
+1172,23.7603118,61.4980214,Tampere,Mainland Finland,Finland
+1191,15.6323059,60.6070068,Falun,Dalarna County,Sweden
+1193,12.8574827,56.6739826,Halmstad,Halland County,Sweden
+5558,144.2489081,-5.6816069,,Western Highlands,Papua New Guinea
+1197,5.7318101,58.9699675,Stavanger,Rogaland,Norway
+1201,17.8285472,59.4204736,Järfälla kommun,Stockholm County,Sweden
+1202,13.8201171,55.4295203,Ystad,Skåne County,Sweden
+1204,13.083333,55.666667,Lomma,Skåne County,Sweden
+1205,18.166667,64.6,Lycksele,Västerbotten County,Sweden
+1206,11.2658595,58.6725359,Tanumstrand,Västra Götaland County,Sweden
+1198,8.7876653,61.1529386,,Innlandet,Norway
+1200,14.7330679,66.2826146,Jordbrua,Nordland,Norway
+1212,14.5208584,59.6749712,,Örebro County,Sweden
+1210,11.2261188,58.3536447,Smögen,Västra Götaland County,Sweden
+1211,14.333333,60.416667,Vansbro,Dalarna County,Sweden
+1196,18.9558585,69.6516345,Tromsø,Troms og Finnmark,Norway
+1208,14.8094385,56.8787183,Växjö,Kronoberg County,Sweden
+1595,-69.0646512,12.2168334,Sint Willibrordus,Unknown region,Curacao
+1550,13.5957333,45.2271961,Grad Poreč,Istria County,Croatia
+1551,28.5830306,43.8150793,Mangalia,Constanța,Romania
+5559,80.7137847,7.5554942,,Central Province,Sri Lanka
+3360,14.7195763,44.9924852,Draga Bašćanska,Primorje-Gorski Kotar County,Croatia
+1549,13.8698215,44.9328531,Galižana,Istria County,Croatia
+5560,12.458306,43.9458623,,47893,San Marino
+1580,103.8194992,1.357107,Singapore,Central,Singapore
+1563,55.4704516,-4.6677028,La Misère,Unknown region,Seychelles
+1054,15.5794883,49.607079,Havlíčkův Brod,Kraj Vysočina,Czechia
+1598,106.8270488,-6.175247,Special Capital Region of Jakarta,Java,Indonesia
+1603,-15.7229909,27.8838269,Mogán,Canary Islands,Spain
+1639,6.3518205,49.4885953,Remerschen,Canton Remich,Luxembourg
+1646,5.8837911,49.8993724,Insenborn,Canton Wiltz,Luxembourg
+1681,14.2147221,50.7824196,Děčín,Ústecký kraj,Czechia
+1594,-68.9370850600204,12.110006949999999,Willemstad,0000 NA,Curacao
+1692,57.5703566,-20.2759451,,Moka,Mauritius
+281,-17.1110077,28.0910382,San Sebastián de la Gomera,Canary Islands,Spain
+562,-16.5766728,28.1221408,Granadilla de Abona,Canary Islands,Spain
+328,19.14609412691246,47.48138955,Budapest,Central Hungary,Hungary
+465,166.442419,-22.2745264,Noumea,New Caledonia,France
+273,-15.4349015,28.1288694,Las Palmas de Gran Canaria,Canary Islands,Spain
+350,24.7453688,59.4372155,Tallinn,Harju maakond,Estonia
+373,123.9488177,10.3126722,Lapu-Lapu,Central Visayas,Philippines
+379,120.9799964,14.5906346,Manila,Metro Manila,Philippines
+374,123.9020773,10.2931062,Cebu City,Central Visayas,Philippines
+1673,15.6575209,45.3658443,,Karlovac County,Croatia
+717,-5.6899182,42.1791551,Antigua,Castile and León,Spain
+1602,34.9249653,38.9597594,,Central Anatolia Region,Turkey
+669,73.5107387,4.1779879,Malé,20116,Maldives
+714,-16.6167914,28.0992051,San Miguel de Abona,Canary Islands,Spain
+666,-6.0651186,53.3858337,Howth,Leinster,Ireland
+1612,78.6677428,22.3511148,,Madhya Pradesh,India
+1209,18.722719424506295,63.291386700000004,Örnsköldsvik District,Västernorrland County,Sweden
+1581,19.0954528,42.0979745,Bar,Bar Municipality,Montenegro
+1582,27.208264534658166,42.444553,Burgas,Burgas,Bulgaria
+1613,-61.4830315,12.471685,L'Esterre,Carriacou and Petite Martinique,Grenada
+1600,-64.5661642,18.4024395,,Tortola,British Virgin Islands
+757,17.6346815,47.687609,Gyor,Western Transdanubia,Hungary
+1601,14.1236014,45.0913954,Grad Labin,Istria County,Croatia
+760,15.8941361,43.7343845,Grad Šibenik,Šibenik-Knin County,Croatia
+1649,129.0752365,35.1799528,Busan,47545,South Korea
+1645,5.8883753,49.902328,Bonnal,Canton Wiltz,Luxembourg
+1652,-17.1666328,32.8669649,Porto Moniz,Madeira,Portugal
+1635,128.6818586,35.227956,Changwon-si,51444,South Korea
+1669,-80.0669035,19.6700153,Head of Bay,Sister Islands,Cayman Islands
+5561,19.9999619,41.000028,,Central Albania,Albania
+1670,103.8194992,1.357107,,Central,Singapore
+5562,-80.8328748,23.0131338,,Matanzas,Cuba
+375,118.7350414,9.7376025,Puerto Princesa,Mimaropa,Philippines
+187,18.2082717,42.6236872,Mlini,Dubrovnik-Neretva County,Croatia
+812,-22.9050314,16.5986926,Santa Maria,Sal,Cape Verde
+3211,10.3333283,55.670249,,Unknown region,Denmark
+5453,33.45959860374677,44.5655503,Sevastopol,99001,Ukraine
+722,18.8419505,42.2885656,Budva,Budva Municipality,Montenegro
+803,-8.7792538,41.5315251,Esposende,Braga,Portugal
+5563,24.7537645,56.8406494,,Ogres novads,Latvia
+798,-25.10264949987561,36.97262155,Vila do Porto,Azores,Portugal
+777,-9.314443310006252,38.69325455,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias",Lisbon,Portugal
+789,-25.5194914,37.8225227,Ribeira Grande,Azores,Portugal
+808,-8.4294632,40.2111931,Coimbra,Coimbra,Portugal
+816,6.7313031,0.3389242,São Tomé,Água Grande,São Tomé and Príncipe
+3365,3.0283195,41.7838827,Sant Feliu de Guíxols,Girona,Spain
+794,-16.8409696,32.65238,Caniço,Madeira,Portugal
+785,-16.7912062,32.6874768,Santa Cruz,Madeira,Portugal
+5564,2.9999825,28.0000272,,In Salah,Algeria
+854,23.3217359,42.6977028,Sofia,Sofia-City,Bulgaria
+1203,16.3662382,56.6628826,Kalmar,Kalmar County,Sweden
+3366,27.067106,40.417786,Kemer,Marmara Region,Turkey
+1051,16.6113382,49.1922443,Brno,Jihomoravský kraj,Czechia
+1207,14.165719,57.7825634,Jönköping,Jönköping County,Sweden
+1199,10.30813448748398,63.18143325,Melhus,Trøndelag,Norway
+1183,10.9361604,59.2133614,Fredrikstad,Viken,Norway
+1192,16.5051474,59.3717379,Eskilstuna,Södermanland County,Sweden
+1179,24.9427473,60.1674881,Helsinki,Mainland Finland,Finland
+1188,13.1929449,55.7029296,Lund,Skåne County,Sweden
+1174,22.2670522,60.4517531,Turku,Mainland Finland,Finland
+1094,13.5722764,47.9020955,Weyregg am Attersee,Bezirk Vöcklabruck,Austria
+1680,-22.8884999,16.1280304,Rabil,Boa Vista,Cape Verde
+1195,10.3952118,63.4304475,Trondheim,Trøndelag,Norway
+3372,7.02255,0.9713095,,Unknown region,São Tomé and Príncipe
+3383,3.2088349,41.9541918,Begur,Girona,Spain
+3413,28.6389327,44.0829457,Stațiunea Zoologică Marină Agigea,Constanța,Romania
+3409,33.1956124,35.3431715,Karavas,Girne (Kyrenia) District,Northern Cyprus
+3381,18.609196956229376,42.3972366,Luštica,Herceg Novi Municipality,Montenegro
+3399,40.2298991,37.9200463,Yenişehir,Southeastern Anatolia Region,Turkey
+3406,35.9799375,36.0851597,Samandağ,Mediterranean Region,Turkey
+3373,6.7122719,0.3820753,Praia Gamboa,Água Grande,São Tomé and Príncipe
+3407,28.746563548821015,37.4369333,Kale,Aegean Region,Turkey
+3382,-16.7241893,28.1219416,Adeje,Canary Islands,Spain
+3408,139.5106759,35.7041083,Koganei,184-0004,Japan
+3417,140.6464527,35.7204126,Asahi,289-2521,Japan
+1552,28.621515355297706,44.172889600000005,Constanța,Constanța,Romania
+3414,28.5723649,43.7524566,Vama Veche,Constanța,Romania
+774,-8.6058415,41.1300103,Vila Nova de Gaia,Porto,Portugal
+3357,30.7029585,36.8864752,Antalya,Mediterranean Region,Turkey
+3397,29.1187843,36.4819843,Faralya,Aegean Region,Turkey
+1753,25.5108223,64.91245,Kempele,Mainland Finland,Finland
+1742,2.7932391,41.6756178,Blanes,Girona,Spain
+1738,126.363998,34.4887966,Wonpo-ri,Jindo-gun,South Korea
+1748,-64.5510129,18.4497712,Little Mountain,Other British Virgin Islands,British Virgin Islands
+1755,-71.5527809,21.721746,,East Caicos,Turks and Caicos Islands
+1749,-17.9151468,27.809685,Valverde,Canary Islands,Spain
+1743,2.8392392,41.6973503,Lloret de Mar,Girona,Spain
+1754,20.3196068,46.4171344,Hódmezővásárhely,South Great Plain,Hungary
+1758,127.4885107,37.6874224,Seonchon-ri,Gapyeong-gun,South Korea
+1719,2.1632838,42.3495722,Queralbs,Girona,Spain
+1757,-100.445882,39.7837304,,Kansas,United States
+1740,-4.8379791,39.3260685,,Extremadura,Spain
+1213,11.2638099,58.5597964,Hamburgsund,Västra Götaland County,Sweden
+1711,34.9144977,-19.302233,,Sofala Province,Mozambique
+1817,-61.4750305,12.4502397,Belmont,Carriacou and Petite Martinique,Grenada
+1816,-61.447983997976394,12.50176755,Bogles,Carriacou and Petite Martinique,Grenada
+1800,105.674413,-10.4213344,Flying Fish Cove,Shire of Christmas Island,Australia
+1784,42.3528328,25.6242618,,Al-Qassim Province,Saudi Arabia
+1799,134.755,-24.7761086,,Macdonnell Region,Australia
+1788,139.150229,35.263676,Odawara,250-8555,Japan
+1766,-70.0356845,12.5268736,Oranjestad,Oranjestad (city),Netherlands
+1809,138.9467078,34.9764551,Izu,Chubu Region,Japan
+1795,-64.6232227,18.4257128,Road Town,Tortola,British Virgin Islands
+1814,-61.6353812,12.1766094,Hermitage,Saint Patrick,Grenada
+1815,-61.6904045,12.1360374,,Saint John,Grenada
+1764,-13.6529153,28.9543147,Tías,Canary Islands,Spain
+1821,-79.7549044,19.7378526,East End,Sister Islands,Cayman Islands
+1826,-8.22617471804401,37.095165949999995,Albufeira e Olhos de Água,Faro,Portugal
+1843,-16.7676315,28.1132178,El Puertito,Canary Islands,Spain
+1855,126.3416185,34.4949232,Osan-ri,Jindo-gun,South Korea
+1853,127.6961188,36.638392,,28063,South Korea
+1845,-77.3383438,25.0782266,Nassau,Unknown region,Bahamas
+1852,126.515299,33.2572971,Seogwipo-si,63572,South Korea
+1854,129.44059,36.72702,Pyeonghae-eup,Uljin-gun,South Korea
+1822,-2.5822348,49.4566233,,Guernsey,Guernsey
+1839,-102.0077097,23.6585116,,Zacatecas,Mexico
+1856,128.67149,38.0793,Susan-ri,Yangyang-gun,South Korea
+1847,-169.919199,-19.0534159,Alofi,Unknown region,Niue
+1830,18.4337153,59.3949482,Oskar-Fredriksborg,Stockholm County,Sweden
+1858,121.500289,22.6383135,Baisha,Green Island,Taiwan
+1882,-76.17990486867475,23.9685,Exuma,Unknown region,Bahamas
+1875,18.6816526,63.2658665,Sund,Västernorrland County,Sweden
+1859,14.433933,57.9970873,Röttle,Jönköping County,Sweden
+1833,17.6142916,49.4097025,Lipová,Central Moravia,Czechia
+1873,-78.01819757890183,26.68442465,East Grand Bahama,Unknown region,Bahamas
+1884,126.8631275,37.4810539,Gwangmyeong,14215,South Korea
+1945,-74.93268294731843,23.8263065,Rum Cay,Unknown region,Bahamas
+1936,-17.9151945,28.6592222,Los Llanos de Aridane,Canary Islands,Spain
+1932,132.7262671,32.9390595,Sukumo,788-0013,Japan
+1939,102.2656823,4.5693754,,Pahang,Malaysia
+1926,120.9820179,23.9739374,,Nantou County,Taiwan
+1900,120.714193,22.0739455,Checheng,Pingtung County,Taiwan
+1916,-69.961098,12.4643623,Pos Chikito,Unknown region,Aruba
+1892,139.1207299,35.1667838,Yugawara,Ashigarashimo County,Japan
+1919,-27.1031772,38.7669312,Lajes,Azores,Portugal
+1938,127.865372,26.493888,Onna,Kunigami,Japan
+1930,3.1278785,41.8495354,Palamós,Girona,Spain
+1920,-27.0612244,38.681636,Porto Martins,Azores,Portugal
+1921,-27.085069030282323,38.7277934,Praia da Vitória (Santa Cruz),Azores,Portugal
+1946,-81.37736012600702,19.29730085,Propose Queens Jubilee City Limit (Study Area),KY1-9000,Cayman Islands
+1937,127.768221,26.312545,Chatan,Nakagami,Japan
+1929,-81.3895724,19.3720286,West Bay,KY1-1401,Cayman Islands
+1934,121.4656619,25.011997,New Taipei,22041,Taiwan
+1898,138.3683995,38.0182578,Sado,Chubu Region,Japan
+1922,-27.2195578,38.6593167,Angra do Heroísmo,Azores,Portugal
+1887,121.744652,25.1317232,Keelung,202201,Taiwan
+1909,14.7312832,44.8299167,Lopar,Primorje-Gorski Kotar County,Croatia
+1896,28.2742661,36.8522547,Marmaris,Aegean Region,Turkey
+1968,12.8619375,56.2429224,Ängelholms kommun,Skåne County,Sweden
+1997,15.9732187,48.857214,Mašovice,Jihomoravský kraj,Czechia
+1961,120.7446924,22.0026559,Hengchun,Pingtung County,Taiwan
+2008,17.8660811,58.7443252,Landsort,Stockholm County,Sweden
+1980,13.7652213,47.9016069,Altmünster,Bezirk Gmunden,Austria
+1956,-76.4848097,25.3509316,Alice Town,Unknown region,Bahamas
+2004,-16.9763096,32.6483323,Câmara de Lobos,Madeira,Portugal
+2005,-17.104073,32.681067,Ponta do Sol,Madeira,Portugal
+1992,-79.2979085,25.7160528,Buccaneer,Bimini,Bahamas
+1970,-17.790381063308747,28.630490299999998,Breña Baja,Canary Islands,Spain
+2000,15.322074515121667,43.805438,Kornati,Šibenik-Knin County,Croatia
+1948,-78.0000547,24.7736546,,Unknown region,Bahamas
+2006,-8.1353519,39.6621648,,Castelo Branco,Portugal
+1988,-72.9088133,4.099917,,Meta,Colombia
+2035,-0.9841152,37.6019353,Cartagena,Campo de Cartagena y Mar Menor,Spain
+2044,1.8883335,46.603354,,Centre-Val de Loire,France
+2061,-169.914426,-19.0024502,Makefu,Unknown region,Niue
+2017,167.46858266389722,-22.60509145,Isle of Pines,New Caledonia,France
+2056,33.9260372,36.3778166,Silifke,Mediterranean Region,Turkey
+2052,-74.49001670000001,24.032,San Salvador,Unknown region,Bahamas
+2125,14.8513392,44.2258255,Brgulje,Zadar County,Croatia
+2111,-59.6423782,13.2500531,Speightstown,Saint Peter,Barbados
+2085,55.4345526,-4.583654,Glacis,Unknown region,Seychelles
+2076,13.5361361,47.7998147,Weißenbach am Attersee,Bezirk Vöcklabruck,Austria
+2130,-77.72610063734791,25.5905,Berry Islands,Unknown region,Bahamas
+2113,-59.5250305,13.1500331,,Saint George,Barbados
+2124,14.8519492,44.1418034,Veli Rat,Zadar County,Croatia
+2122,-59.637289,13.1856145,Holetown,Saint James,Barbados
+2108,122.7312101,12.7503486,,Unknown region,Philippines
+2117,-59.6248035,13.3200717,Greenidge,Saint Lucy,Barbados
+2084,55.4348924,-4.5757792,Vista do Mar,Unknown region,Seychelles
+2082,-63.0483073,18.0250713,Philipsburg,Philipsburg,Sint Maarten
+2099,-59.6462839,13.2817114,Checker Hall,Saint Lucy,Barbados
+2101,13.330396925232218,47.878189750000004,Tiefgraben,Bezirk Vöcklabruck,Austria
+2083,55.43572319304134,-4.605056299999999,Beau Vallon,Beau Vallon,Seychelles
+5565,73.2244152,3.7203503,,Felidhu Atoll,Maldives
+2112,-59.6344888,13.2657643,Retreat,Saint Peter,Barbados
+5566,19.4528646,48.7411522,,Region of Banská Bystrica,Slovakia
+2176,5.8898706,49.9087765,Lultzhausen,Canton Wiltz,Luxembourg
+2180,30.5241361,50.4500336,Kyiv,01001,Ukraine
+2162,55.4334831,-4.6066837,Mare Anglaise,Beau Vallon,Seychelles
+5567,47.4979476,29.2733964,,Jahra,Kuwait
+2174,125.2811296,24.8054647,Miyakojima,906-0000,Japan
+2163,127.357257,26.19381,Tokashiki,Shimajiri,Japan
+2173,135.7786103,33.4764838,Kushimoto,Higashimuro County,Japan
+2064,5.6343227,52.2434979,,Gelderland,Netherlands
+2167,31.2718321,49.4871968,,Cherkasy Oblast,Ukraine
+2143,24.0659379,61.4649006,Kangasala,Mainland Finland,Finland
+2152,12.674297,42.6384261,,Umbria,Italy
+2147,26.5098027,38.6354423,Karaburun,Aegean Region,Turkey
+2149,5.851122226785716,49.9315225,Lac de la Haute-Sûre,Canton Wiltz,Luxembourg
+2169,19.134422,52.215933,,Łódzkie Voivodship,Poland
+5568,17.5961467,44.3053476,,Federation of Bosnia and Herzegovina,Bosnia and Herzegovina
+2231,-79.2889588,25.7403176,Porgy Bay,Bimini,Bahamas
+2243,14.884472,44.5561174,Grad Novalja,Lika-Senj County,Croatia
+2220,-64.4346277,18.4463642,Spanish Town,Virgin Gorda,British Virgin Islands
+2208,14.6629678,45.1459664,Šilo,Primorje-Gorski Kotar County,Croatia
+2206,-15.6542506,28.1442408,Gáldar,Canary Islands,Spain
+1579,-68.2740206,12.1472869,Kralendijk,Bonaire,Netherlands
+2227,125.6080623,7.0648306,Davao City,Davao Region,Philippines
+2240,1.5680321,41.2014639,Calafell,Tarragona,Spain
+2207,-79.9174627243246,19.703182249999998,,Sister Islands,Cayman Islands
+2225,-84.17566257468567,9.536456900000001,,Cantón Quepos,Costa Rica
+2238,127.74201,26.397613,Yomitan,Nakagami,Japan
+2299,127.305581,26.232525,Zamami,Shimajiri,Japan
+2306,3.1387422,42.113535,l'Escala,Girona,Spain
+2266,128.5913424,38.2069574,Sokcho-si,24826,South Korea
+2308,15.2447617,59.3896399,Ölmbrotorp,Örebro County,Sweden
+2284,26.4031312,39.601185,Ayvacık,Marmara Region,Turkey
+2293,14.1117625,48.1907992,Marchtrenk,Bezirk Wels-Land,Austria
+2312,127.232981,26.590619,Aguni,Shimajiri,Japan
+2256,-76.9594379,26.5407116,Hope Town,Unknown region,Bahamas
+2259,27.6943124,42.4181556,Sozopol,Burgas,Bulgaria
+2310,140.9562206,40.9260344,Hiranai,Higashitsugaru,Japan
+2298,96.896422,-12.117644,Bantam,Shire of Cocos (Keeling) Islands,Australia
+2262,-63.136012162422055,18.05481845,Lowlands,Saint Martin (France),Sint Maarten
+2313,15.608577750193259,43.799600999999996,Murter,Šibenik-Knin County,Croatia
+2303,10.7861425,59.8645605,Nordstrand,Oslo,Norway
+2330,2.9312155,41.7197773,Tossa de Mar,Girona,Spain
+2372,28.5792742,43.4941248,Tyulenovo,Dobrich,Bulgaria
+2351,14.4079371,44.960346,Grad Cres,Primorje-Gorski Kotar County,Croatia
+2374,14.7206658,45.1582241,Selce,Primorje-Gorski Kotar County,Croatia
+2347,-81.0899279,19.3445439,Colliers,Unknown region,Cayman Islands
+2335,26.6722539,40.4054063,Gelibolu,Marmara Region,Turkey
+2334,137.0187306,36.7362147,Takaoka,Chubu Region,Japan
+2319,138.866742,35.094699,Numazu,Chubu Region,Japan
+2323,-79.8828535,19.6887835,West End,Sister Islands,Cayman Islands
+5569,33.1451285,34.9823018,,Cyprus,Cyprus
+2349,139.762221,35.6821936,Tokyo,100-0005,Japan
+2352,126.8319452,37.6581862,Goyang-si,10460,South Korea
+2357,14.654766837850648,58.3002128,Västra Tollstad,Östergötland County,Sweden
+2339,-81.1768749,19.3509633,Old Man Bay,KY1-1601,Cayman Islands
+5570,29.7468414,-18.4554963,,Mashonaland West Province,Zimbabwe
+2399,46.4416422,-18.9249604,,Bongolava,Madagascar
+2389,57.0036901,21.0000287,,Al Wusta Governorate,Oman
+2430,-70.0031012,12.5041503,Wayaca,Oranjestad (city),Aruba
+2395,33.3224232,36.1452033,Aydıncık,Mediterranean Region,Turkey
+2416,117.8902853,-2.4833826,,East Kalimantan,Indonesia
+2426,16.4491101,43.327179,Općina Milna,21405,Croatia
+2378,35.7878438,-6.5247123,,Dodoma Region,Tanzania
+2381,-64.7815286,32.2937417,,HM 12,Bermuda
+2382,127.9505403,26.6901234,Nakijin,Kunigami,Japan
+2377,16.3413945,43.3540916,Gornje Selo,Općina Šolta,Croatia
+2435,135.8150779,33.5316794,Kozagawa,Higashimuro County,Japan
+2392,135.3669663,33.6779962,Shirahama,Nishimuro County,Japan
+2418,16.090491,43.044573,Grad Komiža,21485,Croatia
+2461,-61.4314345,12.5159402,Windward,Carriacou and Petite Martinique,Grenada
+2449,-70.3028026,19.0974031,,Sánchez Ramírez,Dominican Republic
+2453,129.57501,28.417921,Tatsugo,Oshima County,Japan
+2469,121.503611,22.662222,Baijiao,Green Island,Taiwan
+2489,-27.9717011,39.0532491,São Mateus,Azores,Portugal
+2560,14.7365902,44.9777652,Jurandvor,Primorje-Gorski Kotar County,Croatia
+2518,138.4425665,35.4680507,Minobu,Chubu Region,Japan
+2559,138.916862,35.643042,Otsuki,Chubu Region,Japan
+2503,-63.2490017,17.6263487,The Bottom,Saba,Netherlands
+2535,-76.4022591,24.0962598,Black Point,Unknown region,Bahamas
+2517,138.7653041,35.5010653,Fujikawaguchiko,Chubu Region,Japan
+2508,18.4052397,59.1335185,Dalarö,Stockholm County,Sweden
+2505,139.087685,34.926734,Ito,Chubu Region,Japan
+2530,139.5838447,35.3040672,Zushi,249-0006,Japan
+2522,16.2593131,48.9500554,Hostěradice,Jihomoravský kraj,Czechia
+2553,127.770163,26.360996,Kadena,Nakagami,Japan
+2554,9.7294664,54.8855854,Dynt Strand,Sønderborg Municipality,Denmark
+2589,-76.29269284312099,24.73107935,South Eleuthera,Unknown region,Bahamas
+2581,127.911746,26.665586,Motobu,Kunigami,Japan
+2568,-79.8483665,19.7047373,Rock,Sister Islands,Cayman Islands
+2588,-75.61499318805444,24.3385,Cat Island,Unknown region,Bahamas
+2587,-72.4623032,21.64438,Yankee Town,Providenciales,Turks and Caicos Islands
+2615,130.3236567,31.4165805,Minamisatsuma,897-0031,Japan
+2594,26.8384935,38.1953539,Seferihisar,Aegean Region,Turkey
+2586,-80.0299595,19.6982885,Cork Landing,Sister Islands,Cayman Islands
+2563,16.1860931,43.0593989,Grad Vis,21480,Croatia
+2609,5.966033,59.3580711,Hebnes,Rogaland,Norway
+2564,121.54224333795878,22.04384985,Orchid Island,Taitung County,Taiwan
+2569,-8.8249919,52.1665981,Castlemagner,The Municipal District of Kanturk-Mallow,Ireland
+2619,-77.45654039583333,23.8985,South Andros,Unknown region,Bahamas
+2634,122.992602,24.45566,Yonaguni,Yaeyama,Japan
+2648,128.90815,27.818004,Amagi,Oshima County,Japan
+2646,18.917834,59.2878469,Sandhamn,Stockholm County,Sweden
+2644,14.7508013,44.9709329,Općina Baška,Primorje-Gorski Kotar County,Croatia
+2652,34.8594762,30.8124247,,8499300,Israel
+2636,128.8759523,37.7525313,Gangneung-si,25522,South Korea
+2678,15.0,60.716667,Leksand,Dalarna County,Sweden
+2639,-17.9568256,28.7129549,Tijarafe,Canary Islands,Spain
+2674,27.6873855,36.7263403,Datça,Aegean Region,Turkey
+2627,-61.4567557,12.4833286,Hillsborough,Carriacou and Petite Martinique,Grenada
+2640,21.6132334,60.5619353,Taivassalo,Mainland Finland,Finland
+2660,124.1861835,24.3439358,Ishigaki,907-8501,Japan
+2667,-27.2580723,38.7925431,Biscoitos,Azores,Portugal
+2666,-8.347000200982333,37.14653405,Alcantarilha e Pêra,Faro,Portugal
+2623,120.1361,23.2617,Yugang,727,Taiwan
+2712,136.9075182,35.5442619,Mino,Chubu Region,Japan
+2701,-13.5499014,28.9639681,Arrecife,Canary Islands,Spain
+2713,15.4068192,49.2344952,Řídelov,Kraj Vysočina,Czechia
+2728,55.452359,-4.6232085,Victoria,Bel Air,Seychelles
+2716,138.794672,34.800667,Nishiizu,Chubu Region,Japan
+2694,13.636112,50.5032737,Most,Ústecký kraj,Czechia
+2736,135.3777917,33.7278991,Tanabe,646-8545,Japan
+2738,137.8620028,37.0435809,Itoigawa,Chubu Region,Japan
+2735,136.1911394,34.0707815,Owase,519-3696,Japan
+2717,139.8699838,34.9965304,Tateyama,294-0045,Japan
+2697,-79.8239109,19.7183409,Stake Bay,Sister Islands,Cayman Islands
+2731,137.3413791,36.7643429,Namerikawa,Chubu Region,Japan
+2725,144.6720651,43.9124057,Shari,Okhotsk Subprefecture,Japan
+2711,-78.1728798,2.9664255,Centro de Visitantes,Unknown region,Colombia
+2734,132.5109394,33.3625533,Seiyo,797-0007,Japan
+2730,136.946461,37.0521078,Nanao,Chubu Region,Japan
+2732,130.9970786,30.7325356,Nishinoomote,Unknown region,Japan
+2733,138.0955398,34.9332488,Shizuoka,Chubu Region,Japan
+2718,126.78905289115315,26.341139,Kumejima,Shimajiri,Japan
+2708,123.826987,24.322143,Taketomi,Yaeyama,Japan
+2739,132.2191163,34.1664995,Iwakuni,740-0018,Japan
+2740,30.3629644,40.7603347,Serdivan,Marmara Region,Turkey
+2742,145.1222288,44.0759225,Rausu,Okhotsk Subprefecture,Japan
+2743,141.6509612,42.8209335,Chitose,Ishikari Subprefecture,Japan
+2744,140.6529686,41.8240228,Hokuto,Oshima Subprefecture,Japan
+2745,140.8691498,38.2677554,Sendai,980-0803,Japan
+2746,129.7152872,33.1799965,Sasebo,857-0028,Japan
+2747,129.6913078,33.7500515,Iki,811-5192,Japan
+2729,127.786429,26.721715,Ie,Kunigami,Japan
+2748,130.6180016,33.6251241,Fukuoka,811-2405,Japan
+2752,32.34985,41.682663,Kaman,Black Sea Region,Turkey
+2755,15.0739319,59.6581113,Mårdshyttan,Örebro County,Sweden
+2753,34.3102872,36.6057089,Erdemli,Mediterranean Region,Turkey
+2758,37.759073,39.8972011,Zara,Central Anatolia Region,Turkey
+2756,15.1818668,60.3358322,Tuna-Hästberg,Dalarna County,Sweden
+2757,37.2703202,38.7211857,Gürün,Central Anatolia Region,Turkey
+2762,-77.3947693,18.1850507,,Middlesex County,Jamaica
+2760,2.4828158,41.5739524,Sant Andreu de Llavaneres,Barcelona,Spain
+2772,-61.7533519,12.0916225,Happy Hill,Saint George,Grenada
+2789,13.3561241,47.8228118,Sankt Lorenz,Bezirk Vöcklabruck,Austria
+2773,120.2835205,14.8314675,Olongapo,Central Luzon,Philippines
+2759,56.4226837,25.9426327,Leema,Musandam Governorate,Oman
+2806,15.3656904,56.6767988,Skruv,Kronoberg County,Sweden
+2751,33.1237528,39.553364,Balâ,Central Anatolia Region,Turkey
+2801,-61.7570692,12.0240306,Grand Anse,Saint George,Grenada
+5461,14.1199235,44.9693545,Koromačno,Istria County,Croatia
+2771,-61.7586618,12.0850484,Moliniere,Saint George,Grenada
+2750,139.714222,35.736156,Toshima,170-0014,Japan
+2754,15.2321365,59.3466769,Hovsta,Örebro County,Sweden
+2866,-23.5126049302171,14.9047303,Prainha,Praia,Cape Verde
+2868,-81.1443457,19.2974274,High Rock Estates,KY1-1702,Cayman Islands
+2851,-81.167914,19.3026715,Old Isaacs,KY1-1702,Cayman Islands
+2816,2.5491562,41.5797031,Arenys de Mar,Barcelona,Spain
+2836,24.7136101,44.4150447,Icoana,Olt,Romania
+2841,-61.7706878,12.020477,Morne Rouge,Saint George,Grenada
+2846,-61.7671994,12.0013683,True Blue,Saint George,Grenada
+2837,26.1827754,44.2002681,Falaștoaca,Giurgiu,Romania
+2838,24.3874477,45.0648653,Budești,Vâlcea,Romania
+2842,-61.7772089,12.0091847,Calliste,Saint George,Grenada
+2830,-4.4282106,48.6319226,Le Cleguer,Brittany,France
+2824,20.6560717,47.6435536,Poroszló,Great Plain and North,Hungary
+2844,-61.7571328,11.9960987,Lance Aux Epines,Saint George,Grenada
+2845,-61.751805,12.0535331,St. George's,Saint George,Grenada
+2843,-61.7515957,12.1036566,Brizan,Saint George,Grenada
+2813,18.3858743,59.213614,Brevik,Stockholm County,Sweden
+2847,-61.7554088,12.0798095,Grand Mal,Saint George,Grenada
+5571,104.999927,35.000074,,Gansu,China
+2848,-61.7560569,12.0635804,Cherry Hill,Saint George,Grenada
+5572,-60.975036,13.8250489,,Micoud,Saint Lucia
+2932,13.5958425,47.9377776,Kammerl,Bezirk Vöcklabruck,Austria
+2906,-71.2916952,17.8589278,Pedernales,juancho,Dominican Republic
+2933,56.3985618,25.9622167,Al’Aq,Musandam Governorate,Oman
+2895,139.059891,35.08992,Atami,Chubu Region,Japan
+2915,25.6604862,60.3953913,Porvoo,Mainland Finland,Finland
+2891,127.906464,26.466732,Kin,Kunigami,Japan
+2913,56.4506109,26.3099538,Dahit,Musandam Governorate,Oman
+2927,56.2137322,25.7801324,Wa`ab `Abdah,Musandam Governorate,Oman
+2912,11.2511421,58.3608171,Kungshamn,Västra Götaland County,Sweden
+2914,6.7401819,0.2509415,Riboque Santana,Cantagalo,São Tomé and Príncipe
+2901,13.9376,44.9655487,Pinezići,Istria County,Croatia
+2911,56.3807177,26.0857287,Mayat,Musandam Governorate,Oman
+2944,28.6310206,43.94877,Costinești,Constanța,Romania
+2951,11.1923998,63.7038577,Skogn,Trøndelag,Norway
+2958,-61.2321481,13.3106573,Wallibou,Saint David,Saint Vincent and the Grenadines
+2949,14.625149656101048,44.32950205,Premuda,Zadar County,Croatia
+2946,-13.5001038,29.1458859,Haría,Canary Islands,Spain
+2959,139.13462,35.160373,Manazuru,Ashigarashimo County,Japan
+2952,10.7585834,63.6237322,Vigtil,Trøndelag,Norway
+2953,10.703646,63.567098,Logtun,Trøndelag,Norway
+2954,11.0932825,63.840275,Vangshylla,Trøndelag,Norway
+2956,18.6042817,59.2484909,Östernäs,Stockholm County,Sweden
+2957,25.4370789,45.2143769,Moroeni,Dâmbovița,Romania
+2937,121.507931,22.67486,Nanzihu,Green Island,Taiwan
+2966,11.223880440465752,63.696451800000006,Levanger,Trøndelag,Norway
+2988,138.858719,34.643311,Minamiizu,Chubu Region,Japan
+2967,-61.2582694,13.2708071,Coulls Hill,Saint David,Saint Vincent and the Grenadines
+2968,-61.2765569,12.90447,,Unknown region,Saint Vincent and the Grenadines
+2969,-61.272345,13.2372216,Barrouallie,Saint Patrick,Saint Vincent and the Grenadines
+2986,-61.2413945,13.2896437,Chateaubelair,Saint David,Saint Vincent and the Grenadines
+2991,17.3906258,47.7354942,Lébény,Western Transdanubia,Hungary
+2941,-17.799698538625798,28.5773058,Villa de Mazo,Canary Islands,Spain
+2947,10.0662385,63.3247682,Børsa,Trøndelag,Norway
+2996,24.6568435,60.2047672,Espoo,Mainland Finland,Finland
+2963,9.9905946,63.3449274,Viggja,Trøndelag,Norway
+2994,-14.0460201,28.3256078,Tuineje,Canary Islands,Spain
+3004,14.4098223,44.5892011,Ćunski,Primorje-Gorski Kotar County,Croatia
+3026,139.465077,35.364842,Fujisawa,251-0876,Japan
+3006,121.3804397,23.1053075,Chenggong,Taitung County,Taiwan
+3008,14.9442143,60.7314451,Västanvik,Dalarna County,Sweden
+3013,-18.1059013,64.9841821,,Northeastern Region,Iceland
+3045,17.086538711321808,68.28988385,Narvik,Nordland,Norway
+3028,29.7223732,40.4303445,Iznik,Marmara Region,Turkey
+3025,139.6406823,35.1550499,Miura,238-0298,Japan
+3041,27.266873,37.8632398,Kuşadası,Aegean Region,Turkey
+3011,25.5142278,60.9881967,Salpakangas,Mainland Finland,Finland
+3024,136.7126046,34.3670821,Minamiise,Watarai County,Japan
+3000,18.3203227,59.0963956,Skälåker,Stockholm County,Sweden
+3038,137.1083671,37.3294213,Noto,Chubu Region,Japan
+3029,-14.1080857,28.3497867,Pájara,Canary Islands,Spain
+3058,139.035878,34.801476,Higashiizu,Chubu Region,Japan
+3049,30.416336,40.7892499,Tuzla,Marmara Region,Turkey
+3054,13.685288,47.5580272,Obertraun,Bezirk Gmunden,Austria
+3037,-1.641531,43.4035671,Iratzea,Nouvelle-Aquitaine,France
+3056,-59.6230355,13.1446031,Husbands,Saint James,Barbados
+3087,11.1867187,47.3289241,Seefeld,Bezirk Innsbruck-Land,Austria
+3105,11.5809202,58.326461,Jordfall,Västra Götaland County,Sweden
+3072,141.7084037,39.0817727,Ofunato,022-0004,Japan
+3081,-9.036440984780038,38.60571425,Palhais e Coina,Setúbal,Portugal
+3106,129.4938985,28.3776614,Amami,Unknown region,Japan
+3115,126.4987083,33.4887737,Jeju,63122,South Korea
+3088,15.6418305,43.7858544,Jezera,Šibenik-Knin County,Croatia
+3119,56.4180231,26.1885323,Fiiam,Musandam Governorate,Oman
+3099,56.2342013,25.6502282,Jiddat al Latab,Musandam Governorate,Oman
+3117,27.430651,37.0343987,Bodrum,Aegean Region,Turkey
+3062,15.7788084,43.7602196,Grad Vodice,Šibenik-Knin County,Croatia
+3101,128.77755,37.94002,Namae-ri,Yangyang-gun,South Korea
+3102,14.2648197,59.8553907,Långban,Värmland County,Sweden
+3065,56.2600644,25.646326,Dibba Al Bayah,Musandam Governorate,Oman
+3120,-25.5112463,37.7204455,Água de Pau,Azores,Portugal
+3111,2.4448926,41.5398348,Mataró,Barcelona,Spain
+3104,-15.5729983,27.9252512,San Bartolomé de Tirajana,Canary Islands,Spain
+3121,-8.8932341,38.5241783,Setúbal,Setúbal,Portugal
+3097,18.9213833,47.3772495,Érd,Central Hungary,Hungary
+3116,15.0761546,56.1822345,Järnavik,Blekinge County,Sweden
+3064,-28.0187906,38.6055151,Calheta,Azores,Portugal
+3140,-7.3746524,38.3441811,Luz,Évora,Portugal
+3129,167.7953223704529,8.230816999999998,,Namu,Marshall Islands
+3150,139.8266292,38.7272187,Tsuruoka,997-0035,Japan
+3137,27.5618225,53.9024716,Minsk,220009,Belarus
+3141,128.433205,34.854254,Tongyeong-si,53039,South Korea
+3179,10.7061413,63.5976747,Småland,Trøndelag,Norway
+3122,-59.6464011,13.2757717,Clinketts,Saint Lucy,Barbados
+3125,-25.540367165890544,37.75094545,Lagoa (Santa Cruz),Azores,Portugal
+3165,127.7784916,26.2814968,Ginowan,901-2710,Japan
+3164,139.638735,35.74836,Nerima,176-0022,Japan
+3124,-25.582231647946067,37.755337999999995,Lagoa (Nossa Senhora do Rosário),Azores,Portugal
+3180,127.971539,26.493888,Ginoza,Kunigami,Japan
+3138,-16.4099501,28.3150189,Güímar,Canary Islands,Spain
+3202,11.652021984824351,57.690322300000005,Hönö,Västra Götaland County,Sweden
+3187,127.686066,26.106017,Itoman,901-0345,Japan
+3445,-16.5532956,28.4159024,Puerto de la Cruz,Canary Islands,Spain
+3197,139.8169621,35.6727747,Koto,135-0016,Japan
+3191,-85.59453768352674,10.69922695,Nacascolo,Cantón Liberia,Costa Rica
+3459,13.7902844,47.8448255,Traunkirchen,Bezirk Gmunden,Austria
+3189,15.9693023,43.5263742,Općina Rogoznica,Šibenik-Knin County,Croatia
+3457,-68.83036,12.0524587,Nieuwpoort,Unknown region,Curacao
+3443,3.1619905,41.9183618,Palafrugell,Catalonia,Spain
+3188,-84.825728,10.1173153,Sardinal,Cantón Puntarenas,Costa Rica
+3207,36.0625987,35.9029545,Yayladağı,Mediterranean Region,Turkey
+3201,11.78214904209239,57.60943205,Styrsö,Västra Götaland County,Sweden
+3199,11.649451646034429,57.67008115,Fotö,Västra Götaland County,Sweden
+3217,-8.3994888,37.1255179,Porches,Faro,Portugal
+3220,25.552879094033575,61.23322975,Asikkala,Mainland Finland,Finland
+3224,13.8050769,44.9273327,Fažana,Istria County,Croatia
+3246,15.2254729,60.9385784,Nedre Gärdsjö,Dalarna County,Sweden
+3239,10.6660806,59.5377583,Kjøvangen,Viken,Norway
+5573,44.6736646,40.7696272,,Lori Province,Armenia
+3243,-87.05976165965734,5.52811005,Cocos Island,Cantón Puntarenas,Costa Rica
+3228,127.851324,26.384705,Uruma,904-2292,Japan
+3262,55.4540146,-4.6574977,,Plaisance,Seychelles
+3237,14.6744188,45.0757279,Vrbnik,Primorje-Gorski Kotar County,Croatia
+3241,13.5385635,45.4907416,Crveni Vrh - Monte Rosso,Istria County,Croatia
+3251,18.6360744,59.3534921,Kalvsvik,Stockholm County,Sweden
+5574,27.6971358,53.4250605,,Minsk Region,Belarus
+3293,-23.72273385069002,15.26645025,Tarrafal,Tarrafal,Cape Verde
+3287,17.4705293,47.3261087,Pápa,Central Transdanubia,Hungary
+3277,-1.3138511,37.5986534,Mazarrón,Bajo Guadalentín,Spain
+3323,140.7835618,43.1954132,Yoichi,Shiribeshi Subprefecture,Japan
+3288,10.6543472,59.5534722,Stjernåsen,Viken,Norway
+3290,-24.9866092,17.1202551,Janela,Paul,Cape Verde
+3292,-25.3105084,16.9599304,Costim Pereira,Porto Novo,Cape Verde
+3291,-24.392869,16.6321293,Monte Trigo,Tarrafal de São Nicolau,Cape Verde
+3319,29.0151321,41.0265498,Üsküdar,Marmara Region,Turkey
+3328,-17.0650395,32.6700921,Ribeira Brava,Madeira,Portugal
+3322,140.5147577,42.9797765,Iwanai,Shiribeshi Subprefecture,Japan
+3276,-53.2,-10.3333333,,Mato Grosso,Brazil
+3304,-9.6227973,53.2598912,Caladh Thaidhg,Conamara Municipal District,Ireland
+3330,14.1502357,45.0162498,Drenje,Istria County,Croatia
+3338,26.0236504,44.9417468,Ploiești,Prahova,Romania
+2680,-16.7787271,28.2101368,Guía de Isora,Canary Islands,Spain
+3337,3.0687997,41.8184693,Castell-Platja d'Aro,Girona,Spain
+3507,9.7061956,54.8868004,Rendeløb,Sønderborg Municipality,Denmark
+2457,-70.0212771,12.5143164,Dakota,Oranjestad (city),Aruba
+3336,18.3654526,47.7357694,Neszmély,Central Transdanubia,Hungary
+3331,14.1801746,45.1380212,Plomin,Istria County,Croatia
+3519,2.255835,42.9967236,Alet,Occitania,France
+3518,-78.6953623,26.535681,City of Freeport,Unknown region,Bahamas
+3513,10.7277219,47.4886608,Breitenwang,Bezirk Reutte,Austria
+3534,11.58486379208906,47.4742812,Eben am Achensee,Bezirk Schwaz,Austria
+3526,14.0534296,48.3448903,Feldkirchen an der Donau,Bezirk Urfahr-Umgebung,Austria
+5474,-14.4529612,14.4750607,,Tambacounda Region,Senegal
+5473,14.2050615,45.1280743,Zagorje,Istria County,Croatia
+5478,128.0255901,26.5707754,Okinawa,905-8540,Japan
+3581,14.7888328,45.128264,Novi Vinodolski,Primorje-Gorski Kotar County,Croatia
+3598,13.6035607,47.9463531,Schörfling am Attersee,Bezirk Vöcklabruck,Austria
+3599,-81.2604411,19.2843717,Bodden Town,KY1-1105,Cayman Islands
+3642,-2.0929268,49.234492,Trinity,Unknown region,Jersey
+3634,-77.28381175814397,26.52551055,Central Abaco,Unknown region,Bahamas
+3638,18.2073591,59.3120997,Nacka,Stockholm County,Sweden
+3658,15.5060948,43.9082721,Općina Pakoštane,Zadar County,Croatia
+3605,13.7722804,48.0220048,Desselbrunn,Bezirk Vöcklabruck,Austria
+3646,56.2647217,25.6723261,الطوية,Musandam Governorate,Oman
+3607,-72.30044556984475,21.8020614,Providenciales,Providenciales,Turks and Caicos Islands
+3664,14.668363322248577,44.970986749999994,Stara Baska,Primorje-Gorski Kotar County,Croatia
+3676,16.3634227,43.3569613,Gornja Krušica,Općina Šolta,Croatia
+3680,9.7287821,54.8380033,Kragesand,Region of Southern Denmark,Denmark
+3674,55.5114647,-4.6735851,Anse des Genets,Pointe La Rue,Seychelles
+3699,19.5060937,47.1817585,,Central Hungary,Hungary
+3706,10.6702747,59.330383,Larkollen,Viken,Norway
+3673,-70.0421896,12.604091,Tierra Del Sol,Unknown region,Aruba
+3780,14.2350214,45.1788571,Brseč,Primorje-Gorski Kotar County,Croatia
+3773,-16.8167118,28.3658242,Los Silos,Canary Islands,Spain
+3775,13.5046423,45.5010207,Savudrija - Salvore,Istria County,Croatia
+3749,-8.8689639,37.956549,Sines,Setúbal,Portugal
+3759,10.040313,54.9213988,Mommark,Sønderborg Municipality,Denmark
+3732,-69.9094505,12.4361328,San Nicolaas,Unknown region,Aruba
+3838,19.0623899,47.3299781,Taksony,Central Hungary,Hungary
+3812,13.8225156,47.9825598,Laakirchen,Bezirk Gmunden,Austria
+3831,13.9111814,44.8021166,Premantura,Istria County,Croatia
+3830,-69.9496521,12.4526385,Savaneta,Unknown region,Aruba
+3813,16.6922771,43.4434966,Grad Omiš,Split-Dalmatia County,Croatia
+3839,18.9393976,46.9669545,Dunaújváros,Central Transdanubia,Hungary
+3900,-60.8346264,11.1588971,Crown Point,Tobago,Trinidad and Tobago
+3843,55.4743038,-4.6936267,Barbarons,Unknown region,Seychelles
+3846,26.7672998,38.3228184,Urla,Aegean Region,Turkey
+3879,-78.3494771,18.2779531,Negril,Cornwall County,Jamaica
+3898,-64.5569031,18.4411609,East End,Tortola,British Virgin Islands
+3848,-22.9811102,16.7584756,Palmeira,Sal,Cape Verde
+3882,26.556127256552166,41.6819469,Babademirtaş Mahallesi,Marmara Region,Turkey
+3884,-78.3624745,18.2642805,West End,Cornwall County,Jamaica
+3886,-13.6245357,29.0395479,Tao,Canary Islands,Spain
+3860,16.6442394,49.3636494,Blansko,Jihomoravský kraj,Czechia
+3881,13.5258328,47.8538142,Parschallen,Bezirk Vöcklabruck,Austria
+3914,-1.5804922,37.4099628,Águilas,Region of Murcia,Spain
+3926,-81.0902982,19.3129,Gun Bay,Unknown region,Cayman Islands
+3937,14.4476911,35.8885993,,Central Region,Malta
+4020,138.801992,34.750811,Matsuzaki,Chubu Region,Japan
+3969,9.6786745,55.4672418,Gammel Ålbo,Kolding Municipality,Denmark
+4024,-14.151955,28.1834046,La Lajita,Canary Islands,Spain
+3984,-77.1730521,18.4239086,Drax Hall,Middlesex County,Jamaica
+3972,-28.638920279702297,38.52847775,Horta (Angústias),Azores,Portugal
+4011,18.3282083,47.6516214,Tata,Central Transdanubia,Hungary
+4001,121.479444,22.674167,Chaikou,Green Island,Taiwan
+3975,-18.1989082,65.849561,Hjalteyri,Northeastern Region,Iceland
+4013,-16.4393504,28.2356006,Fasnia,Canary Islands,Spain
+4012,-16.497760004636767,28.19052695,Arico,Canary Islands,Spain
+4002,121.5026579,22.6763277,流麻溝,Green Island,Taiwan
+4035,18.416600993444604,59.261892849999995,Hedvigsberg,Stockholm County,Sweden
+4036,14.4490905,62.5725191,Lillsved,Jämtland County,Sweden
+4037,14.683333,58.183333,Ödeshög,Östergötland County,Sweden
+4039,10.637472,55.8157777,Ballen,Central Denmark Region,Denmark
+4040,14.1100595,46.3684202,Bled,4260,Slovenia
+4084,2.248254,41.4493539,Badalona,Catalonia,Spain
+4043,14.331519561168385,44.5644497,Male Srakane,Primorje-Gorski Kotar County,Croatia
+4050,130.52448324447516,30.347925,Yakushima,Kumage County,Japan
+4052,56.270597,25.7018725,Zaghi,Musandam Governorate,Oman
+4079,17.0090208,46.2371661,Gyékényes,Southern Transdanubia,Hungary
+4069,3.1262041,42.040982,Torroella de Montgrí,Girona,Spain
+4070,23.5069225,62.8069625,Kuortane,Mainland Finland,Finland
+4058,128.4671265,38.3783535,Ganseong-eup,Goseong-gun,South Korea
+4042,14.299659433543464,44.509327299999995,Susak,Primorje-Gorski Kotar County,Croatia
+4054,28.9627863,40.2129489,Nilüfer,Marmara Region,Turkey
+4085,1.2546057,41.1172364,Tarragona,Catalonia,Spain
+4064,18.522222,59.222222,Björnömalmen och Klacknäset,Stockholm County,Sweden
+4034,18.3049291,59.2792775,Saltsjöbaden,Stockholm County,Sweden
+4072,2.2130934,41.5393484,Mollet del Vallès,Barcelona,Spain
+4096,0.8024645,40.8838957,l'Ametlla de Mar,Tarragona,Spain
+4106,9.7210559,55.5218831,Snoghøj,Fredericia Municipality,Denmark
+4108,29.0612098,40.1982203,Osmangazi,Marmara Region,Turkey
+4109,-87.3173404,20.398797,Akumal,Quintana Roo,Mexico
+4125,26.6303057,40.8548793,Keşan,Marmara Region,Turkey
+4127,-8.7435403,41.3540398,Vila do Conde,Porto,Portugal
+4130,131.399194,34.4074815,Hagi,758-0033,Japan
+4111,130.4913329,33.7668264,Fukutsu,811-3209,Japan
+4138,18.4069862,59.1887796,Dyviksudd,Stockholm County,Sweden
+4142,129.3429384,36.0189315,Pohang-si,37683,South Korea
+4120,2.3118347,41.4796899,el Masnou,Barcelona,Spain
+4147,3.2752159,42.2893484,Cadaqués,Girona,Spain
+4110,130.5406875,33.8055642,Munakata,811-3406,Japan
+4164,14.286198,48.3059078,Linz,4020,Austria
+4168,14.510908,45.2981626,Kostrena,Primorje-Gorski Kotar County,Croatia
+4180,27.2668129,37.3769167,Didim,Aegean Region,Turkey
+4187,11.7056026,47.5276244,Achenkirch,Tyrol,Austria
+4148,3.1489254,42.4036867,Colera,Girona,Spain
+4188,-21.9575664,64.0695354,Hafnarfjordur,Capital Region,Iceland
+4182,55.4177606,-4.66406,Port Glaud,Unknown region,Seychelles
+4154,131.8996704,32.9601732,Saiki,876-8585,Japan
+4158,120.37135216778387,22.338764599999998,Xiaoliuqiu,Pingtung County,Taiwan
+4186,24.20593356902458,59.23099585,Rummu,Harju maakond,Estonia
+5575,-70.3028026,19.0974031,,Sánchez Ramírez,Dominica
+5576,20.55144,44.1534121,,Central Serbia,Serbia
+4215,18.6917822,59.2882014,Stavsnäs,Stockholm County,Sweden
+4213,17.8897567,42.7875881,Slano,Dubrovnik-Neretva County,Croatia
+4257,10.6415183,47.4415816,Weißenbach am Lech,Bezirk Reutte,Austria
+4211,-78.3037097,18.2758684,Sheffield,Cornwall County,Jamaica
+4247,121.0299469,14.6044363,San Juan,Metro Manila,Philippines
+4251,14.6454488,45.1055463,Risika,Primorje-Gorski Kotar County,Croatia
+4255,33.175342,35.3409121,Lapithos,Girne (Kyrenia) District,Northern Cyprus
+4208,30.1523298,41.0703914,Kandıra,Marmara Region,Turkey
+4258,133.3115144,36.2134858,Okinoshima,Oki County,Japan
+4261,5.1358678,60.9333004,Dalsøyra,Vestland,Norway
+4266,22.9695005,59.8228008,Hanko,Mainland Finland,Finland
+4210,129.7874339,33.1154683,Nagasaki,859-3233,Japan
+4236,22.8442015,62.7954104,Seinäjoki,Mainland Finland,Finland
+5489,-71.5296449,21.498342,Cockburn Harbour,East Caicos,Turks and Caicos Islands
+5488,3.2047232,42.3373159,el Port de la Selva,Girona,Spain
+4276,140.6318351,41.0430897,Sotogahama,Higashitsugaru,Japan
+4298,128.72601,38.00836,Gisamun-ri,Yangyang-gun,South Korea
+4295,128.50169,38.32875,Jugwang-myeon,Goseong-gun,South Korea
+4286,-69.1490075,12.3208592,Lagún,Unknown region,Curacao
+4290,139.7400553,35.6432274,Minato,108-0073,Japan
+4289,2.1138977,41.5421013,Sabadell,Barcelona,Spain
+4294,138.945379,34.679545,Shimoda,Chubu Region,Japan
+4273,10.8915055,47.3823667,Biberwier,Bezirk Reutte,Austria
+4285,-69.1229877,12.2655549,Santa Martha,Unknown region,Curacao
+4316,13.9942622,50.6428488,Trmice,Ústecký kraj,Czechia
+4303,26.58160881356922,41.663629,1. Murat Mahallesi,Marmara Region,Turkey
+4306,14.6100504,67.2321407,Saltstraumen,Nordland,Norway
+4278,13.5237703,47.8832538,Nußdorf am Attersee,Bezirk Vöcklabruck,Austria
+4282,13.8480592,44.8380234,Pješčana Uvala,Istria County,Croatia
+4296,26.3028171,38.3228053,Çeşme,Aegean Region,Turkey
+4317,16.8377033,43.3331922,Povlja,21413,Croatia
+4318,13.5181996,45.4509082,Monterol - Monterol,Istria County,Croatia
+4320,23.1286377,60.3846716,Salo,Mainland Finland,Finland
+4322,131.3788769,31.6019221,Nichinan,887-0021,Japan
+4328,14.904966,44.1405227,Božava,Zadar County,Croatia
+4312,9.400138,33.8439408,,Gabès,Tunisia
+4349,131.1821587,34.3708941,Nagato,Unknown region,Japan
+4337,134.1522806,33.2898523,Muroto,781-7185,Japan
+4344,-79.8612517,19.7000788,Cotton Tree Bay,Sister Islands,Cayman Islands
+4351,13.5465849,47.8300947,Steinbach am Attersee,Bezirk Vöcklabruck,Austria
+4359,30.6503783,36.8725334,Konyaaltı,Mediterranean Region,Turkey
+4371,-16.7640491,28.373686,Garachico,Canary Islands,Spain
+4345,10.545680446198158,47.36123525,Reutte,Bezirk Reutte,Austria
+4384,-61.2565016,13.1788539,Clare Valley,Saint Andrew,Saint Vincent and the Grenadines
+4342,26.6916837,39.3181095,Ayvalık,Marmara Region,Turkey
+4387,33.8780416,35.1961975,Agios Sergios,Gazimağusa District,Northern Cyprus
+4389,1.4407074,41.1677349,Creixell,Tarragona,Spain
+4378,131.6096524,33.2393864,Oita,870-0046,Japan
+4379,130.1930487,32.4585127,Amakusa,863-8631,Japan
+4393,13.473181062166006,47.816465550000004,Unterach am Attersee,Bezirk Vöcklabruck,Austria
+4403,-79.3666965,-1.3397668,,Los Ríos,Ecuador
+4447,-27.1511743,38.655227,Feteira,Azores,Portugal
+4443,-69.9804307,12.5113591,Santa Cruz,Unknown region,Aruba
+4424,13.0001566,55.6052931,Malmo,Skåne County,Sweden
+4446,127.7297641,37.8810569,Chuncheon-si,24346,South Korea
+4426,52.55487906958925,35.53511025,Hablerud RD,Firuzkuh Central District,Iran
+4445,-70.05109874323594,12.601227949999998,Malmok Beach,Unknown region,Aruba
+4396,127.0287472,37.2633325,Suwon-si,16490,South Korea
+4400,126.7052,37.456,Incheon,21554,South Korea
+4434,23.5969495,61.5499614,Ylöjärvi,Mainland Finland,Finland
+4448,-27.0577534,38.7063954,Cabo da Praia,Azores,Portugal
+4431,-169.917382,-19.104524,Tamakautoga,Unknown region,Niue
+4392,29.6165859,40.6912501,Karamürsel,Marmara Region,Turkey
+4483,24.3587506,61.6775495,Orivesi,Mainland Finland,Finland
+4462,-8.6192306,41.5314496,Barcelos,Braga,Portugal
+4467,35.843409,33.8750629,,Beqaa Governorate,Lebanon
+4457,-13.8265805,28.6087445,El Jablito,Canary Islands,Spain
+4493,6.1296751,49.8158683,Luxembourg,Canton Mersch,Luxembourg
+4509,29.8212788,40.7179954,Gölcük,Marmara Region,Turkey
+4482,-169.911657,-19.1266684,Avatele,Unknown region,Niue
+4486,12.5721097,56.2738191,Arild,Skåne County,Sweden
+4454,-71.1399956,21.4607723,Cockburn Town,Grand Turk,Turks and Caicos Islands
+4455,-83.0603709,12.1746802,Brig Bay,South Caribbean Coast Autonomous Region,Nicaragua
+4511,-77.3409447,18.4593532,Runaway Bay,Middlesex County,Jamaica
+4526,139.988668,35.699997,Funabashi,273-0005,Japan
+4534,12.016907706856564,57.69212935,Skår,Västra Götaland County,Sweden
+4539,28.8797178,61.8689933,Savonlinna,Mainland Finland,Finland
+4541,-63.2319666,17.6291116,Windwardside,Saba,Netherlands
+4546,128.432748,27.043304,Yoron,Oshima County,Japan
+4513,14.8631279,56.1701723,Karlshamn,Blekinge County,Sweden
+4517,27.1639512,62.300466,Pieksämäki,Mainland Finland,Finland
+4568,13.84351130934489,48.0281477,Roitham am Traunfall,Upper Austria,Austria
+4570,14.8417869,57.1671356,Asaryd,Kronoberg County,Sweden
+4550,14.2239854,56.3192616,Stora Björkeröd,Skåne County,Sweden
+4523,12.4983228,56.2827467,Mölle,Skåne County,Sweden
+4578,25.1845044,61.8639814,Jämsä sub-region,Mainland Finland,Finland
+4580,140.3207449,35.1521846,Katsuura,299-5231,Japan
+4581,14.5395314,45.1588133,Njivice,Primorje-Gorski Kotar County,Croatia
+4584,28.473989,62.8129715,Tuusniemi,Mainland Finland,Finland
+4600,14.5688736,45.2741319,Kraljevica,Primorje-Gorski Kotar County,Croatia
+4618,11.3406884,58.345092,Kullebacken,Västra Götaland County,Sweden
+4611,-8.3083026,41.7190293,Terras de Bouro,Braga,Portugal
+4613,128.52049,38.25982,Toseong-myeon,Goseong-gun,South Korea
+4628,128.621207,34.8804677,Geoje-si,53256,South Korea
+4629,11.4196339,58.3965726,Lysekil,Västra Götaland County,Sweden
+4603,18.7403377,47.7856939,Esztergom,Central Transdanubia,Hungary
+4576,16.666667,56.883056,Borgholm,Kalmar County,Sweden
+4604,-70.0373932,12.5912367,West Punt,Unknown region,Aruba
+4635,14.946185318960357,44.4966129,Pag,Zadar County,Croatia
+4639,-8.6513544,41.1853221,Senhora da Hora,Porto,Portugal
+4689,129.38777,36.53718,Yeonghae-myeon,Yeongdeok-gun,South Korea
+4655,24.0703481,61.9856303,Ruovesi,Mainland Finland,Finland
+4660,29.1293251,40.8741659,Prince Islands,Marmara Region,Turkey
+4662,-21.9422367,64.145981,Reykjavik,Capital Region,Iceland
+4667,17.6199728,59.4175161,Lunda,Stockholm County,Sweden
+4633,14.8185835,56.3981817,Midingsbråte,Kronoberg County,Sweden
+4683,14.1550018,45.0360579,Sveta Marina,Istria County,Croatia
+4692,13.2828212,56.2827878,Örkelljunga,Skåne County,Sweden
+4669,14.549668107706815,45.090195449999996,Krk,Primorje-Gorski Kotar County,Croatia
+4632,15.1240542,56.4978762,Konga,Kronoberg County,Sweden
+4654,21.9877132,38.9953683,,Thessaly and Central Greece,Greece
+5577,18.1236723,26.8234472,,District of Al-Jufra,Libya
+4718,27.7909871,40.3974352,Erdek,Marmara Region,Turkey
+4693,-84.6281253,9.6156361,Jacó,Cantón Garabito,Costa Rica
+4722,26.0804935,62.0962173,Toivakka,Mainland Finland,Finland
+4732,127.6791452,26.2122345,Naha,900-8585,Japan
+4733,16.2869384,43.3924333,Grohote,Općina Šolta,Croatia
+4738,10.6758874,54.9920754,Ny Vemmenæs,Svendborg Municipality,Denmark
+4747,13.499998,45.4855524,Bašanija - Bassania,Istria County,Croatia
+4714,25.4856617,42.6073975,,Stara Zagora,Bulgaria
+4696,127.975258,27.051239,Iheya,Shimajiri,Japan
+5578,168.1069154,-16.5255069,,Malampa,Vanuatu
+4758,18.1820897,59.3669445,Lidingö,Stockholm County,Sweden
+4773,15.3561558,60.5304723,Norr Amsberg,Dalarna County,Sweden
+4774,129.3119136,35.5391697,Ulsan,44691,South Korea
+4767,31.4406667,36.7870124,Manavgat,Mediterranean Region,Turkey
+4808,51.6013212,25.1566623,Al Wakrah,Unknown region,Qatar
+4764,38.4313975,1.4419683,,Isiolo,Kenya
+4798,13.8684859,44.8248515,Banjole,Istria County,Croatia
+4762,55.4009292,-4.6508556,Port Launay,Unknown region,Seychelles
+4843,-64.9672817,-34.9964963,,Córdoba,Argentina
+4835,137.2484135,37.438147,Suzu,Chubu Region,Japan
+4832,-77.68382209594239,26.93839435,North Abaco,Unknown region,Bahamas
+4847,-78.87886908072466,26.744,West Grand Bahama,Unknown region,Bahamas
+4855,2.8094117,45.5749966,Mont Dore,Auvergne-Rhône-Alpes,France
+4858,-75.10587821212229,23.303,Long Island,Unknown region,Bahamas
+4863,15.5866422,56.1621073,Karlskrona,Blekinge County,Sweden
+4825,19.7378481,60.2196758,Hammarland,Åland Islands,Finland
+4882,15.6512392,56.1192251,Sanda,Blekinge County,Sweden
+4885,-74.9944061,6.0428128,San Luis,Antioquia,Colombia
+4903,135.4946824,33.5507649,Susami,Nishimuro County,Japan
+4888,13.4565283,59.3638383,Björkås,Värmland County,Sweden
+4890,128.5766269,37.6251666,Songjeong-ri,Pyeongchang-gun,South Korea
+4906,18.388514,59.3256235,Gustavsberg,Stockholm County,Sweden
+4922,13.786641,45.041053,Bale,Istria County,Croatia
+4928,18.2613337,59.3205986,Boo,Stockholm County,Sweden
+4930,-9.355054025521003,38.6932444,Parede,Lisbon,Portugal
+4924,13.7546445,50.6349282,Oldřichov u Duchcova,Ústecký kraj,Czechia
+4876,4.846954280988026,60.9248554,Grima,Vestland,Norway
+4972,-79.746753,19.7547148,Spot Bay,Sister Islands,Cayman Islands
+4959,17.6081756,47.7211947,Győrújfalu,Western Transdanubia,Hungary
+4965,15.3291878,49.3192961,Horní Cerekev,Kraj Vysočina,Czechia
+4957,17.2787127,47.9356591,Feketeerdő,Western Transdanubia,Hungary
+4979,14.2487372,45.2266799,Mošćenice,Primorje-Gorski Kotar County,Croatia
+4995,31.0378663,39.3757408,Çifteler,Central Anatolia Region,Turkey
+4984,-22.9231513,16.6140275,Cabocan,Sal,Cape Verde
+4994,26.8882993,38.357797,Güzelbahçe,Aegean Region,Turkey
+4944,-70.0356845,12.5268736,Oranjestad,Oranjestad (city),Aruba
+5016,-9.7031892,51.5810541,Kilcrohane,West Cork,Ireland
+5020,13.8957804,44.823321,Pomer,Istria County,Croatia
+5035,24.4414178,60.7173615,Loppi,Mainland Finland,Finland
+5028,139.8364101,38.9147229,Sakata,998-0043,Japan
+5032,17.2333962,68.6544087,Bakkejorda,Troms og Finnmark,Norway
+5033,17.7223768,68.5579633,Vassdalen - Áravuopmi,Nordland,Norway
+5034,127.659859,34.7546257,Yeosu-si,59674,South Korea
+5040,135.34844,35.4704853,Maizuru,625-0087,Japan
+5046,19.0468565,47.6192785,Budakalász,Central Hungary,Hungary
+5579,50.5344606,26.1551249,,Northern Governorate,Bahrain
+5051,136.8196451,34.3411841,Shima,517-0501,Japan
+5054,14.8678838,60.6332112,Skålhol,Dalarna County,Sweden
+5021,24.2115056,46.2931514,Cornești,Mureș,Romania
+5015,-6.1155829,53.2859485,Sandycove,Leinster,Ireland
+5580,53.9994829,24.0002488,,Abu Dhabi Emirate,United Arab Emirates
+5070,-71.6453429,17.869706,La Cueva,puerto nuevo  (trudille),Dominican Republic
+5114,10.8378637,47.3147862,Nassereith,Bezirk Imst,Austria
+5093,127.2007295,37.8948267,Pocheon-si,11147,South Korea
+5061,15.0159131,44.0613586,Savar,Zadar County,Croatia
+5113,55.4839207,-4.7184256,Anse Louis,Unknown region,Seychelles
+5096,39.2803583,-6.8160837,Dar es Salaam,Coastal Zone,Tanzania
+5103,129.42491,36.80482,Giseong-myeon,Uljin-gun,South Korea
+5063,126.7369036,35.9679984,Gunsan-si,54078,South Korea
+5116,138.948903,35.147361,Mishima,Chubu Region,Japan
+5097,128.75775,37.97832,Sibyeon-ri,Yangyang-gun,South Korea
+5077,-2.3595986,49.4351648,Sark,GY10 1SF,Guernsey
+5137,22.8364951,46.4592657,Izvoarele,Alba,Romania
+5165,55.435331,-4.670083,La Béolière,Unknown region,Seychelles
+5139,19.066912,47.247818,Délegyháza,Central Hungary,Hungary
+5140,19.0760467,47.6677606,Szentendre,Central Hungary,Hungary
+5149,9.6002601,44.1741845,Valle Santa,Liguria,Italy
+5152,-60.5473352,11.3223399,Charlotteville,Tobago,Trinidad and Tobago
+5154,19.308359,47.6702447,Erdőkertes,Central Hungary,Hungary
+5161,-79.3010034,25.7004821,Port Royal,Bimini,Bahamas
+5163,14.2739261,57.7918701,Huskvarna,Jönköping County,Sweden
+5176,141.4431399,38.4456238,Onagawa,Oshika County,Japan
+5167,55.455935,-4.5975253,Ma Constance,English River,Seychelles
+5169,19.0607758,59.7203711,Kapellskär,Stockholm County,Sweden
+5170,26.1027202,44.4361414,Bucharest,030015,Romania
+5581,44.0287382,41.6809707,,Lower Kartli,Georgia
+5492,32.8610263,39.9844422,Tepebaşı,Central Anatolia Region,Turkey
+5582,4.6667145,50.6402809,,Walloon Brabant,Belgium
+5202,138.7669125,37.6452283,Niigata,Chubu Region,Japan
+5204,-69.98186415210564,12.51756625,,Unknown region,Aruba
+5179,17.1834489,46.7906038,Hévíz,Western Transdanubia,Hungary
+5211,55.4811946,-4.7526077,Baie Lazare,Unknown region,Seychelles
+5212,9.6675155,54.8892125,Broager,Region of Southern Denmark,Denmark
+5230,15.6102287,49.7715165,Pukšice,Kraj Vysočina,Czechia
+5236,-62.6846221,17.2894653,Kittian Village,Saint Kitts,Saint Kitts and Nevis
+5183,34.3806708,35.5977395,Rizokarpaso,İskele District,Northern Cyprus
+5182,-16.8512557,28.3721177,Buenavista del Norte,Canary Islands,Spain
+5178,-17.793202882087616,28.7810668,San Andrés y Sauces,Canary Islands,Spain
+5251,16.5532114,43.3825826,Grad Supetar,21400,Croatia
+5269,127.9774759,26.5919599,Nago,905-8540,Japan
+5285,126.8308604,37.3217152,Ansan,15353,South Korea
+5252,126.8032255,37.3798891,Siheung-si,14998,South Korea
+5257,127.1785572,37.2405741,Yongin-si,17020,South Korea
+5288,-62.722301,17.2960919,Basseterre,Saint Kitts,Saint Kitts and Nevis
+5290,134.0926948,34.6647608,Setouchi,701-4292,Japan
+5291,131.049859,32.699616,Yamato,Kamimashiki County,Japan
+5237,18.4752174,42.4479266,Vitaljina,Dubrovnik-Neretva County,Croatia
+5258,139.323536,35.464797,Atsugi,243-0213,Japan
+5335,-8.6422,37.5976,Odemira,Beja,Portugal
+5317,26.0729271,44.5507941,Otopeni,Ilfov,Romania
+5356,35.5027381,40.6236468,Köyceğiz,Black Sea Region,Turkey
+5339,11.633333,57.716667,Öckerö,Västra Götaland County,Sweden
+5338,-7.9138664,40.6574713,Viseu,Viseu,Portugal
+5336,-8.7855011,38.0619858,Vila Nova de Santo André,Setúbal,Portugal
+5340,11.5865767,57.9377614,Rönnäng,Västra Götaland County,Sweden
+5343,26.3590969,40.1852143,Eceabat,Marmara Region,Turkey
+5359,27.7506179,42.2698672,Primorsko,Burgas,Bulgaria
+5352,136.5836516,34.8817102,Suzuka,513-8701,Japan
+5351,3.1755328,42.2632018,Roses,Catalonia,Spain
+5355,30.2875296,36.3657472,Kumluca,Mediterranean Region,Turkey
+5354,29.9875293,36.2443603,Demre,Mediterranean Region,Turkey
+5337,129.1652969,37.4498745,Samcheok-si,25914,South Korea
+5299,13.8995169,48.0977674,Edt bei Lambach,Bezirk Wels-Land,Austria
+5350,0.8496593807405975,40.99876295,Vandellòs i l'Hospitalet de l'Infant,Catalonia,Spain
+5373,28.7654688,36.8388775,Ortaca,Aegean Region,Turkey
+5395,-24.9984723,16.9059009,Ponta João Ribeiro,São Vicente,Cape Verde
+5387,-8.7822865,37.7252803,Vila Nova de Milfontes,Beja,Portugal
+5388,51.2295295,25.3336984,,Al Shahaniya,Qatar
+5398,-68.3520304,12.2199139,Karpata,Bonaire,Netherlands
+5419,-68.4136608,12.2643026,Slagbaai,Bonaire,Netherlands
+5403,136.1689317,35.9034571,Echizen,Chubu Region,Japan
+5400,-68.3212271,12.2107213,1000 Steps,Bonaire,Netherlands
+5393,29.3621795,36.6481603,Seydikemer,Aegean Region,Turkey
+5396,-24.9863842,16.8874145,Mindelo,São Vicente,Cape Verde
+5405,132.5624807,32.9603698,Ainan,Minami-Uwa County,Japan
+5406,-68.4137309,12.2462196,Playa Frans,Bonaire,Netherlands
+5363,27.77419,42.23584,Kiten,Burgas,Bulgaria
+5516,18.929382,47.5099444,Budakeszi,Central Hungary,Hungary
+3095,-16.8144779,28.2957363,Santiago del Teide,Canary Islands,Spain
+5517,19.94126,60.102423,Mariehamn,Åland Islands,Finland
+1178,25.9209164,63.2467777,,Mainland Finland,Finland
+5553,-66.1109318,8.0018709,,Guarico State,Venezuela
+5527,-66.9296405,10.6000384,La Guaira,1160,Venezuela
+5554,6.1296751,49.8158683,,Canton Mersch,Luxembourg
+5548,-8.9096544,37.0831666,Vila do Bispo,Faro,Portugal
+3913,-78.08116191638643,24.8875,North Andros,Unknown region,Bahamas
+3903,33.87024813574234,35.165695850000006,Enkomi,Gazimağusa District,Northern Cyprus
+5118,-69.1428331,12.3046749,Santa Cruz,Unknown region,Curacao
+5313,-61.2138459,13.1416492,Arnos Vale,Saint George,Saint Vincent and the Grenadines
+5583,7.4276832,43.7323492,,98000,Monaco
+5584,159.1070693851845,-8.7053941,,Isabel,Solomon Islands
+5586,-169.861341,-19.0536414,,Unknown region,Niue
+5587,-88.9140683,13.8000382,,Departamento de Cabañas,El Salvador
+5588,-56.0201525,-32.8755548,,Durazno,Uruguay
+5589,179.0122737,-18.1239696,,Eastern,Fiji
+5590,-3.2765753,54.7023545,,England,United Kingdom
+5591,132.9102573,5.3783537,,Sonsorol,Palau
+5592,10.4478313,51.1638175,,Thuringia,Germany
+5593,-107.991707,61.0666922,,Northwest Territories,Canada
+5594,-63.0549948,18.0423736,,Unknown region,Sint Maarten
+5595,17.3231107,-23.2335499,,Khomas,Namibia
+5596,-157.78587140620786,-19.99697155,,Mitiaro,Cook Islands
+5597,14.8153333,46.1199444,,Upravna Enota Litija,Slovenia
+5598,29.2675469,26.2540493,,New Valley,Egypt
+5599,54.5643516,32.6475314,,Yazd Province,Iran
+5600,-62.6725973,17.250512,,Saint Kitts,Saint Kitts and Nevis
+5601,25.3319078,58.7523778,,Järva maakond,Estonia
+5602,107.9650855,15.9266657,,Quảng Nam Province,Vietnam
+5603,24.991639,-28.8166236,,Free State,South Africa
+5604,-75.0458515,-6.8699697,,Loreto,Peru
+5605,-4.5591148,54.1936805,,Middle,Isle of Man
+5606,66.7780818,48.1012954,,Ulytau Region,Kazakhstan
+5607,139.2394179,36.5748441,,Unknown region,Japan
+5608,-61.0840075,10.7466905,,Sangre Grande,Trinidad and Tobago
+5609,8.2319736,46.7985624,,Obwalden,Switzerland
+5610,172.8344077,-41.5000831,,Tasman,New Zealand
+5611,97.7453061,64.6863136,,Krasnoyarsk Krai,Russia
+5612,-86.0755145,15.2572432,,Olancho,Honduras
+5613,-88.7600927,16.8259793,,Cayo District,Belize
+5614,24.6859225,45.9852129,,Sibiu,Romania
+5615,14.12456,47.59397,,Styria,Austria
+5616,-90.345759,15.5855545,,Alta Verapaz,Guatemala
+5617,-81.1308434,8.559559,,Veraguas,Panama
+5618,23.7499997,55.3500003,,Kaunas County,Lithuania
+5619,29.4917691,14.5844444,,North Kordofan State,Sudan
+5620,21.7168387,41.6171214,,Vardar Region,North Macedonia
+5621,95.9999652,17.1750495,,Yangon,Myanmar
+5622,-175.202642,-19.9160819,,Haʻapai,Tonga
+5623,-2.1358386,49.2214561,,Unknown region,Jersey
+5624,-61.9554608,17.2234721,,Antigua,Antigua and Barbuda
+5625,15.3381061,49.7439047,,Kraj Vysočina,Czechia
+1637,-77.39603414176767,25.0302511,New Providence,Unknown region,Bahamas
+5585,101.70017611907599,13.03876215,,Rayong Province,Thailand

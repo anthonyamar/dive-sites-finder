@@ -1,7 +1,7 @@
 class DestinationsController < ApplicationController
   
   def index
-    @pagy, @destinations = pagy(Destination.order(Arel.sql('country')).all)
+    @pagy, @destinations = pagy(Destination.order(:country, :region, :city).all)
   end
 
   def country
