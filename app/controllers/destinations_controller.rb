@@ -7,12 +7,13 @@ class DestinationsController < ApplicationController
   def country
     @destination = Destination.find_by(country: params[:country])
     @regions = Destination.regions_in_country(params[:country])
+      
     
     load_associated_data
-    
-    destination_map = Maps::CreateLocationHashes.new([@destination], boundaries: :country).perform
-    sites_and_centers = Maps::CreateLocationHashes.new(@dive_centers + @dive_sites).perform
-    @locations = destination_map + sites_and_centers
+
+    @locations = Maps::CreateLocationHashes.new(@regions, boundaries: :region).perform
+#    sites_and_centers = Maps::CreateLocationHashes.new(@dive_centers + @dive_sites).perform
+#    @locations = destination_map + sites_and_centers
   end
 
   def region

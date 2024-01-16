@@ -21,15 +21,22 @@
           <div class="grid grid-cols-2 gap-2">
         <% @regions.order(region: :asc).each do |region| %>
           <%= link_to region_destinations_path(region: region.region) do %>
+            <% cities = Destination.cities_in_region(region.country, region.region) %>
+            <% sites_count = cities.sum(&:dive_sites_count) + region.dive_sites_count %>
+            <% centers_count = cities.sum(&:dive_centers_count) + region.dive_centers_count %>
+            <% next if cities.size.zero? || sites_count.zero? || centers_count.zero? %>
             <div class="mt-2 w-full p-2 bg-white rounded-lg shadow sm:p-6 hover:shadow-lg">
               <p class="font-medium text-sky-600 whitespace-nowrap underline"><%= region.region %></p>
 
               <% cities = Destination.cities_in_region(region.country, region.region) %>
               <p>
                 <!-- Finir de faire les comptes et les requettes permettant d'avoir les dive sites et centers. Les requêtes ici ne combinent pas tous les sites de plongée. Il faut aussi prendre ceux de @destination et non que les objets strictement région/ville ou autres -->
-                <%= t("count.x_cities", count: cities.size) %>,
-                <%= t("count.x_dive_sites", count: cities.sum(&:dive_sites_count)) %>,
-                <%= t("count.x_dive_centers", count: cities.sum(&:dive_centers_count)) %>
+                <%= t("count.x_cities", count: cities.size) 
+                %>,
+                <%= t("count.x_dive_sites", count: sites_count) 
+                %>,
+                <%= t("count.x_dive_centers", count: centers_count) 
+                %>
               </p>
             </div>
           <% end %>

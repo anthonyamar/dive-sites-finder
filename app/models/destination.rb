@@ -16,6 +16,7 @@ class Destination < ApplicationRecord
   
   # ============= scopes ============
   
+  # Méthode pour récupérer toutes les villes d'un pays
   def self.cities_in_country(country)
     # Sous-requête pour trouver l'ID minimum pour chaque ville dans le pays
     subquery = Destination.where(country: country)
@@ -32,6 +33,7 @@ class Destination < ApplicationRecord
     # Sous-requête pour trouver l'ID minimum pour chaque combinaison unique de pays et de région
     subquery = Destination.where(country: country)
       .where.not(region: nil)
+      .where(city: nil)
       .select("MIN(id) as id")
       .group(:region)
 
@@ -50,7 +52,6 @@ class Destination < ApplicationRecord
     # Utiliser la sous-requête pour obtenir les objets Destination
     Destination.where(id: subquery)
   end
-  
   
   # ============= methods ===========
   
