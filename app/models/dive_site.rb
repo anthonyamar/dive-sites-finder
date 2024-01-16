@@ -6,6 +6,10 @@ class DiveSite < ApplicationRecord
   # ============= relations ==============
   
   belongs_to :destination, counter_cache: true
+  belongs_to :geo_group, counter_cache: true, optional: true
+  belongs_to :country, counter_cache: true, optional: true
+  belongs_to :region, counter_cache: true, optional: true
+  belongs_to :city, counter_cache: true
   
   # ============= validations ============
   
