@@ -4,11 +4,6 @@ class Data::DestinationsToGcrc
   
   CSV_FILE_PATH = Rails.public_path.join("destinations_to_gcrc").to_s
   
-  def initialize
-    perform_countries
-    
-  end
-  
   def perform_countries
     CSV.open(CSV_FILE_PATH + "/countries.csv", "a") do |csv|
       csv << %w(name code latitude longitude saved id)
@@ -143,6 +138,7 @@ class Data::DestinationsToGcrc
   end
   
   def split_language_string(input)
+    return nil if input.blank?
     input.gsub(/ and /, ', ').split(', ').map(&:strip)
   end
   
