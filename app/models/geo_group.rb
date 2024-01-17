@@ -4,7 +4,9 @@ class GeoGroup < ApplicationRecord
 
   # ============= relations ============
   
-  has_many :countries
+  has_many :geo_groups_countries, dependent: :destroy
+  has_many :countries, through: :geo_groups_countries
+  
   has_many :regions, through: :countries
   has_many :cities, through: :regions
   has_many :dive_centers

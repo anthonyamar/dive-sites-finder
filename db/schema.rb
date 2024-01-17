@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_16_225108) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_17_191557) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -49,10 +49,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_16_225108) do
     t.integer "dive_sites_count", default: 0
     t.integer "regions_count", default: 0
     t.integer "cities", default: 0
-    t.bigint "geo_group_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["geo_group_id"], name: "index_countries_on_geo_group_id"
   end
 
   create_table "destination_conditions", force: :cascade do |t|
@@ -147,6 +145,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_16_225108) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "geo_groups_countries", force: :cascade do |t|
+    t.bigint "geo_group_id", null: false
+    t.bigint "country_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_geo_groups_countries_on_country_id"
+    t.index ["geo_group_id"], name: "index_geo_groups_countries_on_geo_group_id"
+  end
+
   create_table "regions", force: :cascade do |t|
     t.string "name", null: false
     t.text "description"
@@ -163,7 +170,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_16_225108) do
   end
 
   add_foreign_key "cities", "regions"
-  add_foreign_key "countries", "geo_groups"
   add_foreign_key "dive_centers", "cities"
   add_foreign_key "dive_centers", "countries"
   add_foreign_key "dive_centers", "destinations"
@@ -174,5 +180,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_16_225108) do
   add_foreign_key "dive_sites", "destinations"
   add_foreign_key "dive_sites", "geo_groups"
   add_foreign_key "dive_sites", "regions"
+  add_foreign_key "geo_groups_countries", "countries"
+  add_foreign_key "geo_groups_countries", "geo_groups"
   add_foreign_key "regions", "countries"
 end
