@@ -40,15 +40,15 @@ class Data::DestinationsToGcrc
       csv << %w(name country latitude longitude saved id)
       
       Destination.where.not(country: nil, region: nil).where(city: nil).each do |destination|
-        existing_region = Region.find_by(name: destination.region)
+        country = Country.find_by(name: destination.country)
+        existing_region = Region.find_by(name: destination.region, country: country)
         next if !existing_region.nil?
 
-        country = Country.find_by(name: destination.country)
         params = {
           name: destination.region,
           latitude: destination.latitude,
           longitude: destination.longitude,
-          bounding_box: get_bounding_box(destination.full_address),
+          bounding_box: get_bounding_box(destination),
           country: country
         }
 
@@ -56,7 +56,7 @@ class Data::DestinationsToGcrc
         region.dive_sites << destination.dive_sites
         region.dive_centers << destination.dive_centers
         
-        csv_params = [region.name, region.country.name, region.latitude, region.longitude]
+        csv_params = [region.name, region.country&.name, region.latitude, region.longitude]
         if region.save
           csv << csv_params.push(true, region.id)
         else
@@ -71,26 +71,25 @@ class Data::DestinationsToGcrc
       csv << %w(name country region latitude longitude timezone saved id)
       
       Destination.where.not(country: nil, region: nil, city: nil).each do |destination|
-        existing_city = City.find_by(name: destination.city)
+        country = Country.find_by(name: destination.country)
+        region = Region.find_by(name: destination.region, country: country)
+        existing_city = City.find_by(name: destination.city, region: region)
         next if !existing_city.nil?
 
-        country = Country.find_by(name: destination.country)
-        region = Region.find_by(name: destination.region)
         params = {
-          name: destination.region,
+          name: destination.city,
           latitude: destination.latitude,
           longitude: destination.longitude,
-          bounding_box: get_bounding_box(destination.full_address),
+          bounding_box: get_bounding_box(destination),
           timezone: get_timezone(destination),
-          country: country,
           region: region
         }
-
+        
         city = City.new(params)
         city.dive_sites << destination.dive_sites
         city.dive_centers << destination.dive_centers
         
-        csv_params = [city.name, city.country.name, city.region.name, city.latitude, city.longitude, city.timezone]
+        csv_params = [city.name, city.region&.country&.name, city.region&.name, city.latitude, city.longitude, city.timezone]
         
         if city.save
           csv << csv_params.push(true, city.id)

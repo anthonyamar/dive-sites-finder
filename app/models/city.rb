@@ -4,7 +4,7 @@ class City < ApplicationRecord
   
   # ============= relations ============
   
-  belongs_to :country
+  belongs_to :region
   has_many :dive_centers
   has_many :dive_sites
 
