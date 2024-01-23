@@ -1,0 +1,22 @@
+<div class="container bg-white mt-36 mb-20 mx-auto">
+  <h1 class="heading-1">🌍 Start <span class="text-sky-600">exploring</span> the world</h1>
+  <div class="grid grid-cols-3 gap-5 mt-10">
+    <% @geo_groups.each do |geo_group| %>
+      <div class="mt-2 relative group">
+        <%= link_to geo_group_path(geo_group) do %>
+          <%= image_tag("illustrations/geo_groups/placeholder.jpg", class: "w-full h-60 rounded-lg shadow object-cover brightness-50 group-hover:brightness-100 transition duration-300 ease-in-out", alt: "Illustration of #{geo_group.name}") %>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <h3 class="heading-1 text-4xl font-serif text-white text-center">
+              <%= geo_group.name %><br>
+              <div class="text-lg w-3/4 mx-auto mt-2">
+                <%= geo_group.countries.first(4).pluck(:name).join(' - ') %> 
+                <%= "and more" if geo_group.countries.size > 4 %>
+              </div>
+            </h3>
+            <p></p>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
