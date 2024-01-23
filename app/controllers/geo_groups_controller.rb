@@ -4,4 +4,8 @@ class GeoGroupsController < ApplicationController
     @geo_groups = GeoGroup.all
   end
   
+  def show
+    @geo_group = GeoGroup.find(params[:id])
+  end
+  
 end
