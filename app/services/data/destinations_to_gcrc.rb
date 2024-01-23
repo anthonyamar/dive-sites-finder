@@ -4,9 +4,20 @@ class Data::DestinationsToGcrc
   
   CSV_FILE_PATH = Rails.public_path.join("destinations_to_gcrc").to_s
   
-  def perform_countries
+  def initialize(csv_data)
+  end
+  
+  def perform_countries(csv_path: "")
     CSV.open(CSV_FILE_PATH + "/countries.csv", "a") do |csv|
       csv << %w(name code latitude longitude saved id)
+      
+      if csv_data.blank?
+        destinations = Destination
+          .where.not(country: nil)
+          .where(region: nil, city: nil)
+      else
+        destinations = csv_to_destinations(csv_path)
+      end
       
       Destination.where.not(country: nil).where(region: nil, city: nil).each do |destination|
         existing_country = Country.find_by(name: destination.country)
@@ -139,6 +150,16 @@ class Data::DestinationsToGcrc
   def split_language_string(input)
     return nil if input.blank?
     input.gsub(/ and /, ', ').split(', ').map(&:strip)
+  end
+  
+  def csv_to_destination(path)
+    destinations = []
+    
+    Dest = Struct.new()
+    
+    CSV.foreach(path, headers: true) do |row|
+      # logique pour créer des objet avec les rows et le struct afin de faire les records
+    end
   end
   
 end

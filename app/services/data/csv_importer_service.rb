@@ -52,4 +52,34 @@ class Data::CsvImporterService
     end
   end
   
+  def import_with_gg_descriptions
+    CSV.foreach(@file_path, headers: true) do |row|
+      country = Country.find_by(name: row['name'])
+      country.meta_description = row['meta_description']
+      country.description = row['description']
+      
+      geo_groups = row['geo_groups'].split(", ")
+      
+      geo_groups.each do |str|
+        geo_group = GeoGroup.find_by(name: str)
+        
+        unless geo_group.present?
+          geocoded = Geocoder.search(str).first.data
+          params = {
+            name: str,
+            latitude: geocoded["lat"],
+            longitude: geocoded["lon"],
+            bounding_box: geocoded["boundingbox"]
+          }
+          
+          geo_group = GeoGroup.create!(params)
+        end
+        
+        geo_group.countries << country
+      end
+      
+      country.save
+    end
+  end
+  
 end
