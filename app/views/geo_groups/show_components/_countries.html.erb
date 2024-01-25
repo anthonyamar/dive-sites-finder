@@ -1,0 +1,24 @@
+<h2 class="heading-1 mb-5">Where to dive in <%= @geo_group.name %>?</h2>
+<div class="grid grid-cols-3 gap-5">
+  <% more_than_six = @geo_group.countries_count > 6 %>
+  <% cards = more_than_six ? 5 : 6 %>
+  <% @geo_group.countries.order(:name).first(cards).each do |country| %>
+    <%= render Ui::Cards::ImgCardComponent.new(
+      link: country_path(country),
+      image: "illustrations/countries/placeholder.jpg",
+      alt_image: "Illustration of #{country.name}",
+      title: country.name,
+      sub_title: "#{country.regions_count} regions"
+      ) 
+    %>
+  <% end %>
+  <% if more_than_six %>
+    <%= render Ui::Cards::ImgCardComponent.new(
+      link: countries_path(geo_group: @geo_group.slug),
+      image: "illustrations/countries/placeholder.jpg",
+      alt_image: "Illustration of countries in #{@geo_group.name}",
+      title: "+ #{@geo_group.countries_count - cards} more"
+      ) 
+    %>
+  <% end %>
+</div>
