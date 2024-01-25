@@ -1,5 +1,7 @@
 class DiveSite < ApplicationRecord
   
+  extend FriendlyId
+  friendly_id :name, use: :slugged
   reverse_geocoded_by :latitude, :longitude
   enum bow: { salt: 'salt', artificial: 'artificial', fresh: 'fresh', unknown: 'unknown' }
   

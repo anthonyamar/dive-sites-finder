@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_23_224159) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_25_185740) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -27,7 +27,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_23_224159) do
     t.bigint "region_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "slug"
     t.index ["region_id"], name: "index_cities_on_region_id"
+    t.index ["slug"], name: "index_cities_on_slug", unique: true
   end
 
   create_table "countries", force: :cascade do |t|
@@ -52,6 +54,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_23_224159) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "meta_description"
+    t.string "slug"
+    t.index ["slug"], name: "index_countries_on_slug", unique: true
   end
 
   create_table "destination_conditions", force: :cascade do |t|
@@ -103,10 +107,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_23_224159) do
     t.bigint "country_id"
     t.bigint "region_id"
     t.bigint "city_id"
+    t.string "slug"
     t.index ["city_id"], name: "index_dive_centers_on_city_id"
     t.index ["country_id"], name: "index_dive_centers_on_country_id"
     t.index ["geo_group_id"], name: "index_dive_centers_on_geo_group_id"
     t.index ["region_id"], name: "index_dive_centers_on_region_id"
+    t.index ["slug"], name: "index_dive_centers_on_slug", unique: true
   end
 
   create_table "dive_sites", force: :cascade do |t|
@@ -125,10 +131,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_23_224159) do
     t.bigint "country_id"
     t.bigint "region_id"
     t.bigint "city_id"
+    t.string "slug"
     t.index ["city_id"], name: "index_dive_sites_on_city_id"
     t.index ["country_id"], name: "index_dive_sites_on_country_id"
     t.index ["geo_group_id"], name: "index_dive_sites_on_geo_group_id"
     t.index ["region_id"], name: "index_dive_sites_on_region_id"
+    t.index ["slug"], name: "index_dive_sites_on_slug", unique: true
   end
 
   create_table "geo_groups", force: :cascade do |t|
@@ -145,6 +153,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_23_224159) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "kind"
+    t.string "slug"
+    t.index ["slug"], name: "index_geo_groups_on_slug", unique: true
   end
 
   create_table "geo_groups_countries", force: :cascade do |t|
@@ -168,7 +178,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_23_224159) do
     t.bigint "country_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "slug"
     t.index ["country_id"], name: "index_regions_on_country_id"
+    t.index ["slug"], name: "index_regions_on_slug", unique: true
   end
 
   add_foreign_key "cities", "regions"

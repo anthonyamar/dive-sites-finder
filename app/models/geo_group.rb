@@ -1,5 +1,7 @@
 class GeoGroup < ApplicationRecord
   
+  extend FriendlyId
+  friendly_id :name, use: :slugged
   reverse_geocoded_by :latitude, :longitude
   enum kind: { water: 'water', continent: 'continent' }
 
