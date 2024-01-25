@@ -29,6 +29,9 @@ gem "tailwindcss-rails"
 # ViewComponent [https://viewcomponent.org/]
 gem "view_component"
 
+# Draper for decorators patterns [https://github.com/drapergem/draper]
+gem "draper"
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
