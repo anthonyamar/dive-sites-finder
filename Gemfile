@@ -26,6 +26,9 @@ gem "stimulus-rails"
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
 gem "tailwindcss-rails"
 
+# ViewComponent [https://viewcomponent.org/]
+gem "view_component"
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
@@ -69,8 +72,6 @@ gem 'money'
 
 # Friendly ID for slugs [https://github.com/norman/friendly_id]
 gem 'friendly_id'
-
-
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
