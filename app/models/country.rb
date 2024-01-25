@@ -32,7 +32,7 @@ class Country < ApplicationRecord
   end
   
   def continent
-    geo_groups.continents.first
+    geo_groups.continent.first
   end
 
 end

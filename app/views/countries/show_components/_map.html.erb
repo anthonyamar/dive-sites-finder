@@ -1,0 +1,36 @@
+<div class="my-28">
+  <h2 class="text-4xl font-serif font-bold tracking-wide text-gray-900 sm:text-6xl">
+    Where to dive in <%= @country.name %>?
+  </h2>
+  <div class="grid grid-cols-2 gap-12 mt-10" data-controller="map"
+    data-map-locations="<%= @locations.to_json %>"
+    data-map-zoom-level="5"
+    data-map-destination-marker-url="<%= image_url('map_markers/destination.png') %>"
+    data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
+    data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
+    data-map-mapbox-token="<%= ENV["MAPBOX_ACCESS_TOKEN"] %>"
+  >
+    <div id="map" class="w-full h-full min-h-[65vh] max-h-[100vh] rounded-4xl shadow-lg">
+      <!--  javascript/controllers/map_controller.js   -->
+    </div>
+    <div>
+      <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4l">
+        Discover <%= @country.regions_count %> regions in <%= @country.name %>
+      </h3>
+      <div class="grid grid-cols-2 gap-2">
+        <% @country.regions.order(cities_count: :desc).first(10).each do |region| %>
+          <%= link_to '#' do %>
+            <div class="mt-2 w-full p-2 bg-white rounded-lg shadow sm:p-6 hover:shadow-lg">
+              <p class="font-medium text-sky-600 whitespace-nowrap underline"><%= region.name %></p>
+              <p>
+                <%= t("count.x_cities", count: region.cities_count) %>,
+                <%= t("count.x_dive_sites", count: region.cities.sum(&:dive_sites_count)) %>,
+                <%= t("count.x_dive_centers", count: region.cities.sum(&:dive_centers_count)) %>
+              </p>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
