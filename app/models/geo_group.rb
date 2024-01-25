@@ -28,6 +28,4 @@ class GeoGroup < ApplicationRecord
 
   # ============= methods ===========
 
-
-
 end

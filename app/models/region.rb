@@ -6,7 +6,7 @@ class Region < ApplicationRecord
   
   # ============= relations ============
   
-  belongs_to :country
+  belongs_to :country, counter_cache: true
   has_many :cities
   has_many :dive_centers
   has_many :dive_sites
@@ -23,6 +23,16 @@ class Region < ApplicationRecord
 
   # ============= methods ===========
 
-
+  def geo_groups
+    country.geo_groups
+  end
+  
+  def waters
+    geo_groups.water
+  end
+  
+  def continent
+    geo_groups.continents.first
+  end
 
 end

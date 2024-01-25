@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_25_185740) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_25_191717) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -50,7 +50,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_25_185740) do
     t.integer "dive_centers_count", default: 0
     t.integer "dive_sites_count", default: 0
     t.integer "regions_count", default: 0
-    t.integer "cities", default: 0
+    t.integer "cities_count", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "meta_description"
@@ -149,7 +149,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_25_185740) do
     t.integer "dive_sites_count", default: 0
     t.integer "countries_count", default: 0
     t.integer "regions_count", default: 0
-    t.integer "cities", default: 0
+    t.integer "cities_count", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "kind"
@@ -174,7 +174,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_25_185740) do
     t.text "bounding_box", default: [], array: true
     t.integer "dive_centers_count", default: 0
     t.integer "dive_sites_count", default: 0
-    t.integer "cities", default: 0
+    t.integer "cities_count", default: 0
     t.bigint "country_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

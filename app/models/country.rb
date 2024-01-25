@@ -26,5 +26,13 @@ class Country < ApplicationRecord
 
 
   # ============= methods ===========
+  
+  def waters
+    geo_groups.water
+  end
+  
+  def continent
+    geo_groups.continents.first
+  end
 
 end

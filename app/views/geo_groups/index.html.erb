@@ -3,7 +3,7 @@
   
   <h2 class="heading-3 mb-2">🗺️ Continent by continent...</h2>
   <div class="grid grid-cols-3 gap-5 mb-10">
-    <% @geo_groups.continent.each do |geo_group| %>
+    <% @geo_groups.continent.order(countries_count: :desc).each do |geo_group| %>
       <div class="mt-2 relative group">
         <%= link_to geo_group_path(geo_group) do %>
           <%= image_tag("illustrations/geo_groups/placeholder.jpg", class: "w-full h-60 rounded-lg shadow object-cover brightness-50 group-hover:brightness-100 transition duration-300 ease-in-out", alt: "Illustration of #{geo_group.name}") %>
@@ -12,7 +12,7 @@
               <%= geo_group.name %><br>
               <div class="text-lg w-3/4 mx-auto mt-2">
                 <%= geo_group.countries.first(4).pluck(:name).join(' - ') %> 
-                <%= "and more" if geo_group.countries.size > 4 %>
+                <%= "and #{geo_group.countries_count - 4} more" if geo_group.countries.size > 4 %>
               </div>
             </h3>
             <p></p>
@@ -24,7 +24,7 @@
   
   <h2 class="heading-3 mb-2">🌊 Ocean by ocean...</h2>
   <div class="grid grid-cols-3 gap-5">
-    <% @geo_groups.water.each do |geo_group| %>
+    <% @geo_groups.water.order(countries_count: :desc).each do |geo_group| %>
       <div class="mt-2 relative group">
         <%= link_to geo_group_path(geo_group) do %>
           <%= image_tag("illustrations/geo_groups/placeholder.jpg", class: "w-full h-60 rounded-lg shadow object-cover brightness-50 group-hover:brightness-100 transition duration-300 ease-in-out", alt: "Illustration of #{geo_group.name}") %>
@@ -33,7 +33,7 @@
               <%= geo_group.name %><br>
               <div class="text-lg w-3/4 mx-auto mt-2">
                 <%= geo_group.countries.first(4).pluck(:name).join(' - ') %> 
-                <%= "and more" if geo_group.countries.size > 4 %>
+                <%= "and #{geo_group.countries_count - 4} more" if geo_group.countries.size > 4 %>
               </div>
             </h3>
             <p></p>
