@@ -2,11 +2,11 @@
 <%= render Ui::Containers::WavesComponent.new do %>
   <div class="container mx-auto">
     <h2 class="text-4xl font-serif font-bold tracking-wide text-gray-900 sm:text-6xl">
-      Where to dive in <%= @country.name %>?
+      Where to dive in <%= @region.name %>?
     </h2>
     <div class="grid grid-cols-2 gap-12 mt-10" data-controller="map"
       data-map-locations="<%= @locations.to_json %>"
-      data-map-zoom-level="5"
+      data-map-zoom-level="8"
       data-map-destination-marker-url="<%= image_url('map_markers/destination.png') %>"
       data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
       data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
@@ -17,25 +17,24 @@
       </div>
       <div>
         <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4l">
-          Discover <%= @country.regions_count %> regions in <%= @country.name %>
+          Discover <%= @region.cities_count %> cities in <%= @region.name %>
         </h3>
         <div class="grid grid-cols-2 gap-2">
-          <% @regions.includes([:cities]).first(10).each do |region| %>
-            <%= link_to region_path(country: @country.slug, region: region.slug) do %>
+          <% @cities.first(10).each do |city| %>
+            <%= link_to '#' do %>
               <div class="mt-2 w-full p-2 bg-white rounded-lg shadow sm:p-6 hover:shadow-lg">
-                <p class="font-medium text-sky-600 whitespace-nowrap underline"><%= region.name %></p>
+                <p class="font-medium text-sky-600 whitespace-nowrap underline"><%= city.name %></p>
                 <p>
-                  <%= t("count.x_cities", count: region.cities_count) %>,
-                  <%= t("count.x_dive_sites", count: region.cities.sum(&:dive_sites_count)) %>,
-                  <%= t("count.x_dive_centers", count: region.cities.sum(&:dive_centers_count)) %>
+                  <%= t("count.x_dive_sites", count: city.dive_sites_count) %>,
+                  <%= t("count.x_dive_centers", count: city.dive_centers_count) %>
                 </p>
               </div>
             <% end %>
           <% end %>
         </div>
-        <% if @country.regions_count > 10 %>
+        <% if @region.cities_count > 10 %>
           <div class="my-2 w-full p-2 bg-white rounded-lg shadow hover:shadow-lg text-center">
-            <i class="fas fa-plus"></i> See <%= @country.regions_count - 10 %> more regions
+            <i class="fas fa-plus"></i> See <%= @region.cities_count - 10 %> more cities
           </div>
         <% end %>
       </div>
