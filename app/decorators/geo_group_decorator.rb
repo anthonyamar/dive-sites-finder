@@ -6,7 +6,8 @@ class GeoGroupDecorator < Draper::Decorator
   
   def format_countries_count(count: 4)
     countries = geo_group.countries.first(count).pluck(:name).join(' - ')
-    countries + "and #{geo_group.countries_count - count} more" if geo_group.countries.size > count
+    countries_and_more = countries + " and #{geo_group.countries_count - count} more"
+    geo_group.countries.size > count ? countries_and_more : countries
   end
 
 end
