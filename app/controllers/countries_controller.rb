@@ -6,7 +6,8 @@ class CountriesController < ApplicationController
   
   def show
     @country = Country.friendly.find(params[:id])
-    # Add @locations to get the map done
+    @regions = @country.regions.order(cities_count: :desc)
+    @locations = Maps::CreateLocationHashes.new([@country, @regions].flatten, boundaries: :region).perform
   end
   
 end

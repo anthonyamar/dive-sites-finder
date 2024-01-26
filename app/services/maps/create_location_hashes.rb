@@ -29,7 +29,7 @@ class Maps::CreateLocationHashes
   
   def create_html_popup(object)
     link = "/#{object.model_name.route_key}/#{object.id}"
-    name = point? ? object.name.titleize : object.send(boundaries) 
+    name = object.name.titleize
     type = object.model_name.human
     
     "<a href='#{link}'>#{name}</a><br>#{type}"
@@ -48,7 +48,7 @@ class Maps::CreateLocationHashes
   end
   
   def has_coordinates?(object)
-    !object.latitude.nil? && !object.longitude.nil?
+    object.latitude.present? && object.longitude.present?
   end
   
   def create_coordinates(object)

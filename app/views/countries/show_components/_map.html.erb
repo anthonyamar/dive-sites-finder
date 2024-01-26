@@ -18,7 +18,7 @@
         Discover <%= @country.regions_count %> regions in <%= @country.name %>
       </h3>
       <div class="grid grid-cols-2 gap-2">
-        <% @country.regions.order(cities_count: :desc).first(10).each do |region| %>
+        <% @regions.includes([:cities]).first(10).each do |region| %>
           <%= link_to '#' do %>
             <div class="mt-2 w-full p-2 bg-white rounded-lg shadow sm:p-6 hover:shadow-lg">
               <p class="font-medium text-sky-600 whitespace-nowrap underline"><%= region.name %></p>
@@ -31,6 +31,11 @@
           <% end %>
         <% end %>
       </div>
+      <% if @country.regions_count > 10 %>
+        <div class="mt-2 w-full p-2 bg-white rounded-lg shadow hover:shadow-lg text-center">
+          <i class="fas fa-plus"></i> See <%= @country.regions_count - 10 %> more regions
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
