@@ -21,7 +21,7 @@
         </h3>
         <div class="grid grid-cols-2 gap-2">
           <% @cities.first(10).each do |city| %>
-            <%= link_to '#' do %>
+            <%= link_to city_path(country: @region.country.slug, region: @region.slug, city: city.slug) do %>
               <div class="mt-2 w-full p-2 bg-white rounded-lg shadow sm:p-6 hover:shadow-lg">
                 <p class="font-medium text-sky-600 whitespace-nowrap underline"><%= city.name %></p>
                 <p>
