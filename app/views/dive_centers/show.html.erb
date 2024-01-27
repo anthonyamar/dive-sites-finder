@@ -19,24 +19,22 @@
           </span>
         <% end %>
       </li>
-      <% unless @dive_center.country_code.blank? %>
+      <% unless @dive_center.city.blank? %>
         <li class="inline-flex items-center">
           <span class="inline-flex items-center text-sm font-medium text-gray-700">
            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
-            <%= @dive_center.country_code %>
+            <%= @dive_center.city.country.name %>
           </span>
         </li>
-      <% end %>
-      <% unless @dive_center.city.blank? %>
         <li>
           <div class="flex items-center">
             <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
             <span class="ml-1 text-sm font-medium text-gray-700 md:ml-2">
-              <%= @dive_center.city.titleize %>
+              <%= @dive_center.city.name.titleize %>
             </span>
           </div>
         </li>
@@ -47,11 +45,11 @@
     <%= @dive_center.name.titleize %>
   </h1>
   
-  <div class="bg-sky-100 mx-auto rounded-lg shadow mt-10 p-5">
+  <div class="bg-sky-50 mx-auto rounded-lg shadow mt-10 p-5">
     <ul class="flex flex-wrap items-center justify-center text-gray-900 text-xl list-none text-center">
       <li class="font-semibold m-5">
-        <%= @dive_center.country_code %> 
-        <%= "- #{@dive_center.city}" unless @dive_center.city.blank? %> <br>
+        <%= @dive_center.city.country.name %> 
+        <%= "- #{@dive_center.city.name}" unless @dive_center.city.blank? %> <br>
         <span class="text-sm font-normal">Location</span>
       </li>
       <li class="font-semibold m-5">

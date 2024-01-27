@@ -1,7 +1,7 @@
 class DiveSitesController < ApplicationController
   
   def index
-    @pagy, @dive_sites = pagy(DiveSite.order(Arel.sql('country IS NULL, country')).all)
+    @pagy, @dive_sites = pagy(DiveSite.all.includes([:city, :region, :country]))
   end
 
   def show

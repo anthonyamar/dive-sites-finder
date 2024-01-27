@@ -20,8 +20,6 @@ class DiveSite < ApplicationRecord
   validates :longitude, presence: true, numericality: { greater_than_or_equal_to: -180, less_than_or_equal_to: 180 }
   validates :latitude, presence: true, numericality: { greater_than_or_equal_to: -90, less_than_or_equal_to: 90 }
   validates :address, length: { maximum: 255 }, allow_blank: true
-  validates :region, length: { maximum: 255 }, allow_blank: true
-  validates :country, length: { maximum: 255 }, allow_blank: true
   validates :is_private, inclusion: { in: [true, false] }
   
   # =============== scope ================
