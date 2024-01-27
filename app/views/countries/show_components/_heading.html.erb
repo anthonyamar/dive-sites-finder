@@ -41,11 +41,11 @@
           </li>
         </ol>
       </nav>
-      <h1 class="text-4xl font-serif font-bold tracking-wide text-gray-900 sm:text-6xl">
+      <h1 class="heading-1">
         <%= ISO3166::Country.new(@country.code).emoji_flag %>
         Diving in <%= @country.name %>
       </h1>
-      <p class="mt-8 text-lg leading-8 text-gray-600">
+      <p class="mt-8 paragraph">
         <%= @country.description %>
       </p>
     </div>

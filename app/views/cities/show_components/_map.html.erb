@@ -1,12 +1,12 @@
 <%= render Ui::Containers::WavesComponent.new do %>
   <div class="container mx-auto">
-    <h2 class="text-4xl font-serif font-bold tracking-wide text-gray-900 sm:text-6xl">
+    <h2 class="heading-1">
       Where to dive in <%= @city.name %>?
     </h2>
     <div class="grid grid-cols-2 gap-12 mt-10" data-controller="map"
       data-map-locations="<%= @locations.to_json %>"
       data-map-zoom-level="12"
-      data-map-destination-marker-url="<%= image_url('map_markers/destination.png') %>"
+      data-map-destination-marker-url="<%= image_url('map_markers/location-dot-solid-sky.svg') %>"
       data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
       data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
       data-map-mapbox-token="<%= ENV["MAPBOX_ACCESS_TOKEN"] %>"
@@ -15,7 +15,7 @@
         <!--  javascript/controllers/map_controller.js   -->
       </div>
       <div>
-        <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4l">
+        <h3 class="heading-3">
           Discover <%= t("count.x_dive_sites", count: @city.dive_sites_count) %>
           and <%= t("count.x_dive_centers", count: @city.dive_centers_count) %>
           in <%= @city.name %>
@@ -25,7 +25,7 @@
             <% @dive_sites.first(10).each do |site| %>
               <%= link_to dive_site_path(site) do %>
                 <div class="mt-2 w-full p-4 bg-white rounded-lg shadow hover:shadow-lg">
-                  <p class="font-medium text-sky-600 whitespace-nowrap">
+                  <p class="font-medium text-main-sky whitespace-nowrap">
                     <i class="fa-regular fa-wave"></i> &nbsp;
                     <span class="underline"><%= site.name.titleize %></span>
                   </p>
@@ -33,7 +33,7 @@
               <% end %>
             <% end %>
             <% if @city.dive_sites_count > 10 %>
-              <div class="my-2 w-full p-4 bg-white rounded-lg shadow hover:shadow-lg text-center">
+              <div class="mt-3 btn-primary">
                 <i class="fas fa-plus"></i> See <%= @city.dive_sites_count - 10 %> more sites in <%= @city.name %>
               </div>
             <% end %>
@@ -42,15 +42,15 @@
             <% @dive_centers.first(10).each do |center| %>
               <%= link_to dive_center_path(center) do %>
                 <div class="mt-2 w-full p-4 bg-white rounded-lg shadow hover:shadow-lg">
-                  <p class="font-medium text-sky-600 whitespace-nowrap">
-                    <i class="fa-solid fa-shop"></i> &nbsp;
+                  <p class="font-medium text-main-sky whitespace-nowrap">
+                    <i class="fa-regular fa-shop"></i> &nbsp;
                     <span class="underline"><%= center.name.titleize %></span>
                   </p>
                 </div>
               <% end %>
             <% end %>
             <% if @city.dive_centers_count > 10 %>
-              <div class="my-2 w-full p-4 bg-white rounded-lg shadow hover:shadow-lg text-center">
+              <div class="mt-3 btn-primary">
                 <i class="fas fa-plus"></i> See <%= @city.dive_centers_count - 10 %> more centers in <%= @city.name %>
               </div>
             <% end %>

@@ -5,19 +5,31 @@
 
 @layer components {
   .btn-primary {
-    @apply rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400;
+    @apply rounded-full bg-orange-accent px-6 py-4 text-sm font-semibold text-center text-dark-blue shadow hover:bg-main-sky hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-accent;
   }
   
   .heading-1 {
-    @apply text-4xl font-serif font-bold tracking-wide text-gray-900 sm:text-6xl;
+    @apply text-4xl font-serif font-bold tracking-wide text-dark-blue sm:text-6xl;
+  }
+  
+  .heading-2 {
+    @apply text-3xl font-serif font-bold tracking-wide text-main-sky sm:text-5xl;
   }
   
   .heading-3 {
-    @apply text-2xl font-bold tracking-tight text-gray-900;
+    @apply text-2xl font-semibold tracking-tight text-dark-blue;
+  }
+  
+  .paragraph {
+    @apply text-lg leading-8 text-gray-600
   }
   
   .link {
-    @apply font-medium text-sky-600 whitespace-nowrap underline;
+    @apply font-medium text-main-sky hover:text-orange-accent whitespace-nowrap underline;
+  }
+  
+  .link-arrow {
+    @apply text-sm font-semibold leading-6 text-main-sky hover:text-orange-accent;
   }
 }
 

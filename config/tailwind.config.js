@@ -15,6 +15,12 @@ module.exports = {
       sans: ['DM Sans', ...defaultTheme.fontFamily.sans],
     },
     extend: {
+       colors: {
+        'light-sky': "#f0f9ff",
+        'main-sky': "#0ea5e9", 
+        'orange-accent': "#FFC533",
+        'dark-blue': "#02263c"
+      },
       spacing: {
         '8xl': '96rem',
         '9xl': '128rem',
