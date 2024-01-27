@@ -1,0 +1,31 @@
+<div class="container bg-white mt-36 mb-20 mx-auto">
+  <h1 class="heading-1 mb-10">🌍 Start <span class="text-main-sky">exploring</span> the world</h1>
+  
+  <h2 class="heading-3 mb-2">🗺️ Continent by continent...</h2>
+  <div class="grid grid-cols-3 gap-5 mb-10">
+    <% @geo_groups.continent.order(countries_count: :desc).each do |geo_group| %>
+      <%= render Ui::Cards::ImgCardComponent.new(
+        link: geo_group_path(geo_group),
+        image: "illustrations/geo_groups/placeholder.jpg",
+        alt_image: "Illustration of #{geo_group.name}",
+        title: geo_group.name,
+        sub_title: geo_group.decorate.format_countries_count
+        ) 
+      %>
+    <% end %>
+  </div>
+  
+  <h2 class="heading-3 mb-2">🌊 Ocean by ocean...</h2>
+  <div class="grid grid-cols-3 gap-5">
+    <% @geo_groups.water.order(countries_count: :desc).each do |geo_group| %>
+      <%= render Ui::Cards::ImgCardComponent.new(
+        link: geo_group_path(geo_group),
+        image: "illustrations/geo_groups/placeholder.jpg",
+        alt_image: "Illustration of #{geo_group.name}",
+        title: geo_group.name,
+        sub_title: geo_group.decorate.format_countries_count
+        ) 
+      %>
+    <% end %>
+  </div>
+</div>

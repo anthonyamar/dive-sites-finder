@@ -1,0 +1,96 @@
+<div class="container bg-white mt-36 mb-20 mx-auto">
+  <nav class="flex mb-4" aria-label="Breadcrumb">
+    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+      <li class="inline-flex items-center">
+        <%= link_to root_path, class: "inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600" do %>
+        <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+        </svg>
+        Home
+        <% end %>
+      </li>
+      <li class="inline-flex items-center">
+        <%= link_to destinations_path, class: "inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600" do %>
+          <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          Destinations
+        <% end %>
+      </li>
+      <li class="inline-flex items-center">
+        <%= link_to country_destinations_path(country: @destination.country), class: "inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600" do %>
+          <span class="inline-flex items-center text-sm font-medium text-gray-700">
+            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <%= @destination.country %>
+          </span>
+        <% end %>
+      </li>
+      <li class="inline-flex items-center">
+        <%= link_to country_destinations_path(country: @destination.country, region: @destination.region), 
+            class: "inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600" do 
+        %>
+          <span class="inline-flex items-center text-sm font-medium text-gray-700">
+            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <%= @destination.region %>
+          </span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to country_destinations_path(country: @destination.country, region: @destination.region, city: @destination.city), 
+            class: "inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600" do 
+        %>
+          <span class="inline-flex items-center text-sm font-medium text-gray-700">
+            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <%= @destination.city %>
+          </span>
+        <% end %>
+      </li>
+    </ol>
+  </nav>
+  <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+    <%= ISO3166::Country.new(@destination.country_code).emoji_flag %>
+    Diving in <%= @destination.city %> - <%= @destination.country %>
+  </h1>
+  
+  <div class="grid grid-cols-2 gap-4 mt-10" data-controller="map"
+    data-map-locations="<%= @locations.to_json %>"
+    data-map-zoom-level="12"
+    data-map-destination-marker-url="<%= image_url('map_markers/destination.png') %>"
+    data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
+    data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
+    data-map-mapbox-token="<%= ENV["MAPBOX_ACCESS_TOKEN"] %>"
+  >
+    <div id="map" class="w-full h-full min-h-[65vh]">
+      <!--  javascript/controllers/map_controller.js   -->
+    </div>
+    
+    <div class="p-5 shadow rounded">
+      <div>
+        <h3 class="text-2l font-bold tracking-tight text-gray-700 sm:text-4l">
+          Discover <%= t("count.x_dive_sites", count: @destination.dive_sites.size) %> dive sites. 
+        </h3>
+        <% @destination.dive_sites.each do |dive_site| %>
+          <div class="mt-2">
+            <%= link_to dive_site.name, dive_site_path(dive_site), class: "font-medium text-sky-600 whitespace-nowrap underline" %>
+          </div>
+        <% end %>
+      </div>
+      <div class="mt-5">
+        <h3 class="text-2l font-bold tracking-tight text-gray-700 sm:text-4l">
+          Discover <%= t("count.x_dive_centers", count: @destination.dive_centers.size) %> dive centers. 
+        </h3>
+        <% @destination.dive_centers.each do |dive_center| %>
+          <div class="mt-2">
+            <%= link_to dive_center.name, dive_center_path(dive_center), class: "font-medium text-sky-600 whitespace-nowrap underline" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

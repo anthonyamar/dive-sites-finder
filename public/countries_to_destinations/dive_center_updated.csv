@@ -1,0 +1,473 @@
+ID,type,name,longitude,latitude,destination_id
+602,dive_center,MOANA DIVE CENTER,118.78551,9.967216,375
+730,dive_center,ABYSS PLONGEE,166.441124,-22.284962,465
+733,dive_center,SeaWatch Buvararuhaz,19.153589,47.450128,328
+765,dive_center,AQUABALTIC,24.749452,59.424974,350
+1053,dive_center,Feelgood Scuba & Activities,-6.069007,53.392632,666
+1096,dive_center,MEYASSAR NOORALDIN AL-HADDAD TRADE,39.113032,21.747621,4410
+1133,dive_center,Dive Stop,33.882759,27.028875,5310
+1194,dive_center,Picco Sport,17.669019,47.674613,757
+1324,dive_center,HISPANIA,-1.258402,37.563908,3277
+1804,dive_center,High Coast Diving,18.712551,63.293163,1209
+469,dive_center,NATIVE DIVING,-13.499333,28.996599,2701
+521,dive_center,BLUE BOTTOM DIVING,-16.730576,28.063945,316
+713,dive_center,Scuba Store & More,-68.904179,12.128013,6012
+895,dive_center,HOTEL LES ILLES,3.20448,42.05498,220
+924,dive_center,Similan Scuba,98.241641,8.680661,585
+596,dive_center,Fun and Sun,124.034902,10.323132,4789
+396,dive_center,East Diving Corporation,121.554126,25.055296,6269
+98,dive_center,Adreno Brisbane,153.045117,-27.492098,4053
+115,dive_center,CAPTAIN DIVING,126.928578,37.507054,6211
+735,dive_center,LAVY SUB,-15.428774,28.123632,273
+112,dive_center,AQUA MARINE(DAE-BANG BRANCH),126.928578,37.507054,6211
+113,dive_center,AQUA MARINE(KANG-NAM BRANCH),127.061053,37.499491,6168
+114,dive_center,BSAC KOREA,127.12854,37.532279,823
+116,dive_center,"DAE WOONG SUITS CO., LTD.",127.019233,37.486797,6168
+117,dive_center,DIVE LINE,127.056314,37.502815,6168
+118,dive_center,GUARDIAN SEALIFE,127.12854,37.532279,823
+119,dive_center,JONGRO SPORTS,127.057475,37.570924,6168
+120,dive_center,LEISURE-CAMP,126.928578,37.507054,6211
+121,dive_center,MERMAIDE & MARINE,127.080277,37.513012,6168
+122,dive_center,NUDIBLUE,127.064183,37.48196,823
+123,dive_center,PARANSUM,127.019233,37.511284,6168
+124,dive_center,Patima,127.061677,37.580001,6168
+125,dive_center,PUREUNBADA(YANGJAE BRANCH),127.03735,37.47327,823
+126,dive_center,SAMWON SCUBA SCHOOL,127.002453,37.635943,6168
+127,dive_center,SANHOSOOJOONG,127.12854,37.532279,823
+128,dive_center,SCUBAZONE,127.010508,37.515371,6168
+129,dive_center,SDD KOREA,127.080277,37.651313,6168
+130,dive_center,S-FREE,127.064183,37.500425,823
+131,dive_center,SILVER SEA,126.941344,37.542259,19
+132,dive_center,UNDERWATER,127.015877,37.467234,823
+107,dive_center,Pro Dive Central Coast,151.458138,-33.364306,1722
+148,dive_center,RAINBOW RUNNER S/B,101.766194,3.202992,34
+164,dive_center,THALASSA IMMERSION  DC,9.012893,42.039604,49
+166,dive_center,PLONGEE EVASION PROPRIANO DC,9.012893,42.039604,49
+167,dive_center,L'UGHJATA,9.012893,42.039604,49
+169,dive_center,SERENA SPORTS,9.012893,42.039604,49
+145,dive_center,Scuba Dynamic,101.649218,3.162134,6239
+176,dive_center,PIANOTTOLI DIVING DC,9.012893,42.039604,49
+177,dive_center,HIPPOCAMPE,9.012893,42.039604,49
+178,dive_center,LE SQUALE PLONGEE,9.012893,42.039604,49
+179,dive_center,LEADER BOAT SARL,9.012893,42.039604,49
+175,dive_center,BELUGA DIVING DC,9.012893,42.039604,49
+210,dive_center,BIG BLUE DIVERS,-81.163725,33.836081,1482
+252,dive_center,Diving Center Shark,13.923385,44.827703,121
+253,dive_center,Trogir D.C.,16.271562,43.492617,122
+258,dive_center,Bojan Jenko s.p.,14.356002,46.240245,6209
+259,dive_center,Aquamania,14.541966,46.068003,126
+260,dive_center,Reef d.o.o.,13.648104,45.941502,6233
+263,dive_center,Mavros Ltd.,33.361379,35.172887,1676
+264,dive_center,Ionas Bros.O.E.,23.765582,38.065523,119
+251,dive_center,Apnea d.o.o.,18.089009,42.651461,120
+272,dive_center,FRANTISEK VERTAT - VEFA,73.450804,4.690487,2136
+278,dive_center,IONAS BROS O.E.,23.765582,38.065523,119
+299,dive_center,Pearl Divers,51.491933,25.279543,157
+300,dive_center,KORGAN CENTER LTD,76.939534,43.26348,6381
+271,dive_center,Baracuda Ltd,27.920218,43.213364,136
+318,dive_center,Paradise for Marine Activities - TGI Sharm,34.384954,27.979091,588
+319,dive_center,RED SEA DIVING COLLEGE,34.384954,27.979091,588
+320,dive_center,RED SEA WATERWORLD - Hyatt Regency,34.384954,27.979091,588
+322,dive_center,Reef Oasis Dive Club - Reef Oasis Blue Bay Resort & Spa Hotel,34.384954,27.979091,588
+325,dive_center,EXTREME DIVERS,23.75882,37.945846,139
+330,dive_center,PARALOS DIVING ACADEMY,23.777202,38.054324,119
+333,dive_center,PRITSIS GIORGOS,23.77667,37.937029,139
+338,dive_center,BLUE PLANET DIVING CENTER,18.061208,42.651164,120
+339,dive_center,CROATIA DIVERS,16.71911,42.959237,184
+340,dive_center,DIVING CENTER MIHURIC,14.693388,45.179004,185
+341,dive_center,Diving Center Scuba Valdaliso,13.624262,45.102629,186
+309,dive_center,Agent za Hrvatsku i Sloveniju - Boris Ivančić,14.663961,45.19529,167
+345,dive_center,Moby Dick Diving Center,14.752507,44.782408,189
+358,dive_center,Nomad Ocean Adventures,56.245783,25.614591,193
+360,dive_center,Twin Palms Dive Emporium ***,28.15796,-26.14664,371
+365,dive_center,SIDS-Planet Scuba,99.840396,10.09561,199
+369,dive_center,Scandinavian Divers Liveaboard,98.297895,7.930972,2116
+371,dive_center,Koh Tao Coral Grand Resort,99.840396,10.09561,199
+377,dive_center,Warm Water Divers Co. Ltd.,98.297895,7.930972,2116
+378,dive_center,Princess Divers Co. Ltd.,99.10135,8.119181,205
+343,dive_center,DUBROVNIK DIVING,18.207804,42.62276,187
+385,dive_center,"Dive Conserve Part.,Ltd.",101.252379,13.201746,209
+393,dive_center,"M.I.M.Systems Co.,Ltd.",100.64218,13.889924,211
+395,dive_center,CBM Produkter AB,19.011953,59.704546,5169
+399,dive_center,Carp Corp (Palau Diving Center),134.488947,7.337565,217
+400,dive_center,DIVERS SUPPLY CAYMAN,-81.381699,19.333867,1946
+401,dive_center,Fish N' Fins,134.488947,7.337565,217
+402,dive_center,MAKIN' WAVES,-64.782102,32.292604,6030
+406,dive_center,DIVEWINNS,6.00368,49.566561,223
+408,dive_center,AQUATIS DIVING CENTER,-13.492963,28.998114,2701
+383,dive_center,"Scool Divers Co.,Ltd.",99.10135,8.119181,205
+432,dive_center,NEMO-33 Dive Shop,4.317986,50.795795,249
+440,dive_center,Diving World,-83.516667,22.883333,257
+449,dive_center,Manta Divers,-85.354965,10.495797,265
+426,dive_center,GLOBEMARINE,4.304392,50.80123,243
+458,dive_center,TIMANFAYA SUB,-13.59522,28.95066,2701
+459,dive_center,BUCEO CANARIAS,-15.422916,28.115745,273
+466,dive_center,"HAZELL'S WATER WORLD, INC",-59.612176,13.097588,279
+468,dive_center,DIVE ART,-17.110439,28.091258,281
+475,dive_center,Ocean Runner Venture Sdn Bhd,101.713087,3.144167,31
+476,dive_center,SCUBA STORE & MORE,-68.904179,12.128013,6012
+457,dive_center,BUCEO SUR,-15.397176,27.860463,271
+485,dive_center,Marine Monkees,101.741542,3.081357,34
+487,dive_center,Pulau Sipadan Resort & Tours Sdn Bhd,118.531842,4.436335,295
+492,dive_center,DECOSTOP,128.8889,36.4919,297
+493,dive_center,BLUECOOL,128.8889,36.4919,297
+494,dive_center,BEST DIVE CENTER,126.99794,37.564091,6168
+501,dive_center,Turismu Curu SA,-84.937955,9.865451,302
+502,dive_center,Central American Outfitters SA,-85.772652,10.46031,303
+484,dive_center,Discover Scuba,101.661524,3.207559,3427
+529,dive_center,THE SCUBA SHOP,-63.094622,18.037315,322
+531,dive_center,Long Adventure Outdoor Sport,101.436062,3.007069,324
+533,dive_center,Scuba Junkie Sdn Bhd,118.531842,4.436335,295
+537,dive_center,GALATHEA Buvarbolt,19.056307,47.506675,328
+538,dive_center,POLIPSO Buvarbolt,18.173581,46.072025,329
+539,dive_center,MOLA MOLA Diving school,18.96304,46.530473,330
+543,dive_center,STARFISH DIVING CENTER,13.605258,45.149946,333
+546,dive_center,Mihuric d.o.o.,14.693388,45.179004,185
+547,dive_center,SUBAQUATIC DIVING CENTER,13.520205,45.433069,183
+522,dive_center,BUCEO NAVARRA,-1.631887,42.804947,317
+550,dive_center,Divine Diving. Yoga & Dive Center,39.202641,-6.165917,2775
+555,dive_center,BUCEO SUR,-15.397207,27.860473,271
+556,dive_center,SCUBA 0.76,1.854141,42.350371,340
+559,dive_center,APOLLO DIVING CENTER,29.644289,36.19762,343
+563,dive_center,T.O. Cesar,14.469141,44.531518,346
+564,dive_center,Di-Nautika d.o.o.,16.451221,43.505609,347
+565,dive_center,Diving Center Croatia Divers,16.718498,42.960375,184
+566,dive_center,Apnea - Arbanas d.o.o.,15.977831,45.817928,348
+581,dive_center,EURO - DIVERS,14.631596,45.020739,358
+572,dive_center,Maremark Diving Centre,24.755553,59.418064,6365
+598,dive_center,ROCKSTEADY,118.738362,9.834949,375
+603,dive_center,COCO BEACH RESORT,120.98422,14.599512,379
+606,dive_center,Mares Reef Seekers Cebu,123.885437,10.315699,374
+585,dive_center,Big Blue Divers,55.426057,-4.614977,2083
+589,dive_center,Nemo Divers Diving Center,13.572865,45.51507,366
+601,dive_center,CRESTAMAR,121.00914,14.563865,378
+607,dive_center,Dawn Dives Academy,-13.827327,28.863386,381
+611,dive_center,Buceo Mistral,-1.667741,42.833373,384
+597,dive_center,Sea Explorer Cebu,123.90397,10.320627,374
+643,dive_center,FROGSBORN DIVING CENTRE,-2.989922,53.178775,1570
+642,dive_center,DISCOVER DIVING,-4.738093,54.076513,406
+682,dive_center,KL - Sub d.o.o.,13.953591,44.828846,437
+683,dive_center,Marine Sport Diving Center,14.251126,45.239472,188
+684,dive_center,Mihurić d.o.o.,14.693388,45.179004,185
+685,dive_center,Nemo Adria d.o.o.,15.781486,45.735934,438
+686,dive_center,Poliklinika Oxy,13.835646,44.861306,439
+687,dive_center,Turizam Manta d.o.o.,16.44963,43.511277,347
+688,dive_center,Zadar Sub,15.251696,44.119523,440
+681,dive_center,AQUA SUB d.o.o,14.393896,45.357016,436
+690,dive_center,Diving Center Resnik,16.331663,43.551813,6377
+691,dive_center,Diving Center Big Blue,16.623254,43.281929,6198
+692,dive_center,KPA 3. Maj,14.389004,45.336615,436
+697,dive_center,Dive Stock,24.823131,59.464652,350
+702,dive_center,Bougainville Diving Biograd,15.459413,43.924182,450
+708,dive_center,Kron Diving XR,14.705343,44.792276,1909
+709,dive_center,Dragor Lux d.o.o.,15.965019,45.795705,6199
+714,dive_center,Rubicon Diving,-13.815647,28.859426,381
+715,dive_center,Lanzarote Non Stop Divers,-13.812237,28.862239,381
+716,dive_center,Sa Caleta,-16.723713,28.055529,316
+717,dive_center,La Palma Diving Center,-17.840616,28.479676,456
+718,dive_center,Centro de Buceo El Hierro,-17.981909,27.640998,457
+689,dive_center,Diving Center Viking,16.44323,43.172591,441
+738,dive_center,RAMASSAMY STEPHANE,9.012893,42.039604,49
+728,dive_center,Mediterraneo,7.420816,43.737411,463
+767,dive_center,Dragor Lux,15.965019,45.795705,6199
+794,dive_center,Diving Center No Limit Diver,15.419348,43.963387,503
+803,dive_center,Medena Diving Center - Trogir,16.228698,43.518966,509
+792,dive_center,DIVING CENTER TRAMONTO,15.647285,43.799775,501
+805,dive_center,ANEMONE DIVING CENTER PALAMÓS,3.129816,41.850507,510
+808,dive_center,Pura Vida Lanzarote Diving,-13.798443,28.956837,381
+890,dive_center,"ESPINO INGENIEROS, SL",-15.45978,28.08997,273
+872,dive_center,CIR - CENTRE DE INMERSIO ROSES,3.185054,42.259422,365
+873,dive_center,SCUBA ALEGRE,3.112294,42.153054,554
+874,dive_center,Lassdive,3.193329,42.010456,3383
+875,dive_center,Snorkel,3.188155,41.893376,555
+876,dive_center,Ictineo,3.05696,41.806088,556
+882,dive_center,SCUBA BAHIA,2.837766,39.472634,560
+887,dive_center,ANEMONE DIVING CENTER,3.129816,41.850507,510
+886,dive_center,AIR EQUIPO,-16.555616,28.081523,562
+894,dive_center,Subkro,1.246391,41.105106,565
+905,dive_center,RELLOTGERIA ALABART,2.126554,41.371927,3934
+915,dive_center,Siam Diving Enterprises Asia Pacific Co Ltd,99.822507,10.081529,199
+916,dive_center,Scuba Quest Dive Center,98.280047,7.949738,2116
+893,dive_center,SCUBAFIX,3.198896,42.054392,220
+926,dive_center,Mojo Divers,99.829721,10.099823,199
+927,dive_center,Koh Tao Scuba Club,99.829721,10.099823,199
+929,dive_center,Odd Diving,100.958384,12.675777,4223
+939,dive_center,I.R.T.D.A. d.o.o.,14.447786,45.078789,589
+943,dive_center,Indepth Scuba,149.058791,-35.241513,592
+944,dive_center,Straightline Ski & Scuba,149.170789,-35.325776,6129
+925,dive_center,Crystal Dive,99.825095,10.085781,199
+1015,dive_center,MUNSTER DIVE CENTRE,-8.489221,51.887471,646
+1016,dive_center,Cork Dive Centre,-8.485829,51.871768,646
+1017,dive_center,Di-Nautika d.o.o.,15.942159,45.807032,6199
+1018,dive_center,DIVING FRONTIERS,115.809791,-31.862077,13
+1019,dive_center,Perth Scuba,115.908509,-32.060042,707
+1020,dive_center,Adreno Perth,115.793156,-32.06322,707
+1027,dive_center,Prestige Dive School,28.221684,-26.187464,371
+1028,dive_center,Twin Palms Dive Emporium,28.15796,-26.14664,371
+1038,dive_center,Geko Divers,28.329355,-25.789627,353
+1039,dive_center,OceanComocean,28.340351,-25.838164,353
+1054,dive_center,Dive Point - Rannalhi,73.358087,3.90334,5977
+1055,dive_center,Dive Point - Meedhupparu,72.979296,5.456001,3175
+1056,dive_center,Dive Point - Vadoo,73.457245,4.124044,669
+1057,dive_center,Dive Point - Kuda Rah,72.909856,3.574652,668
+1058,dive_center,Dive Point - Hudhuran Fushi,73.61844,4.348893,1651
+1059,dive_center,Dive Point - Guraidhoo,73.466669,3.899296,2641
+1060,dive_center,Dive Point - Hudhuran Fushi,73.61844,4.348893,1651
+1061,dive_center,Dive Point - Guraidhoo,73.466669,3.899296,2641
+1062,dive_center,Dive Point Operations,73.517185,4.176531,6396
+1100,dive_center,Mevagh Dive Centre,-7.785361,55.176173,693
+1087,dive_center,AMIT International Group,51.388974,35.689198,685
+1135,dive_center,GOO Diving,-16.603319,28.028088,714
+1136,dive_center,BOX FISH,-16.641058,28.011088,316
+1137,dive_center,BLUE MAGMA DIVING,-17.943056,28.643611,716
+1138,dive_center,DEEP BLUE DIVING,-13.855134,28.392081,2994
+1139,dive_center,LA GRACIOSA DIVERS,-13.502787,29.230234,2946
+1124,dive_center,Dive & Fish Australia,115.75745,-32.008358,707
+1146,dive_center,DNS NAUTIKA,18.624766,42.439616,723
+1164,dive_center,Dive Academy,-2.677288,50.952935,4117
+1165,dive_center,Lagoon Safaris,167.240515,-21.038497,741
+1145,dive_center,SEA STORE DOO,18.841097,42.288831,722
+1196,dive_center,KARAPAT DIVE,-15.394156,27.991608,758
+1199,dive_center,Zadar Sub,15.251696,44.119523,440
+1200,dive_center,Pangea Fishing store,16.231668,43.519056,509
+1198,dive_center,Pangea Ribolov D.O.O,15.892936,43.731967,760
+1213,dive_center,CASCO ANTIGUO PORTUGAL,-9.135632,38.706932,769
+1214,dive_center,DIVESPOT,-8.359605,37.101262,770
+1215,dive_center,SPARUS SUB,-9.379195,39.356676,771
+1216,dive_center,EASYDIVERS,-8.266246,37.084979,772
+1217,dive_center,BESTSPOT,-25.659474,37.741199,773
+1218,dive_center,HIDROSPOT,-8.641948,41.105398,774
+1219,dive_center,TWIN PEAKS DIVING CENTRE,-28.336831,38.534833,775
+1220,dive_center,CAVALEIROS DO MAR,-8.820866,41.697439,776
+1221,dive_center,SHAPE OF THE WORLD,-9.291735,38.696145,777
+1222,dive_center,LOJA DO MAR,-9.318462,38.676261,777
+1223,dive_center,AZORES LOW DIVE,-25.783149,37.800614,773
+1224,dive_center,LOJA DO MAR,-16.911832,32.646831,778
+1225,dive_center,LEVADIA,-9.363515,38.696487,4930
+1226,dive_center,NAUTILIFE,-9.232975,38.670707,781
+1227,dive_center,OUTPRO ALFRAGIDE,-9.215945,38.724568,781
+1228,dive_center,OUTPRO ALVALADE,-9.143233,38.756539,769
+1229,dive_center,OCTOPUS PORTUGAL,-27.057317,38.732855,1921
+1230,dive_center,CS DIVING,-8.705714,41.187052,783
+1231,dive_center,PURAVIDA,-8.933304,37.011674,784
+1232,dive_center,SCUBA MADEIRA,-16.921863,32.642593,778
+1234,dive_center,Buddy Dive and Friends,-8.548714,37.135444,786
+1209,dive_center,Tec n’ Rec Diving,11.998523,57.747372,765
+1237,dive_center,AZZURRO AÇORES,-25.582782,37.816264,789
+1238,dive_center,AZZURRO ALMADA,-9.192226,38.628842,802
+1239,dive_center,JUSTDIVE,-9.374795,39.359617,771
+1240,dive_center,OPEN WATERS DIVE,-8.096827,37.0667,790
+1241,dive_center,NAZARÉ WATER FUN,-9.074601,39.586322,791
+1242,dive_center,Scorpio Madeira Diving Center,-16.738207,32.739115,792
+1243,dive_center,SUBNAUTA,-8.533098,37.118698,786
+1244,dive_center,SCUBAZORES DIVERS,-27.230507,38.664909,800
+1245,dive_center,MERO DIVING CENTER,-16.850899,32.638453,794
+1246,dive_center,Madeira Diving Center,-16.824453,32.64695,794
+1247,dive_center,PORTO SANTO SUB,-16.307298,33.063295,795
+1248,dive_center,UDIVING,-7.627132,37.119169,796
+1250,dive_center,MANTAMARIA,-25.141232,36.956804,798
+1251,dive_center,Sao Jorge Dive Center,-28.204353,38.679827,799
+1252,dive_center,DEEP BLUE DIVE CENTER,-27.229397,38.663538,800
+1253,dive_center,WIND CAM,-9.042455,38.660891,801
+1254,dive_center,MANTA DIVING CENTER,-16.832929,32.641137,794
+1255,dive_center,CAPARICA DIVING,-9.131931,38.607204,802
+1256,dive_center,ATLANTIC DIVING ESPOSENDE,-8.783187,41.531261,803
+1257,dive_center,DIVE AZORES,-28.625448,38.531102,804
+1258,dive_center,AZUL DIVING MADEIRA,-16.91877,32.6418,778
+1259,dive_center,SCUBAFISH,-25.660028,37.741985,773
+1260,dive_center,ISLA SUB VRSA,-7.416837,37.195726,805
+1261,dive_center,AÇORDIVING / AZORDIVING,-25.659867,37.740542,773
+1262,dive_center,ESPIRITO AZUL,-25.429874,37.714769,806
+1263,dive_center,CW AZORES,-28.518509,38.529886,807
+1236,dive_center,MEGA DIVE CENTER,-8.629105,41.157944,788
+1266,dive_center,WeDive,-8.66356,37.112783,809
+1267,dive_center,Cabo Verde Diving,-22.911934,16.596415,812
+1268,dive_center,Eco Dive School Cabo Verde,-23.513327,14.93305,811
+1269,dive_center,Atlantic Star Lda,-22.917942,16.589331,812
+1270,dive_center,Scuba Caribe Ilha do Sal,-22.923063,16.595876,812
+1271,dive_center,Scuba Caribe Ilha da Boavista,-22.904737,16.136817,1680
+1272,dive_center,Dive Tribe Cabo Verde,-25.070879,16.830251,813
+1273,dive_center,Blue Eden Santo Antão,-25.074676,17.017836,814
+1275,dive_center,Dive Tribe Sao Tome,6.741171,0.33265,816
+1279,dive_center,Eagle Divers NI,-6.249298,54.765963,819
+1284,dive_center,Tecni Buceo,-15.4623,28.090474,273
+1285,dive_center,"Mares SSI Korea co., ltd.",127.09651,37.363295,6088
+1293,dive_center,Dive Newcastle,151.638753,-33.086369,3136
+1265,dive_center,SUMMERBOARD,-16.738745,32.736437,792
+1301,dive_center,TREK DIVERS LTD,55.832899,-4.347836,3954
+1305,dive_center,SCUBA ZEN,-63.037891,18.113336,1545
+1323,dive_center,DIVING WORLD SAN MARINO,12.483742,43.971509,850
+1326,dive_center,Dive Zone Ltd,25.956845,43.849897,853
+1300,dive_center,Tieti Diving Eurl,165.320235,-20.929488,832
+1486,dive_center,FISHING & SPORT,9.526328,41.097417,595
+1500,dive_center,Rødme Dyk,10.488682,55.108269,967
+1504,dive_center,Action Sport Am Grossen Stern,13.356232,52.521173,6167
+1505,dive_center,Aqua-Nautic Wasserwelt,13.313225,52.503559,6167
+1506,dive_center,Tiefenrausch,13.331372,52.491581,6167
+1507,dive_center,Tauchzentrale Brandenburg,13.431608,52.496685,970
+1508,dive_center,Atlantis Wassersport u. Mee(h)r Berlin,13.342562,52.450732,6167
+1514,dive_center,7 Oceans,9.966499,53.582515,6205
+1515,dive_center,Taucher Zentrum Planet Scuba,10.019064,53.56774,6205
+1517,dive_center,Tauchen-Hamburg,10.003803,53.591938,6205
+1498,dive_center,Sportsbutikken.dk,12.363179,55.663875,964
+1601,dive_center,MAREdiving,16.563873,49.163411,1051
+1603,dive_center,Potapeni Decin,14.240957,50.781469,1681
+1604,dive_center,Outdoorovy obchod,15.552521,49.615634,1054
+1600,dive_center,DIRECT OCEAN,16.601508,49.201374,1051
+1652,dive_center,Tauchshop regler-service.at,16.413286,48.285343,1086
+1653,dive_center,SeaStar Tauchsport,16.474931,48.265272,1086
+1654,dive_center,CCR Tecdive,16.352793,48.139891,1149
+1660,dive_center,Sharktime,14.241506,48.432273,6139
+1661,dive_center,diverspassion.at,14.045624,48.140651,1091
+1662,dive_center,Sauwald Aqua Team,13.79786,48.401427,1092
+1664,dive_center,Under Pressure,13.572299,47.909318,1094
+1666,dive_center,Sport Spezial,11.404102,47.269212,6324
+1651,dive_center,Tauchzentrum Wien,16.377851,48.277339,6379
+1729,dive_center,Atlantis Qualidive,13.562159,48.15377,1151
+1728,dive_center,Tauchsport Zeus Faber,14.465705,48.143582,1150
+1754,dive_center,Kuopion Sukelluskeskus,27.696002,62.893428,1171
+1755,dive_center,Tampereen Sukelluskeskus,23.805036,61.496299,1172
+1756,dive_center,Divextreme Dc,21.729087,61.471984,1173
+1757,dive_center,Fun Dive OY,22.266713,60.453714,1174
+1758,dive_center,A-Diving,25.68647,61.000455,1175
+1759,dive_center,EW Dive,25.652699,60.981537,1175
+1760,dive_center,Oulun Sukelluskeskus,25.470009,65.023538,1176
+1761,dive_center,Spirado OY,24.406115,60.126909,1177
+1762,dive_center,Dive Gear Service Finland,23.802427,61.143923,2143
+1763,dive_center,Sukeltamo,23.699159,61.506157,1172
+1764,dive_center,Varuste.net,24.861245,60.236573,1179
+1765,dive_center,Ålesunds Dykkersenter AS,6.153613,62.473272,1180
+1766,dive_center,Alf Lea as | dykk.no,5.262739,59.413108,1181
+1767,dive_center,Dykkerhuset,10.649653,59.431599,1182
+1768,dive_center,Nautic Service,10.934701,59.220537,1183
+1769,dive_center,Bergen Froskemanncenter,5.329947,60.387519,1184
+1770,dive_center,Stockholm Divers,18.00633,59.330815,1185
+1771,dive_center,Ostens Dykservice,18.281034,57.622596,1186
+1772,dive_center,Tec 'n Rec Diving,11.917258,57.701908,765
+1773,dive_center,Norrlands Dykservice,21.182045,64.669459,1187
+1774,dive_center,H2O Diving Lund,13.19179,55.71082,1188
+1775,dive_center,Råå Aqua Resort,12.746893,55.992246,1189
+1776,dive_center,Megadyk,12.848158,55.874208,1190
+1777,dive_center,Gasbolaget i Dalarna,15.775145,60.557543,1191
+1778,dive_center,Grahams Dykteknik,16.524043,59.368229,1192
+1779,dive_center,Halmstad Dykservice,12.802797,56.661209,1193
+1753,dive_center,Sukellustiimi OY,26.72989,60.851187,1170
+1781,dive_center,Varuste.net,24.861245,60.236573,1179
+1782,dive_center,EW Dive,25.606208,60.980357,1175
+1784,dive_center,Havsport Trondheim,10.403042,63.43144,1195
+1785,dive_center,Ålesunds Dykkersenter AS,6.153387,62.473155,1180
+1786,dive_center,Bergen Froskemanncenter,5.329894,60.387608,1184
+1787,dive_center,Dykkersentret AS,18.975498,69.669098,1196
+1788,dive_center,Jaeren Dykkesenter,5.73496,58.972013,1197
+1789,dive_center,Alf Lea as | dykk.no,5.262739,59.413108,1181
+1790,dive_center,Dykkerhuset Moss,10.700076,59.406088,1182
+1791,dive_center,Prodykk Oslo,10.595586,59.779035,2303
+1792,dive_center,Norway Diving,10.260626,63.283834,2947
+1793,dive_center,Visit Plura,14.731533,66.282171,1200
+1794,dive_center,Team Divers,17.825908,59.41922,1201
+1795,dive_center,Ystads Dyk & Marin,13.831485,55.431564,1202
+1796,dive_center,Octopus,16.349588,56.668068,1203
+1797,dive_center,Flying Divers,11.907034,57.690203,765
+1798,dive_center,Skånsk Dykservice,13.067406,55.673138,1204
+1799,dive_center,Dykhuset Scubahouse Stockholm AB,18.048293,59.331557,1185
+1800,dive_center,Lycksele Sport & Dyk,18.655109,64.587277,6227
+1801,dive_center,West Point Divers,11.265854,58.673416,1206
+1802,dive_center,Atlantis Dykspecialisten,14.163744,57.781639,1207
+1803,dive_center,Växjö Dyksport,14.795715,56.879042,1208
+1805,dive_center,Smögen Dyk & Upplevelse,11.224676,58.353609,1210
+1806,dive_center,Scuba Divers Göteborg,12.001237,57.747716,765
+1808,dive_center,Eco Dive Stockholm AB,18.00633,59.330815,1185
+1809,dive_center,Stockholms Dykcenter,18.057683,59.336573,1185
+1810,dive_center,W-Dyk,14.224634,60.504941,1211
+1811,dive_center,Ostens Dykservice,18.734115,57.575903,6177
+1780,dive_center,Sirius dyk,19.970895,60.042409,5517
+1814,dive_center,Tec n' Rec Diving,11.998523,57.747372,765
+1815,dive_center,Fun Dive,22.266713,60.453714,1174
+1816,dive_center,Dykkerhuset Moss,10.660398,59.429565,1182
+1827,dive_center,Cebu Ernbri Import Inc. / Aquaventure Whitetip Dive Supply,121.015411,14.563974,378
+1840,dive_center,Looe Key Dive Center,-81.406886,24.661788,2368
+1813,dive_center,Oxygene Diving,11.906824,57.680446,765
+1887,dive_center,BEAVER DAM DIVE SHOP,-93.835097,36.408638,4274
+1888,dive_center,BEAVER DAM DIVE SHOP & RESORT,-93.835097,36.408638,4274
+1890,dive_center,DIVING SERVICES CO,-94.260261,35.599796,2875
+1885,dive_center,TEST THE WATERS,-147.551824,64.799534,2302
+1968,dive_center,Florida Springs Scuba,-82.486592,29.387829,4224
+1962,dive_center,DIVER'S PARADISE,-80.155658,25.724308,1838
+1994,dive_center,UNDERWATER UNLIMITED,-80.287906,25.73413,1323
+1995,dive_center,Dive Haven,-84.496324,34.268416,1353
+1999,dive_center,SAM'S TOURS,134.488947,7.337565,217
+2015,dive_center,ISLAND DIVERS HAWAII,-158.061864,21.486874,4175
+2016,dive_center,ISLAND DIVERS HAWAII,-158.061253,21.494045,4175
+2028,dive_center,INLAND SCUBA INC,-112.122957,43.418112,4814
+2003,dive_center,ALOHA SCUBA DIVING COMPANY,-158.051127,21.497399,4175
+2053,dive_center,BLUE MARBLE DIVERS,-77.726244,39.612069,5479
+2043,dive_center,DIVE TOLEDO SCUBA CENTER,-93.573885,31.224682,4754
+2071,dive_center,THE DIVE SHOP,-83.753735,43.002514,1402
+2154,dive_center,DAKOTA SCUBA,-98.046199,43.649838,1484
+2190,dive_center,THE DIVE SHOP,-77.553372,37.63868,1516
+2171,dive_center,OUTSIDE THE ASYLUM SCUBA & SWIM,-95.752159,29.751015,5322
+2217,dive_center,Macaronesian Divers & Store,-16.653974,28.007232,316
+2219,dive_center,Scuba Bar,23.316525,42.661726,6182
+2216,dive_center,Macaronesian Divers & Store,-16.323731,28.401857,725
+2238,dive_center,Lorenc Tauchsport,16.339669,48.153644,6379
+2239,dive_center,Lorenc Tauchsport,16.336422,48.205673,6379
+2241,dive_center,SCUBA DIVERSIONS,-81.327835,28.697575,1346
+2242,dive_center,Buceo PANDORA,-15.398686,27.859621,271
+2245,dive_center,POP d.o.o.,13.871656,44.927956,1549
+2247,dive_center,SPORT & CAMPING SHOP,13.601804,45.225895,1550
+2249,dive_center,SCUBA TRIBE DIVE CENTER,28.605072,43.864486,1551
+2250,dive_center,SCUBA TRIBE,28.654063,44.200113,1552
+2253,dive_center,WeDive,-8.66356,37.112783,809
+2256,dive_center,Odyssey Diving,166.439585,-22.278459,465
+2257,dive_center,Enjoy Diving,166.441772,-22.284419,465
+2237,dive_center,UMEX Tauchsporthandel,16.396888,48.201212,1086
+2269,dive_center,BORA OCEAN ADVENTURES,-151.74149,-16.500413,4214
+2271,dive_center,T'as la peche,166.469631,-22.24495,465
+2272,dive_center,Sea Sport Sarl,166.448657,-22.279377,465
+2273,dive_center,Kuare,166.448089,-22.273491,465
+2274,dive_center,Dive Equipment Seychelles,55.480396,-4.682669,3843
+2277,dive_center,DIVERSPASSION.AT,14.045626,48.140649,1091
+2288,dive_center,Frogsborn Diving Services Limited,-2.989911,53.178803,1570
+2265,dive_center,Northland Dive,174.283982,-35.323942,5331
+2303,dive_center,VISTA MAR LTD,27.462636,42.504793,1582
+2301,dive_center,re:DIVE Pte. Ltd.,103.862252,1.308404,1580
+2326,dive_center,Duikcentrum van de Ven,-68.872689,12.092048,3457
+2327,dive_center,Ocean Encounters,-68.899292,12.08896,6012
+2328,dive_center,Goby Divers,-68.966198,12.118429,286
+2329,dive_center,PortoMari Sports,-69.062748,12.216525,1595
+2302,dive_center,SCUBA QUEST D.O.O.,19.089904,42.091211,1581
+2332,dive_center,The Carib Inn,-68.276313,12.14981,1579
+2336,dive_center,Aquanots Dive Jakarta,106.791752,-6.211078,1598
+2339,dive_center,SCUBA TRIBE,28.605072,43.864486,1551
+257,dive_center,Belinda Sport,15.655622,46.56028,124
+315,dive_center,Camel Dive Club & Hotel,34.384954,27.979091,588
+337,dive_center,Diving Center Subaquatic,13.525721,45.437206,183
+342,dive_center,DIVING CENTER SHARK,13.923385,44.827703,121
+344,dive_center,MARINE SPORT DIVING CENTER,14.251126,45.239472,188
+382,dive_center,"Warm Water Divers Co.,Ltd.",98.297895,7.930972,2116
+2331,dive_center,Xprodiver Bonaire,-68.276888,12.151651,1579
+1026,dive_center,Ecstacea Dive School,28.34799,-26.17048,654
+1099,dive_center,Emerald Diving Ireland,-6.305938,53.370587,645
+1233,dive_center,FOCUSNATURA,-16.795077,32.682965,785
+1235,dive_center,ANTHIA DIVING CENTER,-9.115404,38.43755,787
+1249,dive_center,BRIZACORES,-28.251438,38.394097,797
+1264,dive_center,COIMBRA DIVE CLUB,-8.437991,40.254982,808
+1327,dive_center,Sport Depot SA,23.380789,42.624889,6182
+1516,dive_center,Atlantis Wassersport u. Mee(h)r Hamburg,10.097665,53.619478,5057
+1650,dive_center,Dive Company,16.3708,48.229019,6379
+1730,dive_center,FIFO Diving,-15.424745,28.123238,273
+1750,dive_center,ARK Savunma Araçları Denizcilik ve Tic.Ltd.Şti.,28.997317,41.063246,1167
+1783,dive_center,DiveTime Oy,25.721461,62.203728,1194
+1807,dive_center,H2O Diving Lund AB,13.19179,55.71082,1188
+1812,dive_center,Dyk-Leif AB,11.278698,58.552255,1213
+1014,dive_center,DISCOVER SCUBA,-6.267494,53.344104,645
+1148,dive_center,Diving Canarias,-16.322474,28.40352,725
+1979,dive_center,LOOE KEY DIVE CENTER,-81.406886,24.661788,2368
+1013,dive_center,AQUAVENTURES LTD,-9.373343,51.483511,6184
+1503,dive_center,Atlantis Wassersport u. Mee(h)r Berlin,13.48308,52.508175,970
+1649,dive_center,UMEX Tauchsportartikel,16.396888,48.201212,1086
+1663,dive_center,Adventure Diving,13.788281,47.920798,1093
+2197,dive_center,LIGHTHOUSE DIVING CENTER,-122.275798,47.873647,1523
+2299,dive_center,Wanderlust Dive Center,-68.266499,12.146606,1579
+2330,dive_center,Fun Diving Curacao,-68.877118,12.074676,3457
+2333,dive_center,Div'Ocean Bonaire,-68.276313,12.14981,1579

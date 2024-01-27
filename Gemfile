@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-ruby "3.1.3"
+ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.1"
+gem "rails", "~> 7.1.3"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -25,6 +25,12 @@ gem "stimulus-rails"
 
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
 gem "tailwindcss-rails"
+
+# ViewComponent [https://viewcomponent.org/]
+gem "view_component"
+
+# Draper for decorators patterns [https://github.com/drapergem/draper]
+gem "draper"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -62,6 +68,13 @@ gem 'figaro'
 # Complete geocoding solution for Ruby [https://github.com/alexreisner/geocoder]
 gem 'geocoder'
 
+# Solution for managing countries, timezone and currencies [https://github.com/countries/countries]
+gem 'countries'
+gem 'timezone'
+gem 'money'
+
+# Friendly ID for slugs [https://github.com/norman/friendly_id]
+gem 'friendly_id'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -71,14 +84,14 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem 'pry', '~> 0.14.2'
+  gem 'bullet'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-
-  gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
 
 group :test do

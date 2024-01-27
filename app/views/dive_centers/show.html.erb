@@ -19,24 +19,22 @@
           </span>
         <% end %>
       </li>
-      <% unless @dive_center.country_code.blank? %>
+      <% unless @dive_center.city.blank? %>
         <li class="inline-flex items-center">
           <span class="inline-flex items-center text-sm font-medium text-gray-700">
            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
-            <%= @dive_center.country_code %>
+            <%= @dive_center.city.country.name %>
           </span>
         </li>
-      <% end %>
-      <% unless @dive_center.city.blank? %>
         <li>
           <div class="flex items-center">
             <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
             <span class="ml-1 text-sm font-medium text-gray-700 md:ml-2">
-              <%= @dive_center.city.titleize %>
+              <%= @dive_center.city.name.titleize %>
             </span>
           </div>
         </li>
@@ -47,11 +45,11 @@
     <%= @dive_center.name.titleize %>
   </h1>
   
-  <div class="bg-sky-100 mx-auto rounded-lg shadow mt-10 p-5">
+  <div class="bg-sky-50 mx-auto rounded-lg shadow mt-10 p-5">
     <ul class="flex flex-wrap items-center justify-center text-gray-900 text-xl list-none text-center">
       <li class="font-semibold m-5">
-        <%= @dive_center.country_code %> 
-        <%= "- #{@dive_center.city}" unless @dive_center.city.blank? %> <br>
+        <%= @dive_center.city.country.name %> 
+        <%= "- #{@dive_center.city.name}" unless @dive_center.city.blank? %> <br>
         <span class="text-sm font-normal">Location</span>
       </li>
       <li class="font-semibold m-5">
@@ -67,35 +65,41 @@
     </ul>
   </div>
   <div class="grid grid-cols-2 gap-4 mt-10">
-    <%= js_map [{
-        latitude: @dive_center.latitude, 
-        longitude: @dive_center.longitude,
-        label: "#{@dive_center.name} - #{@dive_center.city} - #{@dive_center.country_code}",
-      }], 
-      style: "mapbox://styles/anthonyamar/cloovcybq00h501pl5uho0vp1", 
-      zoom: 12, 
-      controls: true 
-    %>
+    <div data-controller="map" 
+      data-map-locations="<%= @locations.to_json %>"
+      data-map-zoom-level="15"
+      data-map-destination-marker-url="<%= image_url('map_markers/destination.png') %>"
+      data-map-dive-center-marker-url="<%= image_url('map_markers/dive_center.png') %>"
+      data-map-dive-site-marker-url="<%= image_url('map_markers/dive_site.png') %>"
+      data-map-mapbox-token="<%= ENV["MAPBOX_ACCESS_TOKEN"] %>"
+    >
+      <div id="map" class="w-full h-full min-h-[65vh]"></div>
+    </div>
     <div class="w-full  p-4 bg-white rounded-lg shadow sm:p-8">
       <div class="flex items-center justify-between mb-4">
-        <h5 class="text-xl font-bold leading-none text-gray-900">Closest dive centers</h5>
+        <h5 class="text-xl font-bold leading-none text-gray-900">Closest sites</h5>
       </div>
       <div class="flow-root">
         <ul role="list" class="divide-y divide-gray-200">
-          <% @closest_sites.each do |site| %>
+          <% @closest_dive_sites.each do |site| %>
             <li class="p-2 sm:p-4 hover:bg-sky-100">
               <div class="flex items-center">
                 <div class="flex-1 min-w-0 ms-4">
-                  <%= link_to site.name.titleize, site_path(site), class: "text-sm font-medium text-sky-600 underline truncate" %>
+                  <%= link_to site.name.titleize, dive_site_path(site), class: "text-sm font-medium text-sky-600 underline truncate" %>
                   <p class="text-sm text-gray-500 truncate">
                     <%= site.bow.titleize %>
                   </p>
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900">
-                  <%= @dive_center.distance_to(site.to_coordinates, :km).round(0) %>km
+                  <%= @dive_center.distance_to(site.to_coordinates, :km).round(1) %>km
                 </div>
               </div>
             </li>
+          <% end %>
+          <% if @closest_dive_sites.blank? %>
+            <p class="text-sm text-gray-500">
+              No other dive sites listed around, yet.
+            </p>
           <% end %>
         </ul>
       </div>
