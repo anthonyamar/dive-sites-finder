@@ -2,7 +2,7 @@
 <div class="grid grid-cols-3 gap-5">
   <% more_than_six = @geo_group.countries_count > 6 %>
   <% cards = more_than_six ? 5 : 6 %>
-  <% @geo_group.countries.order(:name).first(cards).each do |country| %>
+  <% @geo_group.countries.order(regions_count: :desc).first(cards).each do |country| %>
     <%= render Ui::Cards::ImgCardComponent.new(
       link: country_path(country),
       image: "illustrations/countries/placeholder.jpg",
