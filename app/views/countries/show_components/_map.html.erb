@@ -23,7 +23,7 @@
             <%= link_to region_path(country: @country.slug, region: region.slug) do %>
               <div class="mt-2 w-full h-full p-2 bg-white rounded-lg shadow sm:p-6 hover:shadow-lg">
                 <p class="link text-pretty"><%= region.name %></p>
-                <p>
+                <p class="text-balance">
                   <%= t("count.x_cities", count: region.cities_count) %>,
                   <%= t("count.x_dive_sites", count: region.cities.sum(&:dive_sites_count)) %>,
                   <%= t("count.x_dive_centers", count: region.cities.sum(&:dive_centers_count)) %>
