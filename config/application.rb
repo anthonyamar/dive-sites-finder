@@ -23,5 +23,8 @@ module DiveSitesFinder
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    
+    # Handle dynamicaly the errors (exceptions) raised
+    config.exceptions_app = self.routes
   end
 end
