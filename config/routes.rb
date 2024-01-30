@@ -26,7 +26,6 @@ Rails.application.routes.draw do
   get ':country/:region', to: 'regions#show', as: 'region'
   get ':country/:region/:city', to: 'cities#show', as: 'city'
 
-  resources :cities, only: [:show]
   resources :destinations, only: [:index] do
     get ':country', to: 'destinations#country', on: :collection, as: 'country'
     get ':country/:region', to: 'destinations#region', on: :collection, as: 'region'
