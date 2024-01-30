@@ -5,7 +5,7 @@ class GeoGroupsController < ApplicationController
   end
   
   def show
-    @geo_group = GeoGroup.friendly.find(params[:id])
+    @geo_group = GeoGroup.friendly.find(params[:id]).decorate
   end
   
 end

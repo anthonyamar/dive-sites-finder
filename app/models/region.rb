@@ -6,6 +6,8 @@ class Region < ApplicationRecord
   
   # ============= relations ============
   
+  has_one_attached :main_image
+  
   belongs_to :country, counter_cache: true
   has_many :cities
   has_many :dive_centers

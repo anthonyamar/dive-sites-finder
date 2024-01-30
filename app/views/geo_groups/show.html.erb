@@ -1,6 +1,6 @@
 <%= content_for :meta_title, "Where to go scuba diving in #{@geo_group.name}" %>
 <%= content_for :meta_description, @geo_group.description %>
-<%= content_for :meta_image, image_path("illustrations/geo_groups/placeholder.jpg") %>
+<%= content_for :meta_image, @geo_group.main_image_path %>
 <% components_path = "geo_groups/show_components/" %>
 
 <div class="container px-4 bg-white mt-24 mb-12 sm:mt-36 sm:mb-20 mx-auto">
