@@ -1,4 +1,8 @@
+<%= content_for :meta_title, "Where to go scuba diving in #{@city.name} - #{@city.country.name}" %>
+<%= content_for :meta_description, @city.description.present? ? @city.description : @city.country.meta_description %>
+<%= content_for :meta_image, image_path("illustrations/cities/placeholder.jpg") %>
 <% region_components = "cities/show_components/" %>
+
 <div class="mt-24 mb-12 sm:mt-36 sm:mb-20">
   <%= render region_components + "heading" %>
   <%= render region_components + "description" %>

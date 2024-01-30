@@ -1,3 +1,6 @@
+<%= content_for :meta_title, "Start exploring the world" %>
+<%= content_for :meta_description, "Choose your next scuba diving destinations by choosing our guides for #{@geo_groups.order(countries_count: :desc).pluck(:name).to_sentence}" %>
+
 <div class="container px-4 bg-white mt-24 mb-12 sm:mt-36 sm:mb-20 mx-auto">
   <h1 class="heading-1 mb-10">🌍 Start <span class="text-main-sky">exploring</span> the world</h1>
   
