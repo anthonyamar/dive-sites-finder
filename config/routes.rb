@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "static_pages#home"
+  get '/about', to: 'static_pages#about'
   
   # PWA service_worker
   get "/service-worker.js" => "service_worker#service_worker"
@@ -32,6 +33,6 @@ Rails.application.routes.draw do
     get ':country/:region/:city', to: 'destinations#city', on: :collection, as: 'city'
   end
   
-  get '/about', to: 'static_pages#about'
+  
   
 end
