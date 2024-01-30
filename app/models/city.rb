@@ -11,6 +11,8 @@ class City < ApplicationRecord
   
   # ============= relations ============
   
+  has_one_attached :main_image
+  
   belongs_to :region, counter_cache: true
   has_many :dive_centers
   has_many :dive_sites

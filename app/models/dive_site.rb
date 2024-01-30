@@ -7,6 +7,8 @@ class DiveSite < ApplicationRecord
   
   # ============= relations ==============
   
+  has_many_attached :images
+  
   belongs_to :destination, counter_cache: true, optional: true
   belongs_to :geo_group, counter_cache: true, optional: true
   belongs_to :country, counter_cache: true, optional: true

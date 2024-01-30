@@ -79,6 +79,9 @@ gem 'friendly_id'
 # sitemap_generator [https://github.com/kjvarga/sitemap_generator]
 gem 'sitemap_generator'
 
+# generate variants images [https://github.com/janko/image_processing]
+gem "image_processing", "~> 1.0"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]

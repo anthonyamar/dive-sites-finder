@@ -7,6 +7,8 @@ class GeoGroup < ApplicationRecord
 
   # ============= relations ============
   
+  has_one_attached :main_image
+  
   has_many :geo_groups_countries, dependent: :destroy
   has_many :countries, through: :geo_groups_countries
   

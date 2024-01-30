@@ -1,7 +1,7 @@
 class CitiesController < ApplicationController
   
   def show
-    @city = City.friendly.find(params[:city])
+    @city = City.friendly.find(params[:city]).decorate
     @dive_centers = @city.dive_centers
     @dive_sites = @city.dive_sites
     

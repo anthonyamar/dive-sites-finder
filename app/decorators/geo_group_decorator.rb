@@ -9,5 +9,10 @@ class GeoGroupDecorator < Draper::Decorator
     countries_and_more = countries + " and #{geo_group.countries_count - count} more"
     geo_group.countries.size > count ? countries_and_more : countries
   end
+  
+  def main_image_path
+    placeholder = "illustrations/geo_groups/placeholder.jpg"
+    geo_group.main_image.attached? ? geo_group.main_image : placeholder
+  end
 
 end
