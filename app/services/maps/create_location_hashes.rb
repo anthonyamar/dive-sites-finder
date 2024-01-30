@@ -28,7 +28,7 @@ class Maps::CreateLocationHashes
   private 
   
   def create_html_popup(object)
-    link = "/#{object.model_name.route_key}/#{object.id}"
+    link = create_link_from_object(object)
     name = object.name.titleize
     type = object.model_name.human
     
@@ -55,6 +55,19 @@ class Maps::CreateLocationHashes
     geocoded = Geocoder.search(object.send(boundaries)).first&.data # should either be city, region or country.
     object.update(latitude: geocoded["lat"], longitude: geocoded["lon"]) unless geocoded.nil?
     object
+  end
+  
+  def create_link_from_object(object)
+    case boundaries
+      when :point
+        "/#{object.model_name.route_key}/#{object.slug}"
+      when :country
+        "/countries/#{object.slug}"
+      when :region
+        "/#{object.country.slug}/#{object.slug}"
+      when :city
+        "/#{object.country.slug}/#{object.region.slug}/#{object.slug}"
+    end
   end
   
 end
