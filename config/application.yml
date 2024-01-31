@@ -11,3 +11,6 @@
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
 MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoiYW50aG9ueWFtYXIiLCJhIjoiY2xvb3Vhb3I5MDRzbjJpbzZ3aXpiY3JlOCJ9.P7fK9W5NaG4f2GK3OPMNzg"
+algolia_application_id: "G7PUQ8MEEF"
+algolia_search_only_api_key: "a0199c799a8e1b7049e1ae1386643898"
+algolia_admin_api_key: "5de5261f97a48d10130530326d1f6a48"

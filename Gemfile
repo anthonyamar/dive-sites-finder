@@ -82,6 +82,9 @@ gem 'sitemap_generator'
 # generate variants images [https://github.com/janko/image_processing]
 gem "image_processing", "~> 1.0"
 
+# Search using AI [https://algolia.com]
+gem 'algolia'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]

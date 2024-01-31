@@ -81,6 +81,11 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    algolia (2.3.4)
+      faraday (>= 0.15, < 3)
+      faraday-net_http_persistent (>= 0.15, < 3)
+      multi_json (~> 1.0)
+      net-http-persistent
     base64 (0.2.0)
     bigdecimal (3.1.6)
     bindex (0.8.1)
@@ -120,6 +125,13 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
+    faraday (2.9.0)
+      faraday-net_http (>= 2.0, < 3.2)
+    faraday-net_http (3.1.0)
+      net-http
+    faraday-net_http_persistent (2.1.0)
+      faraday (~> 2.5)
+      net-http-persistent (~> 4.0)
     ffi (1.16.3)
     figaro (1.2.0)
       thor (>= 0.14.0, < 2)
@@ -170,7 +182,12 @@ GEM
     money (6.16.0)
       i18n (>= 0.6.4, <= 2)
     msgpack (1.7.2)
+    multi_json (1.15.0)
     mutex_m (0.2.0)
+    net-http (0.4.1)
+      uri
+    net-http-persistent (4.0.2)
+      connection_pool (~> 2.2)
     net-imap (0.4.9.1)
       date
       net-protocol
@@ -304,6 +321,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unaccent (0.4.0)
     uniform_notifier (1.16.0)
+    uri (0.13.0)
     view_component (3.10.0)
       activesupport (>= 5.2.0, < 8.0)
       concurrent-ruby (~> 1.0)
@@ -331,6 +349,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  algolia
   bootsnap
   bullet
   capybara
