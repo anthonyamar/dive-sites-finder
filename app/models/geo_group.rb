@@ -1,5 +1,6 @@
 class GeoGroup < ApplicationRecord
   
+  include AlgoliaSearch
   extend FriendlyId
   friendly_id :name, use: :slugged
   reverse_geocoded_by :latitude, :longitude
@@ -29,5 +30,12 @@ class GeoGroup < ApplicationRecord
 
 
   # ============= methods ===========
+  
+  
+  # ============= algolia ===========
+  
+  algoliasearch do
+    geoloc :latitude, :longitude
+  end
 
 end

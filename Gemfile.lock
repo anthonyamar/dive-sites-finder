@@ -86,6 +86,9 @@ GEM
       faraday-net_http_persistent (>= 0.15, < 3)
       multi_json (~> 1.0)
       net-http-persistent
+    algoliasearch-rails (2.3.1)
+      algolia (< 3.0.0)
+      json (>= 1.5.1)
     base64 (0.2.0)
     bigdecimal (3.1.6)
     bindex (0.8.1)
@@ -159,6 +162,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    json (2.7.1)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -349,7 +353,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  algolia
+  algoliasearch-rails
   bootsnap
   bullet
   capybara
