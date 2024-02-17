@@ -62,3 +62,25 @@
 .page.active {
   @apply z-10 border-sky-500 bg-sky-100 text-sky-600 relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20;
 }
+
+/* ALGOLIA */
+
+.aa-Form {
+  @apply rounded-full px-6 py-4 text-lg font-semibold font-serif text-dark-blue !important;
+}
+
+.aa-Form:focus-within {
+  @apply border border-main-sky shadow-inner shadow-sky-100 !important;
+}
+
+.aa-Label svg {
+  @apply text-orange-accent !important;
+}
+
+.aa-Input::placeholder {
+  @apply text-gray-500 font-thin !important;
+}
+
+.aa-Panel {
+  @apply rounded-lg border-0 shadow-xl !important;
+}
