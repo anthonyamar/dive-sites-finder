@@ -69,20 +69,20 @@
   @apply p-0 !important;
 }
 
-.aa-Form {
-  @apply rounded-full px-6 py-4 text-lg font-semibold font-serif text-dark-blue border border-main-sky !important;
+.aa-Form, .aa-DetachedSearchButton {
+  @apply rounded-full p-6 font-semibold font-serif text-dark-blue border border-main-sky !important;
 }
 
 .aa-Form:focus-within {
   @apply border border-main-sky shadow-inner shadow-sky-100 !important;
 }
 
-.aa-Label svg {
+.aa-Label svg, .aa-DetachedSearchButtonIcon svg {
   @apply text-orange-accent !important;
 }
 
-.aa-Input::placeholder {
-  @apply text-gray-500 font-thin !important;
+.aa-Input::placeholder, .aa-DetachedSearchButtonPlaceholder {
+  @apply text-gray-500 font-thin text-md truncate xl:text-base !important;
 }
 
 .aa-Panel {
