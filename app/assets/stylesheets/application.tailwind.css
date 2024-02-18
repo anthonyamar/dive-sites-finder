@@ -62,3 +62,41 @@
 .page.active {
   @apply z-10 border-sky-500 bg-sky-100 text-sky-600 relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20;
 }
+
+/* ALGOLIA */
+
+.aa-PanelLayout {
+  @apply p-0 !important;
+}
+
+.aa-Form, .aa-DetachedSearchButton {
+  @apply rounded-full p-6 font-semibold font-serif text-dark-blue border border-main-sky !important;
+}
+
+.aa-Form:focus-within {
+  @apply border border-main-sky shadow-inner shadow-sky-100 !important;
+}
+
+.aa-Label svg, .aa-DetachedSearchButtonIcon svg {
+  @apply text-orange-accent !important;
+}
+
+.aa-Input::placeholder, .aa-DetachedSearchButtonPlaceholder {
+  @apply text-gray-500 font-thin text-md truncate xl:text-base !important;
+}
+
+.aa-Panel {
+  @apply rounded-lg border-0 shadow-xl !important;
+}
+
+.aa-SourceHeader {
+  @apply px-4 py-2 m-0 text-lg text-main-sky bg-sky-50 !important;
+}
+
+.aa-Item {
+  @apply hover:bg-sky-50 aria-selected:bg-sky-50 !important;
+}
+
+.aa-NoResults {
+  @apply p-4 m-0 text-lg text-main-sky hover:bg-sky-50 !important;
+}

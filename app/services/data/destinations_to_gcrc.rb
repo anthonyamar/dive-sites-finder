@@ -152,14 +152,5 @@ class Data::DestinationsToGcrc
     input.gsub(/ and /, ', ').split(', ').map(&:strip)
   end
   
-  def csv_to_destination(path)
-    destinations = []
-    
-    Dest = Struct.new()
-    
-    CSV.foreach(path, headers: true) do |row|
-      # logique pour créer des objet avec les rows et le struct afin de faire les records
-    end
-  end
   
 end

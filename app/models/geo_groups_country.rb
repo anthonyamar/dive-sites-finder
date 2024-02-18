@@ -14,12 +14,12 @@ class GeoGroupsCountry < ApplicationRecord
   
   def increment_counters
     countries = geo_group.countries_count 
-    geo_group.update(:countries_count, countries + 1)
+    geo_group.update(countries_count: countries + 1)
   end
 
   def decrement_counters
     countries = geo_group.countries_count 
-    geo_group.update(:countries_count, countries - 1)
+    geo_group.update(countries_count: countries - 1)
   end
   
 end

@@ -1,9 +1,11 @@
 class GeoGroup < ApplicationRecord
   
+  include AlgoliaSearch
+  include Rails.application.routes.url_helpers
   extend FriendlyId
   friendly_id :name, use: :slugged
   reverse_geocoded_by :latitude, :longitude
-  enum kind: { water: 'water', continent: 'continent' }
+  enum kind: { ocean: 'ocean', sea: 'sea', continent: 'continent' }
 
   # ============= relations ============
   
@@ -26,8 +28,30 @@ class GeoGroup < ApplicationRecord
 
 
   # ============= scopes ============
-
+  
+  scope :water, -> { where(kind: ["sea", "ocean"]) }
 
   # ============= methods ===========
+  
+  
+  # ============= algolia ===========
+  
+  algoliasearch do
+    attributes :name, :full_path, :l_kind
+    searchableAttributes ['name']
+    
+    # later : add popularity score with 
+    # customRanking ['desc(popularity_score)']
+    
+    geoloc :latitude, :longitude
+  end
+  
+  def full_path
+    geo_group_path(self)
+  end
+  
+  def l_kind
+    I18n.t("models.geo_groups.kinds.#{self.kind}").capitalize
+  end
 
 end
