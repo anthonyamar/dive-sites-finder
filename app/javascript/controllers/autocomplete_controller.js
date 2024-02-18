@@ -18,11 +18,14 @@ export default class extends Controller {
       this.data.get("algoliaSearchKey")
     );
     
-    console.log(searchClient);
+    if (this.autocompleteInstance) {
+      return;
+    }
     
-    autocomplete({
+    this.autocompleteInstance = autocomplete({
       container: '#autocomplete',
       placeholder: 'Search for continents, seas, countries, regions, cities, dive sites or centers...',
+      openOnFocus: true,
       getSources({ query }) {
         return [
           {
@@ -38,16 +41,20 @@ export default class extends Controller {
                       ...hit, 
                       name: hit.name,
                       kind: hit.kind,
+                      slug: hit.slug,
                     };
                   });
                 });
             },
             templates: {
               item({ item, html }) {
-                return html`<div class="flex justify-between p-3">
-                  <div class="font-serif text-dark-blue text-xl">${item.name}</div>
-                  <div class="text-main-sky text-xl">${item.kind}</div>
-                </div>`;
+                return html`
+                <a href="/geo_groups/${item.slug}" alt="${item.name}">
+                  <div class="flex justify-between p-3">
+                    <div class="font-serif text-dark-blue text-xl">${item.name}</div>
+                    <div class="text-main-sky text-xl">${item.kind}</div>
+                  </div>
+                </a>`;
               },
               noResults() {
                 return 'No results for this query.';
@@ -58,5 +65,12 @@ export default class extends Controller {
       },
     });
     
+  } // end connect()
+
+  disconnect() {
+    if (this.autocompleteInstance) {
+      this.autocompleteInstance.destroy();
+      this.autocompleteInstance = null;
+    }
   }
 }
