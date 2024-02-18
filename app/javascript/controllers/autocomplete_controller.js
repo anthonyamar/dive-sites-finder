@@ -25,7 +25,10 @@ export default class extends Controller {
     this.autocompleteInstance = autocomplete({
       container: '#autocomplete',
       placeholder: 'Search for continents, seas, countries, regions, cities, dive sites or centers...',
-      openOnFocus: true,
+      autoFocus: true,
+      renderNoResults({ state, render, html }, root) {
+        render(html`<a href="/geo_groups"><div class="aa-NoResults">No results for "${state.query}". Search by destinations 🌎  → </div></a>`, root);
+      },
       getSources({ query }) {
         return [
           {
@@ -59,9 +62,6 @@ export default class extends Controller {
                   </div>
                 </a>`;
               },
-              noResults() {
-                return 'No results for this query.';
-              }, 
             },
           },
           {
@@ -95,9 +95,6 @@ export default class extends Controller {
                   </div>
                 </a>`
               },
-              noResults() {
-                return 'No results for this query.';
-              }, 
             },
           },
         ];

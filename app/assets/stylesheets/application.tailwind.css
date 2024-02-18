@@ -96,3 +96,7 @@
 .aa-Item {
   @apply hover:bg-sky-50 aria-selected:bg-sky-50 !important;
 }
+
+.aa-NoResults {
+  @apply p-4 m-0 text-lg text-main-sky hover:bg-sky-50  !important;
+}
