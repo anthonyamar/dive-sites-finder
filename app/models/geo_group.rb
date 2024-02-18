@@ -1,6 +1,7 @@
 class GeoGroup < ApplicationRecord
   
   include AlgoliaSearch
+  include Rails.application.routes.url_helpers
   extend FriendlyId
   friendly_id :name, use: :slugged
   reverse_geocoded_by :latitude, :longitude
@@ -35,7 +36,15 @@ class GeoGroup < ApplicationRecord
   # ============= algolia ===========
   
   algoliasearch do
+    attributes :name, :kind
+    # later : add popularity score
+    
+    attribute :full_path 
     geoloc :latitude, :longitude
+  end
+  
+  def full_path
+    geo_group_path(self)
   end
 
 end
