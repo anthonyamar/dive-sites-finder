@@ -42,12 +42,15 @@ export default class extends Controller {
         getItems: () => {
           return searchClient
             .initIndex(indexName)
-            .search(query)
+            .search(query, {
+              hitsPerPage: 2,
+             })
             .then((res) => {
               return res.hits.map((hit) => ({
                 ...hit, 
                 name: hit.name,
                 kind: hit.l_kind,
+                geo_refs: hit.l_geo_refs,
                 path: hit.full_path,
               }));
             });
@@ -59,9 +62,11 @@ export default class extends Controller {
           item({ item, html }) {
             return html`
             <a href="${item.path}" alt="${item.name}">
-              <div class="flex justify-between p-3">
+              <div class="px-3 py-1">
                 <div class="font-serif text-dark-blue text-xl">${item.name}</div>
-                <div class="text-main-sky text-xl">${item.kind}</div>
+                <div class="text-main-sky text-sm">
+                  ${item.geo_refs == null ? item.kind : item.geo_refs}
+                </div>
               </div>
             </a>`;
           },

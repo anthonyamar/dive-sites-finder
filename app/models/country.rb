@@ -42,7 +42,7 @@ class Country < ApplicationRecord
   # ============= algolia ===========
   
   algoliasearch do
-    attributes :name, :full_path, :l_kind
+    attributes :name, :full_path, :l_kind, :l_geo_refs
     # later : add popularity score with 
     # customRanking ['desc(popularity_score)']
     
@@ -55,6 +55,15 @@ class Country < ApplicationRecord
   
   def l_kind
     I18n.t("models.countries.kinds.country").capitalize
+  end
+  
+  def l_geo_refs
+#    if self.waters.any? # Countries always have a continent at least
+      I18n.t("models.countries.geo_refs", 
+        continent: self.continent.name, 
+        waters: self.waters.map(&:name).to_sentence,
+        count: self.waters.size
+      )
   end
   
 end

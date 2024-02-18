@@ -90,7 +90,7 @@
 }
 
 .aa-SourceHeader {
-  @apply px-4 py-2 m-0 text-lg text-main-sky bg-sky-50  !important;
+  @apply px-4 py-2 m-0 text-lg text-main-sky bg-sky-50 !important;
 }
 
 .aa-Item {
@@ -98,5 +98,5 @@
 }
 
 .aa-NoResults {
-  @apply p-4 m-0 text-lg text-main-sky hover:bg-sky-50  !important;
+  @apply p-4 m-0 text-lg text-main-sky hover:bg-sky-50 !important;
 }

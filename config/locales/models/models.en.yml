@@ -8,6 +8,10 @@ en:
     countries:
       kinds:
         country: "country"
+      geo_refs: 
+        other: "%{continent}, bordered by %{waters}"
+        one: "%{continent}, bordered by %{waters}"
+        zero: "%{continent}"
     regions:
       kinds:
         region: "region"
