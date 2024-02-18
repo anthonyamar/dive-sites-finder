@@ -1,0 +1,7 @@
+en:
+  models:
+    geo_groups:
+      kinds:
+        ocean: "ocean"
+        sea: "sea"
+        continent: "continent"

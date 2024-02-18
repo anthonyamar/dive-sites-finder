@@ -40,8 +40,8 @@ export default class extends Controller {
                     return { 
                       ...hit, 
                       name: hit.name,
-                      kind: hit.kind,
-                      slug: hit.slug,
+                      kind: hit.l_kind,
+                      path: hit.full_path,
                     };
                   });
                 });
@@ -49,7 +49,7 @@ export default class extends Controller {
             templates: {
               item({ item, html }) {
                 return html`
-                <a href="/geo_groups/${item.slug}" alt="${item.name}">
+                <a href="${item.path}" alt="${item.name}">
                   <div class="flex justify-between p-3">
                     <div class="font-serif text-dark-blue text-xl">${item.name}</div>
                     <div class="text-main-sky text-xl">${item.kind}</div>
@@ -66,7 +66,7 @@ export default class extends Controller {
     });
     
   } // end connect()
-
+  
   disconnect() {
     if (this.autocompleteInstance) {
       this.autocompleteInstance.destroy();
