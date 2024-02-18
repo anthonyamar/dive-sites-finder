@@ -41,7 +41,7 @@ class GeoGroup < ApplicationRecord
   algoliasearch do
     attributes :name, :full_path, :l_kind
     # later : add popularity score with 
-    # customRaking ['desc(popularity_score)']
+    # customRanking ['desc(popularity_score)']
     
     geoloc :latitude, :longitude
   end
