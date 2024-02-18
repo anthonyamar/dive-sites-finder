@@ -5,3 +5,12 @@ en:
         ocean: "ocean"
         sea: "sea"
         continent: "continent"
+    countries:
+      kinds:
+        country: "country"
+    regions:
+      kinds:
+        region: "region"
+    cities:
+      kinds:
+        city: "city"

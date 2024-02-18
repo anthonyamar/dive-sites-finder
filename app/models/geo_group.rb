@@ -29,9 +29,7 @@ class GeoGroup < ApplicationRecord
 
   # ============= scopes ============
   
-  def self.water
-    self.ocean + self.sea
-  end
+  scope :water, -> { where(kind: ["sea", "ocean"]) }
 
   # ============= methods ===========
   

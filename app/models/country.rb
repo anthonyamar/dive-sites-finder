@@ -1,5 +1,7 @@
 class Country < ApplicationRecord
   
+  include AlgoliaSearch
+  include Rails.application.routes.url_helpers
   extend FriendlyId
   friendly_id :name, use: :slugged
   reverse_geocoded_by :latitude, :longitude
@@ -36,5 +38,23 @@ class Country < ApplicationRecord
   def continent
     geo_groups.continent.first
   end
-
+  
+  # ============= algolia ===========
+  
+  algoliasearch do
+    attributes :name, :full_path, :l_kind
+    # later : add popularity score with 
+    # customRanking ['desc(popularity_score)']
+    
+    geoloc :latitude, :longitude
+  end
+  
+  def full_path
+    country_path(self)
+  end
+  
+  def l_kind
+    I18n.t("models.countries.kinds.country").capitalize
+  end
+  
 end
