@@ -38,6 +38,8 @@ class GeoGroup < ApplicationRecord
   
   algoliasearch do
     attributes :name, :full_path, :l_kind
+    searchableAttributes ['name']
+    
     # later : add popularity score with 
     # customRanking ['desc(popularity_score)']
     

@@ -43,6 +43,8 @@ class Country < ApplicationRecord
   
   algoliasearch do
     attributes :name, :full_path, :l_kind, :l_geo_refs
+    searchableAttributes ['name']
+    
     # later : add popularity score with 
     # customRanking ['desc(popularity_score)']
     
@@ -58,12 +60,11 @@ class Country < ApplicationRecord
   end
   
   def l_geo_refs
-#    if self.waters.any? # Countries always have a continent at least
-      I18n.t("models.countries.geo_refs", 
-        continent: self.continent.name, 
-        waters: self.waters.map(&:name).to_sentence,
-        count: self.waters.size
-      )
+    I18n.t("models.countries.geo_refs", 
+      continent: self.continent.name, 
+      waters: self.waters.map(&:name).to_sentence,
+      count: self.waters.size
+    )
   end
   
 end

@@ -75,8 +75,10 @@ export default class extends Controller {
     };
 
     return [
+      createSource('Country', 'Countries...'),
+      createSource('City', 'Cities...'),
       createSource('GeoGroup', 'Continents, seas and oceans...'),
-      createSource('Country', 'Countries...')
+      createSource('Region', 'Regions...'),
     ];
   }
 
