@@ -82,7 +82,7 @@
 }
 
 .aa-Input::placeholder, .aa-DetachedSearchButtonPlaceholder {
-  @apply text-gray-500 font-thin text-md truncate xl:text-base !important;
+  @apply text-gray-500 font-thin text-sm truncate xl:text-base !important;
 }
 
 .aa-Panel {
