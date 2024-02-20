@@ -167,7 +167,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_20_193300) do
     t.index ["activity_id"], name: "index_dive_centers_activities_on_activity_id"
     t.index ["dive_center_id"], name: "index_dive_centers_activities_on_dive_center_id"
   end
-
+  
   create_table "dive_centers_affiliations", force: :cascade do |t|
     t.bigint "dive_center_id", null: false
     t.bigint "affiliation_id", null: false
@@ -224,6 +224,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_20_193300) do
     t.datetime "updated_at", null: false
     t.index ["country_id"], name: "index_geo_groups_countries_on_country_id"
     t.index ["geo_group_id"], name: "index_geo_groups_countries_on_geo_group_id"
+  end
+
+  create_table "prestations", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "regions", force: :cascade do |t|
