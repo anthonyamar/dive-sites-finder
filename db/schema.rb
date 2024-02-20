@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_20_125419) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_20_193300) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -163,6 +163,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_20_125419) do
     t.bigint "activity_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "visible", default: true
     t.index ["activity_id"], name: "index_dive_centers_activities_on_activity_id"
     t.index ["dive_center_id"], name: "index_dive_centers_activities_on_dive_center_id"
   end

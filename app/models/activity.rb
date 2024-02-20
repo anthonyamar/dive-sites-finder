@@ -13,6 +13,11 @@ class Activity < ApplicationRecord
   validates :name, presence: true, length: { maximum: 255 }
   validates :slug, presence: true, length: { maximum: 255 }
   
+  # ============= scopes =================
+  
+  scope :visible, -> { joins(:dive_centers_activities).where(dive_centers_activities: { visible: true }).distinct }
+
+  
   # ============= methods ================
   
   def should_generate_new_friendly_id?
