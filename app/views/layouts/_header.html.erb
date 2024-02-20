@@ -21,8 +21,10 @@
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-12">
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900 py-3">Log in</a>
-      <a href="#" class="btn-primary py-3">Sign up <span aria-hidden="true">&rarr;</span></a>
+      <%= link_to("Log in", new_user_session_path, class: "text-sm font-semibold leading-6 text-gray-900 py-3") %>
+      <%= link_to(new_user_registration_path, class: "btn-primary py-3") do %>
+        Sign up <span aria-hidden="true">&rarr;</span>
+      <% end %>
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
