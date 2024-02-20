@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_30_221640) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_20_193300) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -40,6 +40,22 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_30_221640) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
+
+  create_table "activities", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "slug", null: false
+    t.integer "dive_centers_count", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "affiliations", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "slug", null: false
+    t.integer "dive_centers_count", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "cities", force: :cascade do |t|
@@ -126,7 +142,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_30_221640) do
     t.string "state"
     t.string "zip"
     t.string "country_code"
-    t.text "activities", default: [], array: true
+    t.text "prestations", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "destination_id"
@@ -140,6 +156,25 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_30_221640) do
     t.index ["geo_group_id"], name: "index_dive_centers_on_geo_group_id"
     t.index ["region_id"], name: "index_dive_centers_on_region_id"
     t.index ["slug"], name: "index_dive_centers_on_slug", unique: true
+  end
+
+  create_table "dive_centers_activities", force: :cascade do |t|
+    t.bigint "dive_center_id", null: false
+    t.bigint "activity_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "visible", default: true
+    t.index ["activity_id"], name: "index_dive_centers_activities_on_activity_id"
+    t.index ["dive_center_id"], name: "index_dive_centers_activities_on_dive_center_id"
+  end
+
+  create_table "dive_centers_affiliations", force: :cascade do |t|
+    t.bigint "dive_center_id", null: false
+    t.bigint "affiliation_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["affiliation_id"], name: "index_dive_centers_affiliations_on_affiliation_id"
+    t.index ["dive_center_id"], name: "index_dive_centers_affiliations_on_dive_center_id"
   end
 
   create_table "dive_sites", force: :cascade do |t|
@@ -216,6 +251,10 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_30_221640) do
   add_foreign_key "dive_centers", "destinations"
   add_foreign_key "dive_centers", "geo_groups"
   add_foreign_key "dive_centers", "regions"
+  add_foreign_key "dive_centers_activities", "activities"
+  add_foreign_key "dive_centers_activities", "dive_centers"
+  add_foreign_key "dive_centers_affiliations", "affiliations"
+  add_foreign_key "dive_centers_affiliations", "dive_centers"
   add_foreign_key "dive_sites", "cities"
   add_foreign_key "dive_sites", "countries"
   add_foreign_key "dive_sites", "destinations"
