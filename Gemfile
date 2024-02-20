@@ -53,6 +53,9 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+# Devise for authentification [https://github.com/heartcombo/devise]
+gem "devise"
+
 # Paginate models [https://github.com/ddnexus/pagy]
 gem "pagy"
 
