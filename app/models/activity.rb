@@ -1,9 +1,9 @@
-class Prestation < ApplicationRecord
+class Activity < ApplicationRecord
 
   # ============= relations ==============
 
-  has_many :dive_centers_prestations
-  has_many :dive_centers, through: :dive_centers_prestations
+  has_many :dive_centers_activities
+  has_many :dive_centers, through: :dive_centers_activities
 
   # ============= validations ============
 

@@ -10,8 +10,8 @@ class DiveCenter < ApplicationRecord
   
   has_many :dive_centers_affiliations
   has_many :affiliations, through: :dive_centers_affiliations
-  has_many :dive_centers_prestations
-  has_many :prestations, through: :dive_centers_prestations
+#  has_many :dive_centers_activities
+#  has_many :activities, through: :dive_centers_activities
   
   belongs_to :destination, counter_cache: true, optional: true
   belongs_to :geo_group, counter_cache: true, optional: true
