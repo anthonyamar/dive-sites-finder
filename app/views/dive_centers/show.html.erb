@@ -58,7 +58,7 @@
       </li>
       <% unless @dive_center.activities.blank? %>
         <li class="font-semibold m-5">
-          <%= @dive_center.activities.to_sentence.capitalize %><br>
+          <%= @dive_center.activities.pluck(:name).to_sentence&.capitalize %><br>
           <span class="text-sm font-normal">Activities</span>
         </li>
       <% end %>

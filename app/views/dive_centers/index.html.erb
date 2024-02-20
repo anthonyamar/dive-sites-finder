@@ -35,7 +35,7 @@
               <%= dive_center.city&.country&.name %>
             </td>
             <td class="px-6 py-4">
-              <%= dive_center.activities&.to_sentence&.capitalize %>
+              <%= dive_center.activities.pluck(:name).to_sentence&.capitalize %>
             </td>
           </tr>
         <% end %>
