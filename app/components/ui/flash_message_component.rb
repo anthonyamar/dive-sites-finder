@@ -12,9 +12,6 @@ class Ui::FlashMessageComponent < ViewComponent::Base
   private
 
   def color_classes
-    puts "================"
-    puts type
-    puts "================="
     case type.to_s
     when "success"
       'bg-green-100 border-green-400 text-green-700'
