@@ -9,9 +9,9 @@ class User < ApplicationRecord
 
   # ============= relations ============
   
-  has_many :users_activities
+  has_many :users_activities, dependent: :destroy
   has_many :activities, through: :users_activities
-  has_many :users_affiliations
+  has_many :users_affiliations, dependent: :destroy
   has_many :affiliations, through: :users_affiliations
   
   # ============= validations ============
