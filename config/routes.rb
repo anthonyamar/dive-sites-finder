@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
-
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
@@ -19,6 +17,13 @@ Rails.application.routes.draw do
   get "/manifest.json" => "service_worker#manifest"
   get "/offline" => "service_worker#offline"
   
+  devise_for :users, controllers: {
+    confirmations: 'users/confirmations',
+    passwords: 'users/passwords',
+    registrations: 'users/registrations',
+    sessions: 'users/sessions',
+  }
+  
   resources :dive_sites, only: [:index, :show]
   resources :dive_centers, only: [:index, :show]
   resources :geo_groups, only: [:index, :show]
@@ -32,7 +37,6 @@ Rails.application.routes.draw do
     get ':country/:region', to: 'destinations#region', on: :collection, as: 'region'
     get ':country/:region/:city', to: 'destinations#city', on: :collection, as: 'city'
   end
-  
   
   
 end
