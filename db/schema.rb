@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_20_193300) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_24_063746) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -48,6 +48,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_20_193300) do
     t.integer "dive_centers_count", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "users_count", default: 0
   end
 
   create_table "affiliations", force: :cascade do |t|
@@ -56,6 +57,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_20_193300) do
     t.integer "dive_centers_count", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "users_count", default: 0
   end
 
   create_table "cities", force: :cascade do |t|
@@ -243,6 +245,46 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_20_193300) do
     t.index ["slug"], name: "index_regions_on_slug", unique: true
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
+    t.string "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "role", default: "user"
+    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "users_activities", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "activity_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["activity_id"], name: "index_users_activities_on_activity_id"
+    t.index ["user_id"], name: "index_users_activities_on_user_id"
+  end
+
+  create_table "users_affiliations", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "affiliation_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["affiliation_id"], name: "index_users_affiliations_on_affiliation_id"
+    t.index ["user_id"], name: "index_users_affiliations_on_user_id"
+  end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "cities", "regions"
@@ -263,4 +305,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_20_193300) do
   add_foreign_key "geo_groups_countries", "countries"
   add_foreign_key "geo_groups_countries", "geo_groups"
   add_foreign_key "regions", "countries"
+  add_foreign_key "users_activities", "activities"
+  add_foreign_key "users_activities", "users"
+  add_foreign_key "users_affiliations", "affiliations"
+  add_foreign_key "users_affiliations", "users"
 end

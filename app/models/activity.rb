@@ -7,7 +7,10 @@ class Activity < ApplicationRecord
 
   has_many :dive_centers_activities
   has_many :dive_centers, through: :dive_centers_activities
-
+  has_many :users_activities
+  has_many :users, through: :users_activities
+  
+  
   # ============= validations ============
 
   validates :name, presence: true, length: { maximum: 255 }

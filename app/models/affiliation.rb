@@ -7,6 +7,8 @@ class Affiliation < ApplicationRecord
 
   has_many :dive_centers_affiliations
   has_many :dive_centers, through: :dive_centers_affiliations
+  has_many :users_affiliations
+  has_many :users, through: :users_affiliations
 
   # ============= validations ============
 
