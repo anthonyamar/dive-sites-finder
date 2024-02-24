@@ -9,7 +9,10 @@ class User < ApplicationRecord
 
   # ============= relations ============
   
-  
+  has_many :users_activities
+  has_many :activities, through: :users_activities
+  has_many :users_affiliations
+  has_many :affiliations, through: :users_affiliations
   
   # ============= validations ============
   
