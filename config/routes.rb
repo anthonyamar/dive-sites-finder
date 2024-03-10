@@ -24,19 +24,22 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
   }
   
-  resources :dive_sites, only: [:index, :show]
-  resources :dive_centers, only: [:index, :show]
-  resources :geo_groups, only: [:index, :show]
-  resources :countries, only: [:index, :show]
+  resources :dive_sites, only: [:index, :show, :edit, :update]
+  resources :dive_centers, only: [:index, :show, :edit, :update]
+  resources :geo_groups, only: [:index, :show, :edit, :update]
+  resources :countries, only: [:index, :show, :edit, :update]
 
   get ':country/:region', to: 'regions#show', as: 'region'
   get ':country/:region/:city', to: 'cities#show', as: 'city'
+  
+  resources :regions, only: [:edit, :update]
+  resources :cities, only: [:edit, :update]
 
-  resources :destinations, only: [:index] do
-    get ':country', to: 'destinations#country', on: :collection, as: 'country'
-    get ':country/:region', to: 'destinations#region', on: :collection, as: 'region'
-    get ':country/:region/:city', to: 'destinations#city', on: :collection, as: 'city'
-  end
+#  resources :destinations, only: [:index] do
+#    get ':country', to: 'destinations#country', on: :collection, as: 'country'
+#    get ':country/:region', to: 'destinations#region', on: :collection, as: 'region'
+#    get ':country/:region/:city', to: 'destinations#city', on: :collection, as: 'city'
+#  end
   
   
 end
