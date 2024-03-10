@@ -1,0 +1,91 @@
+<%= content_for :meta_title, "Edit #{@country.name}" %>
+<div class="container px-4 bg-white mt-24 mb-12 sm:mt-36 sm:mb-20 mx-auto">
+  <h1 class="heading-1">Edit <%= @country.name %></h1>
+
+<%= form_with(model: @country, local: true, class: "max-w-lg mx-auto my-10") do |f| %>
+  <% if @country.errors.any? %>
+    <div id="error_explanation" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+      <strong class="font-bold">Warning !</strong>
+      <span class="block sm:inline"><%= pluralize(@country.errors.count, "error") %> prevent the edit :</span>
+      <ul class="list-disc pl-5 mt-3">
+      <% @country.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-4">
+    <%= f.label :name, class: "form-label" %>
+    <%= f.text_field :name, id: :country_name, class: "form-input" %>
+  </div>
+
+  <div class="mb-4">
+    <%= f.label :description, class: "form-label" %>
+    <%= f.text_area :description, id: :country_description, class: "form-input" %>
+  </div>
+  
+  <div class="mb-4">
+    <%= f.label :meta_description, class: "form-label" %>
+    <%= f.text_area :meta_description, id: :country_description, class: "form-input" %>
+  </div>
+
+  <div class="mb-4">
+    <%= f.label :latitude, class: "form-label" %>
+    <%= f.number_field :latitude, step: :any, id: :country_latitude, class: "form-input" %>
+  </div>
+
+  <div class="mb-4">
+    <%= f.label :longitude, class: "form-label" %>
+    <%= f.number_field :longitude, step: :any, id: :country_longitude, class: "form-input" %>
+  </div>
+  
+  <div class="mb-4">
+    <%= f.label :code, class: "form-label" %>
+    <%= f.text_field :code, step: :any, id: :country_code, class: "form-input" %>
+  </div>
+  
+  <div class="mb-4">
+    <%= f.label :demonym, class: "form-label" %>
+    <%= f.text_field :demonym, step: :any, id: :country_demonym, class: "form-input" %>
+  </div>
+  
+  <div class="mb-4">
+    <%= f.label :currency, class: "form-label" %>
+    <%= f.text_field :currency, step: :any, id: :country_currency, class: "form-input" %>
+  </div>
+  
+  <div class="mb-4">
+    <%= f.label :pressure, class: "form-label" %>
+    <%= f.text_field :pressure, step: :any, id: :country_pressure, class: "form-input" %>
+  </div>
+  
+  <div class="mb-4">
+    <%= f.label :phone_prefix, class: "form-label" %>
+    <%= f.text_field :phone_prefix, step: :any, id: :country_phone_prefix, class: "form-input" %>
+  </div>
+  
+  <div class="mb-4">
+    <%= f.label :voltage, class: "form-label" %>
+    <%= f.text_field :voltage, step: :any, id: :country_voltage, class: "form-input" %>
+  </div>
+  
+  <div class="mb-4">
+    <%= f.label :plug, class: "form-label" %>
+    <%= f.text_field :plug, step: :any, id: :country_plug, class: "form-input" %>
+  </div>
+  
+
+  <div class="mb-4">
+    <%= f.label :slug, class: "form-label" %>
+    <%= f.text_field :slug, id: :country_slug, class: "form-input" %>
+  </div>
+
+  <div class="flex items-center justify-between">
+    <%= f.submit "Edit", as: :button, class: "btn-primary w-full mt-3" %>
+  </div>
+<% end %>
+
+</div>
+
+
