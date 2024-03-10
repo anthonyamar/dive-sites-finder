@@ -21,6 +21,11 @@
         ])
       %>
       <h1 class="heading-1">
+        <% if current_user.admin? %>
+          <%= link_to edit_region_path(@region) do %>
+            <i class="fa-duotone fa-pen-to-square" style="--fa-primary-color: #0ea5e9; --fa-secondary-color: #0ea5e9;"></i>
+          <% end %>
+        <% end %>
         <%= ISO3166::Country.new(@region.country.code).emoji_flag %>
         Diving in <%= @region.name %>
       </h1>
