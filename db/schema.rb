@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_24_063746) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_10_215918) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -67,7 +67,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_24_063746) do
     t.float "longitude"
     t.text "bounding_box", default: [], array: true
     t.string "timezone"
-    t.boolean "capital_city"
+    t.boolean "capital_city", default: false
     t.integer "dive_centers_count", default: 0
     t.integer "dive_sites_count", default: 0
     t.bigint "region_id"
