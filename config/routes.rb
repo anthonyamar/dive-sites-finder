@@ -29,15 +29,27 @@ Rails.application.routes.draw do
   resources :geo_groups, only: [:index, :show, :edit, :update]
   resources :countries, only: [:index, :show, :edit, :update]
 
-  get '/:country/:region/', to: 'regions#show', as: 'region'
-  get '/regions/:id/edit', to: 'regions#edit', as: 'edit_region'
-  patch '/regions/:id', to: 'regions#update', as: 'update_region'
+  # Regions
+  get '/:country/:region/', 
+    to: 'regions#show', 
+    as: 'region'
+  get '/regions/:id/edit', 
+    to: 'regions#edit', 
+    as: 'edit_region'
+  patch '/regions/:id', 
+    to: 'regions#update', 
+    as: 'update_region'
   
-
-  # Routes pour City
-  get '/:country/:region/:city/', to: 'cities#show', as: 'city'
-  get '/cities/:city/edit', to: 'cities#edit', as: 'edit_city'
-  patch '/cities/:city', to: 'cities#update', as: 'update_city'
+  # Cities
+  get '/cities/:id/edit', # Always put this line on top to avoid colision with #show
+    to: 'cities#edit', 
+    as: 'edit_city' 
+  get '/:country/:region/:city/', 
+    to: 'cities#show', 
+    as: 'city'
+  patch '/cities/:id', 
+    to: 'cities#update', 
+    as: 'update_city'
 
 #  resources :destinations, only: [:index] do
 #    get ':country', to: 'destinations#country', on: :collection, as: 'country'
