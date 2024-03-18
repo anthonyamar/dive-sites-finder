@@ -25,7 +25,7 @@
         ])
       %>
       <h1 class="heading-1">
-        <% if current_user.admin? %>
+        <% if user_signed_in? && current_user.admin? %>
           <%= link_to edit_city_path(@city.id) do %>
             <i class="fa-duotone fa-pen-to-square" style="--fa-primary-color: #0ea5e9; --fa-secondary-color: #0ea5e9;"></i>
           <% end %>
