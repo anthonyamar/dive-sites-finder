@@ -24,19 +24,38 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
   }
   
-  resources :dive_sites, only: [:index, :show]
-  resources :dive_centers, only: [:index, :show]
-  resources :geo_groups, only: [:index, :show]
-  resources :countries, only: [:index, :show]
+  resources :dive_sites, only: [:index, :show, :edit, :update]
+  resources :dive_centers, only: [:index, :show, :edit, :update]
+  resources :geo_groups, only: [:index, :show, :edit, :update]
+  resources :countries, only: [:index, :show, :edit, :update]
 
-  get ':country/:region', to: 'regions#show', as: 'region'
-  get ':country/:region/:city', to: 'cities#show', as: 'city'
+  # Regions
+  get '/:country/:region/', 
+    to: 'regions#show', 
+    as: 'region'
+  get '/regions/:id/edit', 
+    to: 'regions#edit', 
+    as: 'edit_region'
+  patch '/regions/:id', 
+    to: 'regions#update', 
+    as: 'update_region'
+  
+  # Cities
+  get '/cities/:id/edit', # Always put this line on top to avoid colision with #show
+    to: 'cities#edit', 
+    as: 'edit_city' 
+  get '/:country/:region/:city/', 
+    to: 'cities#show', 
+    as: 'city'
+  patch '/cities/:id', 
+    to: 'cities#update', 
+    as: 'update_city'
 
-  resources :destinations, only: [:index] do
-    get ':country', to: 'destinations#country', on: :collection, as: 'country'
-    get ':country/:region', to: 'destinations#region', on: :collection, as: 'region'
-    get ':country/:region/:city', to: 'destinations#city', on: :collection, as: 'city'
-  end
+#  resources :destinations, only: [:index] do
+#    get ':country', to: 'destinations#country', on: :collection, as: 'country'
+#    get ':country/:region', to: 'destinations#region', on: :collection, as: 'region'
+#    get ':country/:region/:city', to: 'destinations#city', on: :collection, as: 'city'
+#  end
   
   
 end
